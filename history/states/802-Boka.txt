@@ -1,0 +1,23 @@
+state={
+	id=802
+	name="STATE_802"
+	
+	state_category = city
+
+	history={
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = SLV
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+	
+	provinces={
+		3868 6889 
+	}
+	manpower=563159
+	buildings_max_level_factor=1.000
+}
