@@ -325,23 +325,23 @@ create_import = {
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = national_socialism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	liberalism
-	conservatism
-	socialism
-	marxism_leninism
-	fascism
-	nationalism
+	liberalism = 6
+	conservatism = 10
+	socialism = 0
+	marxism_leninism = 0
+	fascism = 0
+	nationalism = 24
+	national_socialism = 60
 }
 
 create_faction = Großgermanischer_Pakt
 add_to_faction = GER
-puppet
 
 
 add_ideas = {
