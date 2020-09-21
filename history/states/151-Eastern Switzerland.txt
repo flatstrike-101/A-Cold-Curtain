@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = SWI
+		owner = GER
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
