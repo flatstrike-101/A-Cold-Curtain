@@ -1,8 +1,8 @@
 #reload countrycolors
 
 GER = {
-	color = rgb { 73 73 73 }
-	color_ui = rgb { 73 73 73 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 ENG = {
 	color = rgb { 169 39 26 }
@@ -27,15 +27,15 @@ LUX = {
 BEL = { color 	 = rgb { 91 84 98  }
 		color_ui = rgb { 91 84 98 }
 	  }
-HOL = {	color = rgb { 104 104 104 }
+HOL = {	color = rgb { 43 45 47 }
 		color_ui = rgb { 104 104 104 }
 }
-CZE = {	color = rgb { 99 99 99 }
-		color_ui = rgb { 99 99 99 }
+CZE = {	color = rgb { 43 45 47 }
+		color_ui = rgb { 43 45 47 }
 }
 POL = {
-	color = rgb { 99 99 99 }
-	color_ui = rgb { 99 99 99 }
+	color = rgb { 43 45 47 }
+	color_ui = rgb { 43 45 47 }
 }
 AUS = {
 	color = rgb { 194 198 215 }
@@ -86,12 +86,12 @@ ALB = {
 	color_ui = rgb { 112 68 93 }
 }
 NOR = {
-	color = rgb { 111 71 71 }
-	color_ui = rgb { 144 92 92 }
+	color = rgb { 43 45 47 }
+	color_ui = rgb { 43 45 47 }
 }
 DEN = {
-	color = rgb { 153 116 93 }
-	color_ui = rgb { 199 151 121 }
+	color = rgb { 43 45 47 }
+	color_ui = rgb { 43 45 47 }
 }
 BUL = {
 	color = rgb { 38 121 52 }
@@ -295,8 +295,8 @@ OMA = {
 	color_ui = rgb { 202 131 139 }
 }
 SLO = {
-	color = rgb { 114 114 114 }
-	color_ui = rgb { 114 114 114 }
+	color = rgb { 43 45 47 }
+	color_ui = rgb { 43 45 47 }
 }
 RAJ = {
 	color = rgb { 226  135  40 }
@@ -710,4 +710,11 @@ BOS = {
 MOL = {
 	color = rgb { 147 8 8 }
 	color_ui = rgb { 147 8 8 }
+}
+
+#####    MODDING
+
+SSO = {
+	color = rgb { 43 45 47 }
+	color_ui = rgb { 43 45 47 }
 }
