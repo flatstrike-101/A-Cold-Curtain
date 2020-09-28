@@ -10,7 +10,7 @@ state={
 		victory_points = {
 			9809 3
 		}
-		owner = ALB
+		owner = ITA
 		add_core_of = ALB
 		buildings = {
 			infrastructure = 3

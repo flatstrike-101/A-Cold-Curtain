@@ -10,8 +10,7 @@ state=
 		victory_points = {
 			6727 1
 		}
-		add_core_of = UKR
-		owner = UKR
+		owner = SOV
 		buildings = {
 			infrastructure = 4
 			dockyard = 1
@@ -20,6 +19,8 @@ state=
 			}
 		}
 		add_core_of = ROM
+		add_core_of = SOV
+		add_core_of = UKR
 	}
 	provinces=
 	{

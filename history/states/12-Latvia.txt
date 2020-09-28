@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = LAT
+		owner = SOV
 		victory_points = {
 			9340 5 
 		}
@@ -29,6 +29,7 @@ state={
 			}
 
 		}
+		add_core_of = SOV
 		add_core_of = LAT
 
 	}

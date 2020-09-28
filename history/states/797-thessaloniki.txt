@@ -4,14 +4,12 @@ state={
 	name="STATE_797"
 
 	history={
-		owner = GER
+		owner = GRE
 		buildings = {
 			infrastructure = 4
 
 		}
 		add_core_of = GRE
-		add_claim_by = GER
-
 	}
 	
 	provinces={

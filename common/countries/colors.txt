@@ -718,3 +718,13 @@ SSO = {
 	color = rgb { 43 45 47 }
 	color_ui = rgb { 43 45 47 }
 }
+
+SCO = {
+	color = rgb { 1 64 135 }
+	color_ui = rgb { 1 64 135 }
+}
+
+RKS = {
+	color = rgb { 106  53  72 }
+	color_ui = rgb { 106  53  72 }
+}
