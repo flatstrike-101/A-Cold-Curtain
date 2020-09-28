@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 GER	= "countries/Germany.txt"
 ENG = "countries/United Kingdom.txt"
 SOV = "countries/Soviet Union.txt"
@@ -210,4 +211,4 @@ COR = "countries/Corsica.txt"
 ########################## MODDING BELOW
 
 SSO = "countries/Ordensstaat Burgund.txt"
-RKS = "countries/RK Südengland.txt"
+RKS = "countries/RK Südengland.txt"RKS = "countries/RK Südengland.txt"
