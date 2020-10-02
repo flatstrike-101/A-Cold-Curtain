@@ -1,0 +1,22 @@
+state={
+	id=808
+	name="STATE_808"
+	
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		add_core_of = TUR
+
+	}
+	
+	provinces={
+		1549 1578 5014 10804 10811 
+	}
+	manpower=127198
+	buildings_max_level_factor=1.000
+	state_category=town
+}

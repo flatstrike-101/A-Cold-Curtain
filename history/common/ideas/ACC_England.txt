@@ -1,0 +1,43 @@
+ideas = {
+
+	country = {
+		ENG_false_monarch = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05	
+			}
+		}
+		ENG_nation_divided = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			    political_power_gain = -0.25
+			}
+		}
+		ENG_deal_with_devil = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			    fascism_acceptance = 10
+				production_speed_arms_factory_factor	
+				industrial_capacity_factory	= 0.05
+			}
+		}
+	}
+}

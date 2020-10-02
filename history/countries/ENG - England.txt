@@ -1,0 +1,37 @@
+﻿capital = 126
+
+oob = "POL_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "POL_1936_naval_mtg"
+	else = {
+		set_naval_oob = "POL_1936_naval_legacy"
+	}
+}
+
+set_research_slots = 3
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = national_socialism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberalism = 6
+	conservatism = 10
+	socialism = 0
+	marxism_leninism = 0
+	fascism = 0
+	nationalism = 24
+	national_socialism = 60
+}
+
+add_ideas = {
+	ENG_false_monarch
+	ENG_nation_divided
+	ENG_deal_with_devil
+}
+
