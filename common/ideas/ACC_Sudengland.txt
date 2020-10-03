@@ -2,6 +2,8 @@ ideas = {
 
 	country = {
 		RKS_black_book = {
+		    picture = book_legacy
+		
 			allowed = {
 				always = no
 			}
@@ -15,6 +17,8 @@ ideas = {
 			}
 		}
 		RKS_hold_on_the_isles = {
+			picture = our_hold
+			
 			allowed = {
 				always = no
 			}
@@ -28,6 +32,8 @@ ideas = {
 			}
 		}
 		RKS_ready_to_strike = {
+			picture = ready_to_strike
+			
 			allowed = {
 				always = no
 			}

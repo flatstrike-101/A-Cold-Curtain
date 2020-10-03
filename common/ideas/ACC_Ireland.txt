@@ -2,6 +2,8 @@ ideas = {
 
 	country = {
 		IRE_backing_ira = {
+			picture = back_ira
+			
 			allowed = {
 				always = no
 			}
@@ -14,6 +16,8 @@ ideas = {
 			}
 		}
 		IRE_entering_weltachse = {
+			picture = weltache
+			
 			allowed = {
 				always = no
 			}
@@ -27,6 +31,8 @@ ideas = {
 			}
 		}
 		IRE_valera_guides_us = {
+			picture = valera_guides
+			
 			allowed = {
 				always = no
 			}

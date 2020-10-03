@@ -3,6 +3,8 @@ ideas = {
 	
 	country = {
 		WLS_play_both_sides = {
+			picture = play_both_sides
+			
 			allowed = {
 				always = no
 			}
@@ -16,6 +18,8 @@ ideas = {
 			}
 		}
 		WLS_the_way = {
+			picture = the_way
+			
 			allowed = {
 				always = no
 			}
@@ -29,6 +33,8 @@ ideas = {
 			}
 		}
 		WLS_authoritarian_society = {
+			picture = authoritarian_government
+		
 			allowed = {
 				always = no
 			}

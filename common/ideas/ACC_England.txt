@@ -2,6 +2,8 @@ ideas = {
 
 	country = {
 		ENG_false_monarch = {
+			picture = false_monarch
+			
 			allowed = {
 				always = no
 			}
@@ -14,6 +16,8 @@ ideas = {
 			}
 		}
 		ENG_nation_divided = {
+			picture = nation_divided
+			
 			allowed = {
 				always = no
 			}
@@ -26,6 +30,8 @@ ideas = {
 			}
 		}
 		ENG_deal_with_devil = {
+			picture = deal_with_the_devil
+			
 			allowed = {
 				always = no
 			}

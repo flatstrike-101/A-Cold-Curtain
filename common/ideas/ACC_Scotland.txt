@@ -2,6 +2,8 @@ ideas = {
 
 	country = {
 		SCO_pursue_german_ties = {
+			picture = pursue_ties
+			
 			allowed = {
 				always = no
 			}
@@ -15,6 +17,8 @@ ideas = {
 			}
 		}
 		SCO_alone_in_isles = {
+			picture = on_our_own
+			
 			allowed = {
 				always = yes
 			}
@@ -28,6 +32,8 @@ ideas = {
 			}
 		}
 		SCO_fascist_groups = {
+			picture= backing_fascism
+			
 			allowed = {
 				always = yes
 			}
