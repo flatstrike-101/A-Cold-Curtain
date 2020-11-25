@@ -101,6 +101,20 @@
  thule_society:0 "Thule Society"
  thule_society_desc:0 ""
 
+### Korea
+
+ KOR_liberalism_party:0 "Liberal Party"
+ KOR_conservatism_party:0 "Liberal Party"
+ KOR_socialism_party:0 "WPK"
+ KOR_socialism_party_long:0 "Workers' Party of Korea"
+ KOR_marxism_leninism_party:0 "WPK"
+ KOR_marxism_leninism_party_long:0 "Workers' Party of Korea"
+ KOR_fascism_party:0 "FLK"
+ KOR_fascism_party_long:0 "Fascist League of Korea"
+ KOR_nationalism_party:0 "House of Yi"
+ KOR_national_socialism_party:0 "NSPK"
+ KOR_national_socialism_party_long:0 "National-Socialist Party of Korea"
+
  GER_communism_party:0 "KPD"
  GER_democratic_party:1 "Zentrum"
  GER_neutrality_party_civil_war:0 "Militärregierung"
@@ -513,12 +527,6 @@
  HAI_democratic_party_long:0 "President Sténio Vincent"
  HAI_communism_party:0 "PKA"
  HAI_communism_party_long:0 "Pati Kominis Ayisyen"
- KOR_communism_party:0 "WPK"
- KOR_communism_party_long:0 "Worker's Party of Korea"
- KOR_democratic_party:0 "Liberal Party"
- KOR_neutrality_party:0 "Yi Dynasty"
- KOR_fascism_party:0 "NDPC"
- KOR_fascism_party_long:0 "National Defense Policy Committee"
  ICE_democratic_party:1 "Framsóknarflokkurinn"
  ICE_communism_party:1 "Kommúnistaflokkur"
  ICE_communism_party_long:0 "Kommúnistaflokkur Íslands"
