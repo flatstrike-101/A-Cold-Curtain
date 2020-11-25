@@ -1,14 +1,19 @@
 state={
 	id=809
 	name="STATE_809"
-	history = {
+
+	history={
 		owner = KOR
 		add_core_of = KOR
+		victory_points = {
+			4052 1
+		}	
 	}
+
 	provinces={
-		906 912 978 3912 4052 6963 7171 9790 9795 9918 10065 11770 11775 11828 11835 11896 11915 1003 4107 7155
+		906 912 978 3912 4052 6963 7070 7171 9790 9795 9918 10065 11770 11775 11828 11835 11896 
 	}
 	manpower=500000
 	buildings_max_level_factor=1.000
-        state_category = large_city
+	state_category=large_city
 }
