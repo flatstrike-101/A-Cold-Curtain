@@ -143,6 +143,9 @@ ideologies = {
 			
 			marxism = {
 			}
+
+			juche = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -203,9 +206,6 @@ ideologies = {
 			}
 			
 			stalinism = {
-			}
-			
-			juche = {
 			}
 
 			base_marxism_leninism = {
