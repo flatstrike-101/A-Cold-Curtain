@@ -728,3 +728,8 @@ RKS = {
 	color = rgb { 106  53  72 }
 	color_ui = rgb { 106  53  72 }
 }
+
+KOR = {
+	color = rgb { 202  52  51 }
+	color_ui = rgb { 202  52  51 }
+}
