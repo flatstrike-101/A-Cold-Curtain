@@ -1,0 +1,17 @@
+state={
+	id=815
+	name="STATE_815"
+	provinces={
+	11818 3936 895	
+	}
+	manpower=90000
+	buildings_max_level_factor=1.000
+        state_category=rural
+        history = {
+        owner = GER
+        add_core_of = GRE
+        victory_points = {
+			11818 1 
+		}
+        }
+}
