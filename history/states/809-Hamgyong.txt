@@ -1,0 +1,14 @@
+state={
+	id=809
+	name="STATE_809"
+	provinces={
+		852 898 959 3803 3852 3860 3904 3981 6822 6922 6928 6944 9899 10083 11878 
+	}
+	manpower=160000
+	buildings_max_level_factor=1.000
+        state_category=town
+        history = {
+        owner = KOR
+        add_core_of = KOR
+        }
+}
