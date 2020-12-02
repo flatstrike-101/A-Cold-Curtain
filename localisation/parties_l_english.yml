@@ -115,6 +115,20 @@
  KOR_national_socialism_party:0 "NSPK"
  KOR_national_socialism_party_long:0 "National-Socialist Party of Korea"
 
+### Korea
+
+ USA_liberalism_party:0 "Democratic Party"
+ USA_conservatism_party:0 "Republican Party"
+ USA_socialism_party:0 "Socialist Party of America"
+ USA_marxism_leninism_party:0 "CPUSA"
+ USA_marxism_leninism_party_long:0 "Communist Party of America"
+ USA_fascism_party:0 "UNDECIDED"
+ USA_fascism_party_long:0 "UNDECIDED"
+ USA_nationalism_party:0 "UNDECIDED"
+ USA_national_socialism_party:0 "UNDECIDED"
+ USA_national_socialism_party_long:0 "UNDECIDED"
+
+
  GER_communism_party:0 "KPD"
  GER_democratic_party:1 "Zentrum"
  GER_neutrality_party_civil_war:0 "Militärregierung"
