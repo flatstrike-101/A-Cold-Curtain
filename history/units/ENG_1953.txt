@@ -1,0 +1,64 @@
+division_template = {
+	name = "Royalist Infantry"	
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	##### English Army (Or What's left of it) ###
+	division= {
+		name = "1st Royalist Infantry"
+		location = 9297
+		division_template = "Royalist Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {
+		name = "2nd Royalist Infantry"
+		location = 6384
+		division_template = "Royalist Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {
+		name = "3rd Royalist Infantry"
+		location = 9379
+		division_template = "Royalist Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {
+		name = "4th Royalist Infantry"
+		location = 11297
+		division_template = "Royalist Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	
+	division= {
+		name = "5th Royalist Infantry"
+		location = 351
+		division_template = "Royalist Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	
+
+	##### No notable navy #####
+}
