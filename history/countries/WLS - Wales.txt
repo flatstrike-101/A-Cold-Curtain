@@ -1,4 +1,4 @@
-﻿capital = 6
+﻿capital = 122
 
 #oob = "GER_1936"
 
@@ -263,27 +263,36 @@ create_import = {
 }
 
 set_politics = {
-	ruling_party = national_socialism
+	ruling_party = fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	liberalism = 0
-	conservatism = 0
-	socialism = 0
-	marxism_leninism = 14
-	fascism = 0
+	liberalism = 3
+	conservatism = 8
+	socialism = 10
+	marxism_leninism = 0
+	fascism = 69
 	nationalism = 0
-	national_socialism = 86
+	national_socialism = 0
+}
+
+
+add_ideas = {
+	sour_loser
+	general_staff
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
 }
 
 create_country_leader = {
-	name = "Reinhard Heydrich"
+	name = "Jeffrey Hamm"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Reinhard_Heydrich_Leader_SSO.dds"
+	picture = "Jeffrey_Hamm_Leader_WLS.dds"
 	expire = "1965.1.1"
-	ideology = base_national_socialism
+	ideology = classical_fascism
 	traits = {
 	}
 }
