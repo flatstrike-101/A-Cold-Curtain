@@ -1,0 +1,23 @@
+
+state={
+	id=660
+	name="STATE_660"
+	manpower = 1136921
+	
+	state_category = pastoral
+	resources={
+		rubber=3 # was: 4
+	}
+	history={
+		owner = RKW
+		add_core_of = RKW
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		1974 3165 5084 11108 12719
+	}
+}

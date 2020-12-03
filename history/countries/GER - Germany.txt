@@ -112,6 +112,11 @@ create_import = {
 		exporter = SWE
 }
 
+puppet = RKA
+puppet = RKM
+puppet = RKW
+puppet = BEL
+
 1953.1.1 = {
 	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
 	set_war_support = 0.7

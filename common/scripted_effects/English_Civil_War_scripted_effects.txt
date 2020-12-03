@@ -1,0 +1,26 @@
+English_Civil_War_Start = {
+	FEG = {
+		transfer_state = 132
+		transfer_state = 129
+		load_oob = "FEN_CIVIL_WAR"
+	}
+	132 = {
+		add_core_of = FEG
+	}
+	129 = {
+		add_core_of = FEG
+	}
+	ENG = {
+		load_oob = "ENG_CIVIL_WAR"
+		country_event = { id = ENG_civil_war.1 }
+		declare_war_on = {
+			target = FEG
+			type = civil_war
+		}
+	}
+	
+	news_event = {
+		id = british_isles_news.1
+		days = 1
+	}
+}
