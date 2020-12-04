@@ -148,10 +148,17 @@
  ENG_neutrality_party_kings_party_long:0 "The King's Party"
  ENG_neutrality_party_queens_party:0 "Queen's Party"
  ENG_neutrality_party_queens_party_long:0 "The Queen's Party"
- ITA_communism_party:0 "Partito Comunista Italiano"
- ITA_democratic_party:0 "Partito Popolare Italiano"
+
+#Italy
+
+ ITA_marxism-leninism_party:0 "Partito Comunista Italiano"
+ ITA_liberalism_party:0 "Partito Popolare Italiano"
  ITA_fascism_party:0 "Partito Nazionale Fascista"
- ITA_neutrality_party:0 "Partito Nazionale Monarchico"
+ ITA_nationalism_party:0 "Partito Nazionale Monarchico"
+ ITA_conservatism_party:0 "Fronte dell'Uomo Qualunque"
+ ITA_socialism_party:0 "Partito Socialista Unificato"
+ ITA_national_socialism_party:0 "NSIAP"
+
  JAP_communism_party:0 "Nihon Kyosan-to"
  JAP_democratic_party:0 "Rikken Minseito"
  JAP_fascism_party:0 "Taisei Yokusankai"
