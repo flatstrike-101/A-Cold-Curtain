@@ -1,4 +1,4 @@
-capital = 64
+capital = 9
 
 oob = "_1936"
 
@@ -126,17 +126,19 @@ create_import = {
 	oob = "ITA_1939"
 	
 	set_autonomy = {
-		target = SLO
-		autonomous_state = autonomy_puppet
+		target = ETH
+		 autonomy_colony: "Colony"
 	}
 	
-	give_military_access = SLO
-	create_wargoal = {
-		type = take_state_focus
-		target = POL
-		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
+	set_autonomy = {
+		target = EGY
+		 autonomy_colony: "Colony"
 	}
-
+	
+	set_autonomy = {
+		target = GRE
+		 autonomy_satellite: "Satellite"
+	}
 #Trade
 	create_import = {
 			resource = oil
