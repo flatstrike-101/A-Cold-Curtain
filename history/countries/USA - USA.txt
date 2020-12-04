@@ -291,6 +291,11 @@ set_autonomy = {
 }
 
 1953.1.1 = {
+	
+create_faction = usa_faction
+add_to_faction = USA
+add_to_faction = GYA
+
 	set_politics = {
 		ruling_party = conservatism
 		last_election = "1952.11.3"

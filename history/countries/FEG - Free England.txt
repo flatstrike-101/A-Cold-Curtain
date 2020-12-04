@@ -1,0 +1,34 @@
+﻿capital = 132
+
+set_convoys = 300
+
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1952.11.8"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	liberalism = 29
+	conservatism = 12
+	socialism = 40
+	marxism_leninism = 9
+	fascism = 6
+	nationalism = 3
+	national_socialism = 1
+}
+
+add_ideas = {
+	
+}
+
+create_country_leader = {
+	name = "Clement Atlee"
+	desc = "POLITICS_KING_GEORGE_III_DESC"
+	picture = "Leader_Clement_Atlee.dds"
+	expire = "1980.1.1"
+	ideology = market_socialism
+	traits = {
+	}
+}

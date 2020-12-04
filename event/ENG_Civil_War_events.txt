@@ -1,0 +1,14 @@
+add_namespace = ENG_civil_war
+
+#English Civil War Starts
+country_event = {
+	id = ENG_civil_war.1
+	title = ENG_civil_war.1.t
+	desc = ENG_civil_war.1.d
+	picture = event_tom_cotton_sotu
+	is_triggered_only = yes
+	option = {
+		name = ENG_civil_war.1.a
+		ai_chance = { base = 100 }
+	}
+}

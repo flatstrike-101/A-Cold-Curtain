@@ -1,0 +1,13 @@
+state={
+	id=820
+	name="STATE_820"
+	provinces={
+		10930 5221 1846 10594 13173
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+        state_category=rural
+        history = {
+        	owner = RKA
+        }
+}

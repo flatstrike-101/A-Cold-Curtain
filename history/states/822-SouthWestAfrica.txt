@@ -1,0 +1,17 @@
+state={
+	id=822
+	name="STATE_822"
+	provinces={
+		11012 12830 8078
+	}
+	manpower=430000
+	buildings_max_level_factor=1.000
+        state_category=rural
+        history = {
+        	owner = BEL
+			victory_points = {
+				12830 1
+			}
+			add_core_of = BEL
+        }
+}

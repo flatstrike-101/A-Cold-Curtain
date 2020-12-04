@@ -1,0 +1,75 @@
+division_template = {
+	name = "Militia Infantry"	
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	##### English Volunteer Army ###
+	division= {
+		name = "1st Militia Infantry"
+		location = 11345
+		division_template = "Militia Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "2nd Militia Infantry"
+		location = 9315
+		division_template = "Militia Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "3rd Militia Infantry"
+		location = 9379
+		division_template = "Militia Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "4th Militia Infantry"
+		location = 9297
+		division_template = "Militia Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "5th Militia Infantry"
+		location = 6270
+		division_template = "Militia Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "6th Militia Infantry"
+		location = 11297
+		division_template = "Militia Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+
+	##### No notable navy #####
+}
