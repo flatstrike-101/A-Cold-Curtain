@@ -154,7 +154,7 @@ create_import = {
 		limit = {
 			has_government = fascism 
 		}
-		add_opinion_modifier = { target = ITA modifier = MR_pact_fascists }
+		add_opinion_modifier = { target = ITA modifier = MR_pact_fascisms }
 	}
 	diplomatic_relation = { country = SOV relation = non_aggression_pact }
 	add_opinion_modifier = { target = SOV modifier = MR_pact }
@@ -273,11 +273,12 @@ set_popularities = {
 	national_socialism = 0
 }
 
-create_faction = Patto Militare-Economico per la Difesa del Mediterraneo
-add_to_faction = SPA
+create_faction = PM-EDM
+add_to_faction = SPR
 add_to_faction = EGY
 add_to_faction = ETH
 add_to_faction = GRE
+add_to_faction = MEP
 
 
 ITA = { puppet = EGY
@@ -308,10 +309,10 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Umberto II"
-	desc = "POLITICS_UBERTO_II_FASCIST_DESC"
+	desc = "POLITICS_UBERTO_II_fascism_DESC"
 	picture = "Portrait_ITA_Umberto_II.dds"
 	expire = "1965.1.1"
-	ideology = fascist
+	ideology = falangism
 	traits = {
 	}
 }
@@ -322,7 +323,7 @@ create_country_leader = {
 	desc = "POLITICS_UBERTO_II_ABSOLUTE_DESC"
 	picture = "Portrait_ITA_Umberto_II.dds"
 	expire = "1965.1.1"
-	ideology = nationalism
+	ideology = monarchism
 	traits = {
 	}
 }
@@ -399,7 +400,7 @@ create_country_leader = {
 	desc = "POLITICS_MUSSOLINI_DESC"
 	picture = "Portrait_ITA_Mussolini.dds"
 	expire = "1954.1.1"
-	ideology = fascist
+	ideology = classical_fascism
 	traits = {
 	}
 }

@@ -448,7 +448,7 @@
  SPR_DEF:0 "Spain"
  SPR_ADJ:0 "Spanish"
 
-#Italy
+### Italy
  
  ITA_fascism:0 "Italian Empire"
  ITA_fascism_DEF:0 "the Italian Empire"
@@ -472,6 +472,29 @@
  ITA_DEF:0 "Italy"
  ITA_ADJ:0 "Italian"
 
+### Middle Eastern Protektorate
+
+ MEP_fascism:0 "Governo Coloniale del Medio Oriente"
+ MEP_fascism_DEF:0 "il Governo Coloniale del Medio Oriente"
+ MEP_liberalism:0 "Middle Eastern Republic"
+ MEP_liberalism_DEF:0 "the Middle Eastern Republic"
+ MEP_nationalism:0 "Kingdom of Jerusalem"
+ MEP_nationalism_DEF:0 "the Kingdom of Jerusalem"
+ MEP_national_socialism:0 "Holy Empire of Jerusalem"
+ MEP_national_socialism_DEF:0 "the Holy Empire of Jerusalem"
+ MEP_socialism:0 "Middle Eastern Democratic Republic"
+ MEP_socialism_DEF:0 "the Democratic Republic of the Middle East"
+ MEP_marxism-leninism:0 "Middle Eastern Commune"
+ MEP_marxism-leninism_DEF:0 "the Middle Eastern Commune"
+ MEP_conservatism:0 "United Provinces of the Middle East"
+ MEP_conservatism_DEF:0 "the United Provinces of the Middle East"
+ MEP_fascism_ADJ:0 "Middle Eastern"
+ MEP_liberalismc_ADJ:0 "Middle Eastern"
+ MEP_nationalism_ADJ:0 "Middle Eastern"
+ MEP_socialism_ADJ:0 "Middle Eastern"
+ MEP:0 "Middle Eastern"
+ MEP_DEF:0 "Middle Eastern"
+ MEP_ADJ:0 "Middle Eastern"
 
  ROM_fascism:0 "Legionary Romania"
  ROM_fascism_DEF:0 "Legionary Romania"

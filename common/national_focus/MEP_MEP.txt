@@ -1,0 +1,1204 @@
+focus_tree = {
+	id = MEP
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MEP
+		}
+	}
+	#Focus for Create Worker's Soviets
+	focus = {
+		id = MEP_create_workers_soviets
+		icon = GFX_goal_support_communism
+		x = 17
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_workers_united_front }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 250
+
+add_popularity= { 
+ideology = marxism-leninism
+popularity = 0.10 
+}
+  add_popularity= { 
+ideology = socialism
+popularity = 0.05
+}
+		}
+	}
+
+	#Focus for Stimulate Private Enterprise
+	focus = {
+		id = MEP_stimulate_private_enterprise
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 5
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_invest_in_the_agrarian_sector }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Decentralize Planned Economy
+	focus = {
+		id = MEP_decentralize_planned_economy
+		icon = GFX_goal_generic_war_with_comintern
+		x = 22
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_plan_military_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reconstruction
+	focus = {
+		id = MEP_reconstruction
+		icon = GFX_goal_generic_position_armies
+		x = 5
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEP_forced_italianization 
+			focus = MEP_cultural_tolerance 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Forced Italianization
+	focus = {
+		id = MEP_forced_italianization
+		icon = GFX_focus_generic_italy_first
+		x = 7
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_affirm_oath_to_the_motherland }
+		mutually_exclusive = { focus = MEP_cultural_tolerance }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.02
+			add_manpower= -1000
+			add_popularity = { 
+				ideology = national_socialism 
+				popularity = 0.19 
+			}
+		}
+	}
+
+	#Focus for Question Messe's Leadership
+	focus = {
+		id = MEP_question_messes_leadership
+		icon = GFX_goal_generic_forceful_treaty
+		x = 9
+		y = 0
+		cost = 3
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = MEP_affirm_oath_to_the_motherland }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = -0.1 
+}
+  add_popularity= { 
+ideology = marxism-leninism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = socialism
+popularity = 0.05
+}
+  add_popularity= { 
+ideology = liberalism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = conservatism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = nationalism
+popularity = 0.05 
+}
+		}
+	}
+
+	#Focus for Affirm Oath to the Motherland
+	focus = {
+		id = MEP_affirm_oath_to_the_motherland
+		icon = GFX_focus_generic_military_mission
+		x = 5
+		y = 0
+		cost = 3
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = MEP_question_messes_leadership }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.10
+		}
+	}
+
+	#Focus for Road to Independence
+	focus = {
+		id = MEP_road_to_independence
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 9
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_question_messes_leadership }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.05
+
+add_popularity= { 
+ideology = fascism 
+popularity = -0.1 
+}
+  add_popularity= { 
+ideology = marxism-leninism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = socialism
+popularity = 0.05
+}
+  add_popularity= { 
+ideology = liberalism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = conservatism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = nationalism
+popularity = 0.05 
+}
+		}
+	}
+
+	#Focus for Popular Uprising
+	focus = {
+		id = MEP_popular_uprising
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_road_to_independence }
+		mutually_exclusive = { focus = MEP_peaceful_reform }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_stability= 5  
+
+add_popularity= { 
+ideology = fascism 
+popularity = -0.1 
+}
+  add_popularity= { 
+ideology = marxism-leninism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = socialism
+popularity = 0.05
+}
+  add_popularity= { 
+ideology = liberalism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = conservatism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = nationalism
+popularity = 0.05 
+}
+		}
+	}
+
+	#Focus for Peaceful Reform
+	focus = {
+		id = MEP_peaceful_reform
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_road_to_independence }
+		mutually_exclusive = { focus = MEP_popular_uprising }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+		}
+	}
+
+	#Focus for Cultural Tolerance
+	focus = {
+		id = MEP_cultural_tolerance
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 3
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_affirm_oath_to_the_motherland }
+		mutually_exclusive = { focus = MEP_forced_italianization }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+			add_popularity = { 
+				ideology = nationalism
+				popularity = 0.3 
+			}
+		}
+	}
+
+	#Focus for Worker's United Front
+	focus = {
+		id = MEP_workers_united_front
+		icon = GFX_focus_por_workers_of_iberia
+		x = 16
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_popular_uprising }
+		mutually_exclusive = { 
+			focus = MEP_enlightened_revolution 
+		}
+		mutually_exclusive = { 
+			focus = MEP_panarab_nationalism 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = marxism-leninism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = socialism
+popularity = 0.05
+}
+		}
+	}
+
+	#Focus for Enlightened Revolution
+	focus = {
+		id = MEP_enlightened_revolution
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 12
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_popular_uprising }
+		mutually_exclusive = { 
+			focus = MEP_workers_united_front 
+		}
+		mutually_exclusive = { 
+			focus = MEP_panarab_nationalism 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = liberalism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = conservatism
+popularity = 0.05
+}
+		}
+	}
+
+	#Focus for Pan-Arab Nationalism
+	focus = {
+		id = MEP_panarab_nationalism
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		x = 9
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEP_popular_uprising 
+			focus = MEP_peaceful_reform 
+		}
+		mutually_exclusive = { 
+			focus = MEP_workers_united_front 
+			focus = MEP_enlightened_revolution 
+			focus = MEP_ 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = nationalism
+popularity = 0.1 
+}
+
+add_popularity= { 
+ideology = national_socialism
+popularity = 0.1 
+}
+		}
+	}
+
+	#Focus for Relocate Adjacent Territories
+	focus = {
+		id = MEP_relocate_adjacent_territories
+		icon = GFX_focus_CZE_german_puppet
+		x = 7
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_forced_italianization }
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = national_socialism 
+popularity = 0.1 
+}
+
+add_manpower= -8000 
+
+add_state_core
+= 553
+  
+add_state_core
+= 554
+
+add_state_core
+= 445
+		}
+	}
+
+	#Focus for Purify the Eastern Territories
+	focus = {
+		id = MEP_purify_the_eastern_territories
+		icon = GFX_goal_generic_secret_weapon
+		x = 7
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_relocate_adjacent_territories }
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = national_socialism 
+popularity = 0.3 
+}
+
+add_manpower= -18000 
+
+add_state_core
+= 680
+  
+add_state_core
+= 675
+
+add_state_core
+= 656
+		}
+	}
+
+	#Focus for Complete Italian Dominance
+	focus = {
+		id = MEP_complete_italian_dominance
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 7
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_purify_the_eastern_territories }
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = national_socialism 
+popularity = 0.1 
+}
+
+add_manpower= -20000 
+
+add_state_core
+= 677
+  
+add_state_core
+= 799
+		}
+	}
+
+	#Focus for Announce an Italian Ethnostate
+	focus = {
+		id = MEP_announce_an_italian_ethnostate
+		icon = GFX_focus_ger_reichskommisariats
+		x = 7
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_complete_italian_dominance }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = national_socialism
+elections_allowed = no 
+}
+
+add_manpower
+= 50000
+
+ 
+		}
+	}
+
+	#Focus for Grant citizenship to Syrians
+	focus = {
+		id = MEP_grant_citizenship_to_syrians
+		icon = GFX_focus_generic_treaty
+		x = 3
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_cultural_tolerance }
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core
+= 553
+
+add_state_core
+= 554
+
+add_state_core
+= 680
+
+add_state_core
+= 677
+
+add_state_core
+= 799
+
+add_stability
+= -0.05
+		}
+	}
+
+	#Focus for Concessions to Fascist Purists
+	focus = {
+		id = MEP_concessions_to_fascist_purists
+		icon = GFX_goal_generic_secret_weapon
+		x = 3
+		y = 3
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_grant_citizenship_to_syrians }
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= -18000
+   
+
+add_popularity= { 
+ideology = fascism 
+popularity = 0.1 
+}
+ 
+		}
+	}
+
+	#Focus for Finish Integration
+	focus = {
+		id = MEP_finish_integration
+		icon = GFX_goal_generic_improve_relations
+		x = 3
+		y = 4
+		cost = 13
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_concessions_to_fascist_purists }
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core
+= 455
+
+add_state_core
+= 675
+		}
+	}
+
+	#Focus for Fascism Forever!
+	focus = {
+		id = MEP_fascism_forever
+		icon = GFX_goal_support_fascism
+		x = 3
+		y = 5
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_finish_integration }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			legitimacy_daily= 0.1  
+
+ 
+
+add_political_power
+= 250
+
+
+
+set_stability
+= 80
+
+ 
+		}
+	}
+
+	#Focus for Invest in the Industrial Sector
+	focus = {
+		id = MEP_invest_in_the_industrial_sector
+		icon = GFX_goal_generic_production2
+		x = 5
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_reconstruction }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invest in the Agrarian Sector
+	focus = {
+		id = MEP_invest_in_the_agrarian_sector
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 5
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_invest_in_the_industrial_sector }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Encourage Union Membership
+	focus = {
+		id = MEP_encourage_union_membership
+		icon = GFX_goal_generic_soviet_construction
+		x = 15
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_workers_united_front }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = marxism-leninism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = socialism
+popularity = 0.10
+}
+
+add_resource
+= { type = oil amount = 8 state = 454 }
+		}
+	}
+
+	#Focus for Centralize the Unions
+	focus = {
+		id = MEP_centralize_the_unions
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 17
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_create_workers_soviets }
+		mutually_exclusive = { focus = MEP_federate_the_unions }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = marxism-leninism
+popularity = 0.10 
+}
+		}
+	}
+
+	#Focus for Federate the Unions
+	focus = {
+		id = MEP_federate_the_unions
+		icon = GFX_goal_support_fourth_int
+		x = 15
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_encourage_union_membership }
+		mutually_exclusive = { focus = MEP_centralize_the_unions }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = socialism
+popularity = 0.10
+}
+		}
+	}
+
+	#Focus for Petition for Soviet Aid
+	focus = {
+		id = MEP_petition_for_soviet_aid
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 16
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEP_centralize_the_unions 
+			focus = MEP_federate_the_unions 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			diplomatic_relation= { 
+country = SOV 
+relation = lend_lease 
+}
+		}
+	}
+
+	#Focus for Moderate Progressivism
+	focus = {
+		id = MEP_moderate_progressivism
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 13
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_enlightened_revolution }
+		mutually_exclusive = { focus = MEP_separate_but_equal }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = liberalism
+popularity = 0.1
+}
+		}
+	}
+
+	#Focus for Separate, but Equal
+	focus = {
+		id = MEP_separate_but_equal
+		icon = GFX_focus_usa_recruit_the_free_corps
+		x = 11
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_enlightened_revolution }
+		mutually_exclusive = { focus = MEP_moderate_progressivism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = conservatism
+popularity = 0.10
+}
+		}
+	}
+
+	#Focus for Social Democracy
+	focus = {
+		id = MEP_social_democracy
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 13
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_moderate_progressivism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = liberalism
+popularity = 0.20
+}
+		}
+	}
+
+	#Focus for Affirm Traditional Values
+	focus = {
+		id = MEP_affirm_traditional_values
+		icon = GFX_goal_generic_defence
+		x = 11
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_separate_but_equal }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = conservatism
+popularity = 0.20
+}
+		}
+	}
+
+	#Focus for Petition for International Aid
+	focus = {
+		id = MEP_petition_for_international_aid
+		icon = GFX_focus_YUG_dissolve_serbia
+		x = 12
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEP_affirm_traditional_values 
+			focus = MEP_social_democracy 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			diplomatic_relation= { 
+country = USA 
+relation = lend_lease 
+}
+		}
+	}
+
+	#Focus for One Nation, Under Allah
+	focus = {
+		id = MEP_one_nation_under_allah
+		icon = GFX_goal_generic_special_forces
+		x = 9
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_panarab_nationalism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = conservatism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = nationalism
+popularity = 0.10
+}
+add_popularity= { 
+ideology = national_socialism
+popularity = 0.05
+}
+		}
+	}
+
+	#Focus for Rember the Caliphate
+	focus = {
+		id = MEP_rember_the_caliphate
+		icon = GFX_focus_TUR_turanist_ambition
+		x = 9
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_one_nation_under_allah }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 453  
+add_state_core= 344
+add_state_core= 330
+add_state_core= 453 
+
+  add_popularity
+= { ideology = nationalism
+popularity = 0.1 }
+
+   add_popularity
+= { ideology = national_socialism
+popularity = 0.1 }
+		}
+	}
+
+	#Focus for Declare Jihad
+	focus = {
+		id = MEP_declare_jihad
+		icon = GFX_focus_generic_combined_arms
+		x = 9
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_rember_the_caliphate }
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			start_civil_war= {
+ ideology = nationalism
+size = 0.7 
+}
+		}
+	}
+
+	#Focus for Long Live the Governor
+	focus = {
+		id = MEP_long_live_the_governor
+		icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 6
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEP_fascism_forever 
+			focus = MEP_announce_an_italian_ethnostate 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_war_support= 80  
+
+add_state_core
+= 453
+
+add_state_core
+= 344
+
+add_state_core
+= 330
+
+add_stability
+= 0.20
+
+add_political_power
+= 250
+		}
+	}
+
+	#Focus for Economic Resurgence
+	focus = {
+		id = MEP_economic_resurgence
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 22
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrialization
+	focus = {
+		id = MEP_industrialization
+		icon = GFX_focus_generic_industry_3
+		x = 20
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_economic_resurgence }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrialize the Jerusalem Area
+	focus = {
+		id = MEP_industrialize_the_jerusalem_area
+		icon = GFX_goal_generic_position_armies
+		x = 20
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_industrialization }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrialize the Eastern Territories
+	focus = {
+		id = MEP_industrialize_the_eastern_territories
+		icon = GFX_goal_generic_position_armies
+		x = 20
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_industrialize_the_jerusalem_area }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrialize the North
+	focus = {
+		id = MEP_industrialize_the_north
+		icon = GFX_goal_generic_position_armies
+		x = 20
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_industrialize_the_eastern_territories }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invest into Military Industry
+	focus = {
+		id = MEP_invest_into_military_industry
+		icon = GFX_goal_generic_small_arms
+		x = 20
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_industrialize_the_north }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stimulate Private Industry
+	focus = {
+		id = MEP_stimulate_private_industry
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 24
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_economic_resurgence }
+		mutually_exclusive = { focus = MEP_syndicalism }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sponsor Private Corporations
+	focus = {
+		id = MEP_sponsor_private_corporations
+		icon = GFX_goal_generic_production
+		x = 24
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_stimulate_private_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Semi-Free Markets
+	focus = {
+		id = MEP_semifree_markets
+		icon = GFX_goal_generic_trade
+		x = 24
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_sponsor_private_corporations }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Localize Agriculture
+	focus = {
+		id = MEP_localize_agriculture
+		icon = GFX_goal_generic_construction2
+		x = 24
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_semifree_markets }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Democratize the Enterprise
+	focus = {
+		id = MEP_democratize_the_enterprise
+		icon = GFX_focus_BUL_destroy_the_zveno
+		x = 22
+		y = 2
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_syndicalism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Syndicalism
+	focus = {
+		id = MEP_syndicalism
+		icon = GFX_goal_generic_soviet_construction
+		x = 22
+		y = 1
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = MEP_federate_the_unions 
+		}
+		prerequisite = { 
+			focus = MEP_economic_resurgence 
+		}
+		mutually_exclusive = { focus = MEP_stimulate_private_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Corporatism
+	focus = {
+		id = MEP_corporatism
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 5
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_localize_agriculture }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Plan Civilian Economy
+	focus = {
+		id = MEP_plan_civilian_economy
+		icon = GFX_goal_generic_production2
+		x = 22
+		y = 3
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_democratize_the_enterprise }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Plan Military Industry
+	focus = {
+		id = MEP_plan_military_industry
+		icon = GFX_goal_generic_military_sphere
+		x = 22
+		y = 4
+		cost = 1
+		available_if_capitulated = yes
+		prerequisite = { focus = MEP_plan_civilian_economy }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
