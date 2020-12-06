@@ -61,6 +61,11 @@ ITA = {
 	color = rgb { 47 119 54 }
 	color_ui = rgb { 47 119 54 }
 }
+MEP = {
+	color = rgb { 37 131 46 }
+	color_ui = rgb { 37 131 46 }
+}
+
 ROM = {
 	color = rgb { 164 164 69 }
 	color_ui = rgb { 164 164 69 }

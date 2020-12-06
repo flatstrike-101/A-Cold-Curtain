@@ -1,0 +1,36 @@
+capital = 271
+
+oob = "ETH_1953"
+
+set_convoys = 0
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1941.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberalism = 0
+	conservatism = 0
+	socialism = 0
+	marxism_leninism = 0
+	fascism = 30
+	nationalism = 30
+	national_socialism = 30
+}
+
+add_ideas = {
+	
+}
+
+create_country_leader = {
+	name = "Rodolfo Graziani"
+	desc = "POLITICS_GRAZIANI_DESC"
+	picture = "Portrait_Rodolfo_Graziani.dds"
+	expire = "1980.1.1"
+	ideology = classical_fascism
+	traits = {
+	}
+}

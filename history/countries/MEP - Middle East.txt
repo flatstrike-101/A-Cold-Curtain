@@ -1,0 +1,36 @@
+capital = 454
+
+oob = "MEP_1953"
+
+set_convoys = 0
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1941.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberalism = 10
+	conservatism = 10
+	socialism = 10
+	marxism_leninism = 5
+	fascism = 30
+	nationalism = 30
+	national_socialism = 5
+}
+
+add_ideas = {
+	
+}
+
+create_country_leader = {
+	name = "Giovanni Messe"
+	desc = "POLITICS_MESSE_DESC"
+	picture = "Portrait_Giovanni Messe.dds"
+	expire = "1968.1.1"
+	ideology = classical_fascism
+	traits = {
+	}
+}

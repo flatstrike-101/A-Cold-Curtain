@@ -1,0 +1,36 @@
+capital = 446
+
+oob = "EGY_1953"
+
+set_convoys = 0
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1941.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberalism = 5
+	conservatism = 5
+	socialism = 0
+	marxism_leninism = 0
+	fascism = 30
+	nationalism = 60
+	national_socialism = 0
+}
+
+add_ideas = {
+	
+}
+
+create_country_leader = {
+	name = "Ugo Cavallero"
+	desc = "POLITICS_CAVALLERO_DESC"
+	picture = "Leader_Ugo Cavallero.dds"
+	expire = "1970.1.1"
+	ideology = classical_fascism
+	traits = {
+	}
+}
