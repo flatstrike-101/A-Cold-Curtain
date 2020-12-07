@@ -290,6 +290,11 @@ set_autonomy = {
 	autonomous_state =  autonomy_puppet
 }
 
+set_autonomy = {
+	target = GYA
+	autonomous_state =  autonomy_puppet
+}
+
 1953.1.1 = {
 	
 create_faction = usa_faction
