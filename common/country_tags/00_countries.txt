@@ -220,3 +220,11 @@ PCA = "countries/Portugese Central Africa.txt"
 RKA = "countries/Zentralafrika.txt"
 RKW = "countries/Westafrika.txt"
 RKM = "countries/Madagaskar.txt"
+
+### GERMAN CIVIL WAR COUNTRIES ###
+
+HGY = "countries/Himmler's Germany.txt"
+BGY = "countries/Bormann's Germany.txt"
+GGY = "countries/Goring's Germany.txt"
+SGY = "countries/Speer's Germany.txt"
+GOY = "countries/Goebbels's Germany.txt"

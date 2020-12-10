@@ -1,0 +1,298 @@
+division_template = {
+	name = "Militia Infantry Division"	
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Infantry Division"	
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 0 }
+	}
+}
+
+units = {
+	##### Goring's Army ###
+	division= {
+		name = "Infantry Division"
+		location = 11305
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 9294
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 11359
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 11219
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Infantry Division"
+		location = 3522
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {
+		name = "Militia Infantry Division"
+		location = 6487
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 9560
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 3499
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 9428
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 478
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 11415
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 3572
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 444
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 3532
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 3460
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 9532
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 11558
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Militia Infantry Division"
+		location = 17
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {
+		name = "Militia Infantry Division"
+		location = 3381
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {
+		name = "Militia Infantry Division"
+		location = 243
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {
+		name = "Militia Infantry Division"
+		location = 6401
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	division= {
+		name = "Militia Infantry Division"
+		location = 548
+		division_template = "Militia Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Infantry Division"
+		location = 6332
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Infantry Division"
+		location = 3230
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Infantry Division"
+		location = 6558
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Infantry Division"
+		location = 6521
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Infantry Division"
+		location = 6521
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Infantry Division"
+		location = 321
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Infantry Division"
+		location = 6282
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Infantry Division"
+		location = 362
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+
+	##### No notable navy #####
+}

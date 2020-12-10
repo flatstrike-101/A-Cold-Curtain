@@ -1,0 +1,147 @@
+German_Civil_War_Start = {
+	SWI = {
+		transfer_state = 3
+		transfer_state = 151
+	}
+	BGY = {
+		transfer_state = 4
+		4 = { add_core_of = BGY }
+		transfer_state = 102
+		102 = { add_core_of = BGY }
+		transfer_state = 152
+		152 = { add_core_of = BGY }
+		transfer_state = 153
+		153 = { add_core_of = BGY }
+		transfer_state = 52
+		52 = { add_core_of = BGY }
+		transfer_state = 53
+		53 = { add_core_of = BGY }
+		load_oob = "BGY_CIVIL_WAR"
+	}
+	GOY = {
+		transfer_state = 50
+		50 = { add_core_of = GOY }
+		transfer_state = 28
+		28 = { add_core_of = GOY }
+		transfer_state = 42
+		42 = { add_core_of = GOY }
+		transfer_state = 8
+		8 = { add_core_of = GOY }
+		transfer_state = 54
+		54 = { add_core_of = GOY }
+		load_oob = "GOY_CIVIL_WAR"
+	}
+	SGY = {
+		transfer_state = 55
+		55 = { add_core_of = SGY }
+		transfer_state = 51
+		51 = { add_core_of = SGY }
+		transfer_state = 57
+		57 = { add_core_of = SGY }
+		transfer_state = 59
+		59 = { add_core_of = SGY }
+		transfer_state = 56
+		56 = { add_core_of = SGY }
+		transfer_state = 58
+		58 = { add_core_of = SGY }
+		load_oob = "SGY_CIVIL_WAR"
+	}
+	HGY = {
+		transfer_state = 60
+		60 = { add_core_of = HGY }
+		transfer_state = 65
+		65 = { add_core_of = HGY }
+		transfer_state = 69
+		69 = { add_core_of = HGY }
+		transfer_state = 66
+		66 = { add_core_of = HGY }
+		transfer_state = 74
+		74 = { add_core_of = HGY }
+		transfer_state = 67
+		67 = { add_core_of = HGY }
+		transfer_state = 72
+		72 = { add_core_of = HGY }
+		transfer_state = 762
+		762 = { add_core_of = HGY }
+		transfer_state = 87
+		87 = { add_core_of = HGY }
+		load_oob = "HGY_CIVIL_WAR"
+	}
+	GGY = {
+		transfer_state = 64
+		64 = { add_core_of = GGY }
+		transfer_state = 61
+		61 = { add_core_of = GGY }
+		transfer_state = 62
+		62 = { add_core_of = GGY }
+		transfer_state = 63
+		63 = { add_core_of = GGY }
+		transfer_state = 68
+		68 = { add_core_of = GGY }
+		transfer_state = 86
+		86 = { add_core_of = GGY }
+		transfer_state = 85
+		85 = { add_core_of = GGY }
+		transfer_state = 188
+		188 = { add_core_of = GGY }
+		transfer_state = 98
+		98 = { add_core_of = GGY }
+		transfer_state = 5
+		5 = { add_core_of = GGY }
+		transfer_state = 763
+		763 = { add_core_of = GGY }
+		load_oob = "GGY_CIVIL_WAR"
+	}
+	
+	HGY = {
+		declare_war_on = {
+			target = SGY
+			type = civil_war
+		}
+		declare_war_on = {
+			target = GGY
+			type = civil_war
+		}
+		declare_war_on = {
+			target = GOY
+			type = civil_war
+		}
+		declare_war_on = {
+			target = BGY
+			type = civil_war
+		}
+	}
+	
+	BGY = {
+		declare_war_on = {
+			target = SGY
+			type = civil_war
+		}
+		declare_war_on = {
+			target = GGY
+			type = civil_war
+		}
+		declare_war_on = {
+			target = GOY
+			type = civil_war
+		}
+	}
+	
+	SGY = {
+		declare_war_on = {
+			target = GGY
+			type = civil_war
+		}
+		declare_war_on = {
+			target = GOY
+			type = civil_war
+		}
+	}
+	
+	GGY = {
+		declare_war_on = {
+			target = GOY
+			type = civil_war
+		}
+	}
+}
