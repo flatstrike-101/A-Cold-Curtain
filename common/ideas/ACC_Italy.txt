@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+		ITA_fallen_king = {
+			picture = ITA_fallen_king
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				add_popularity = {
+                 ideology = nationalism
+                 popularity = -0.5
+}	
+			}
+		}
+	}
+}

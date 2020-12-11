@@ -753,3 +753,18 @@ RKW = {
 	color = rgb { 41 41 41 }
 	color_ui = rgb { 41 41 41 }
 }
+
+ITR = {
+	color = rgb { 0 38 82 }
+	color_ui = rgb { 0 38 82 }
+}
+
+ITC = {
+	color = rgb { 170 0 0 }
+	color_ui = rgb { 170 0 0 }
+}
+
+ITV = {
+	color = rgb { 120 0 106 }
+	color_ui = rgb { 120 0 106 }
+}

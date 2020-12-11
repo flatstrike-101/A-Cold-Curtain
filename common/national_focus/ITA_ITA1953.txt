@@ -1,0 +1,620 @@
+focus_tree = {
+	id = ITA1953
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	#Focus for The Kingdom Revived
+	focus = {
+		id = ITA_the_kingdom_revived
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 5
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = ITA_there_is_no_alternative 
+		}
+		mutually_exclusive = { 
+			focus = ITA_a_light_still_shines 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Looking Forward
+	focus = {
+		id = ITA_looking_forward
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 1
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_there_is_no_alternative }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Clear Livingspace
+	focus = {
+		id = ITA_clear_livingspace
+		icon = GFX_goal_generic_secret_weapon
+		x = 0
+		y = 4
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_territorial_integration }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= -60000
+			add_resistance_target = {
+    id = 161
+    amount = 10
+    tooltip = ita_focus_clear_livingspace
+}
+add_resistance_target = {
+    id = 159
+    amount = 10
+    tooltip = ita_focus_clear_livingspace
+}
+add_resistance_target = {
+    id = 158
+    amount = 10
+    tooltip = ita_focus_clear_livingspace
+}
+add_resistance_target = {
+    id = 735
+    amount = 10
+    tooltip = ita_focus_clear_livingspace
+}
+add_resistance_target = {
+    id = 1
+    amount = 10
+    tooltip = ita_focus_clear_livingspace
+}
+add_resistance_target = {
+    id = 160
+    amount = 10
+    tooltip = ita_focus_clear_livingspace
+}
+add_resistance_target = {
+    id = 39
+    amount = 10
+    tooltip = ita_focus_clear_livingspace
+}
+add_resistance_target = {
+    id = 736
+    amount = 10
+    tooltip = ita_focus_clear_livingspace
+}
+			add_stability= 5
+
+add_popularity= { 
+ideology = national_socialism
+popularity = 0.15 
+}
+		}
+	}
+
+	#Focus for Purge the Army
+	focus = {
+		id = ITA_purge_the_army
+		icon = GFX_focus_secret_rearmament
+		x = 1
+		y = 5
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_fascist_colonies 
+			focus = ITA_clear_livingspace 
+		}
+		search_filters = { FOCUS_FILTER_FRA_OCCUPATION_COST } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = ITA_civil_war.1 
+}
+		}
+	}
+
+	#Focus for Strengthen the Grand Council
+	focus = {
+		id = ITA_strengthen_the_grand_council
+		icon = GFX_goal_generic_political_pressure
+		x = 2
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_social_darwinism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fascist Colonies
+	focus = {
+		id = ITA_fascist_colonies
+		icon = GFX_goal_generic_territory_or_war
+		x = 2
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_strengthen_the_grand_council }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Territorial Integration
+	focus = {
+		id = ITA_territorial_integration
+		icon = GFX_goal_generic_attack_allies
+		x = 0
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_push_for_the_ethnostate }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purge the Army
+	focus = {
+		id = ITA_purge_the_army
+		icon = GFX_goal_generic_political_pressure
+		x = 4
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_gain_support_from_the_carabinieri }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Push For the Ethnostate
+	focus = {
+		id = ITA_push_for_the_ethnostate
+		icon = GFX_focus_ger_reichskommisariats
+		x = 0
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_looking_forward }
+		mutually_exclusive = { focus = ITA_social_darwinism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = national_socialism
+popularity = 0.15 
+}
+		}
+	}
+
+	#Focus for Social Darwinism
+	focus = {
+		id = ITA_social_darwinism
+		icon = GFX_goal_generic_CAS
+		x = 2
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_looking_forward }
+		mutually_exclusive = { focus = ITA_push_for_the_ethnostate }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 0.15 
+}
+		}
+	}
+
+	#Focus for Fascist Monarchy
+	focus = {
+		id = ITA_fascist_monarchy
+		icon = GFX_focus_generic_home_defense
+		x = 6
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_power_sharing }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = nationalism
+popularity = 0.1 
+}
+		}
+	}
+
+	#Focus for No Compromise
+	focus = {
+		id = ITA_no_compromise
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 4
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_invite_the_king_to_government }
+		mutually_exclusive = { focus = ITA_power_sharing }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.05
+		}
+	}
+
+	#Focus for Power Sharing
+	focus = {
+		id = ITA_power_sharing
+		icon = GFX_focus_generic_monarchy_1
+		x = 6
+		y = 2
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_invite_the_king_to_government }
+		mutually_exclusive = { focus = ITA_no_compromise }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for There is No Alternative
+	focus = {
+		id = ITA_there_is_no_alternative
+		icon = GFX_goal_support_fascism
+		x = 1
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = ITA_the_kingdom_revived 
+		}
+		mutually_exclusive = { 
+			focus = ITA_a_light_still_shines 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Light Still Shines
+	focus = {
+		id = ITA_a_light_still_shines
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 8
+		y = 0
+		cost = 1
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = ITA_the_kingdom_revived 
+		}
+		mutually_exclusive = { 
+			focus = ITA_there_is_no_alternative 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = socialism
+popularity = 0.10
+}
+  add_popularity= { 
+ideology = marxism_leninism
+popularity = 0.10 
+}
+  add_popularity= { 
+ideology = conservatism
+popularity = 0.05 
+}
+  add_popularity= { 
+ideology = liberalism
+popularity = 0.05 
+}
+		}
+	}
+
+	#Focus for Invite the King to Government
+	focus = {
+		id = ITA_invite_the_king_to_government
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 5
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_kingdom_revived }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = nationalism
+popularity = 0.15 
+}
+		}
+	}
+
+	#Focus for Gain Support from the Carabinieri
+	focus = {
+		id = ITA_gain_support_from_the_carabinieri
+		icon = GFX_focus_generic_military_mission
+		x = 4
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_no_compromise }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Secure the People's Support
+	focus = {
+		id = ITA_secure_the_peoples_support
+		icon = GFX_goal_generic_military_sphere
+		x = 6
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_fascist_monarchy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Viva Il Re!
+	focus = {
+		id = ITA_viva_il_re
+		icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 5
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_secure_the_peoples_support 
+			focus = ITA_purge_the_army 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = ITA_civil_war.1 
+}
+		}
+	}
+
+	#Focus for Crumbling Order
+	focus = {
+		id = ITA_crumbling_order
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 8
+		y = 1
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_a_light_still_shines }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = -0.1 
+}
+
+add_stability
+= -0.05
+		}
+	}
+
+	#Focus for Prepare for the Republic
+	focus = {
+		id = ITA_prepare_for_the_republic
+		icon = GFX_goal_support_democracy
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_crumbling_order }
+		mutually_exclusive = { focus = ITA_reform_the_garibaldi_brigades }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = conservatism
+popularity = 0.1 
+}
+  add_popularity= { 
+ideology = liberalism
+popularity = 0.1 
+}
+ 
+add_stability
+= -0.05
+		}
+	}
+
+	#Focus for Reform the Garibaldi Brigades
+	focus = {
+		id = ITA_reform_the_garibaldi_brigades
+		icon = GFX_goal_support_communism
+		x = 10
+		y = 2
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_crumbling_order }
+		mutually_exclusive = { focus = ITA_prepare_for_the_republic }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = marxism_leninism
+popularity = 0.1 
+}
+  add_popularity= { 
+ideology = socialism 
+popularity = 0.1 
+}
+  add_stability= -0.05
+		}
+	}
+
+	#Focus for Recruit the Artisans
+	focus = {
+		id = ITA_recruit_the_artisans
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 8
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_prepare_for_the_republic }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.02  add_popularity= { 
+ideology = liberalism
+popularity = 0.05 
+}
+		}
+	}
+
+	#Focus for Remember the Italian Person
+	focus = {
+		id = ITA_remember_the_italian_person
+		icon = GFX_focus_generic_military_academy
+		x = 8
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_recruit_the_artisans }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.03  add_popularity= { 
+ideology = conservatism
+popularity = 0.05 
+}
+		}
+	}
+
+	#Focus for Strengthen Socialist Syndicates
+	focus = {
+		id = ITA_strengthen_socialist_syndicates
+		icon = GFX_goal_generic_soviet_construction
+		x = 10
+		y = 3
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_reform_the_garibaldi_brigades }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = socialism
+popularity = 0.05 
+}
+  add_stability= -0.03
+		}
+	}
+
+	#Focus for Soviet Assistance
+	focus = {
+		id = ITA_soviet_assistance
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 10
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_strengthen_socialist_syndicates }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.02  add_popularity= { 
+ideology = marxism_leninism
+popularity = 0.05 
+}
+		}
+	}
+
+	#Focus for Viva la Revoluzione!
+	focus = {
+		id = ITA_viva_la_revoluzione
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 9
+		y = 5
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_soviet_assistance 
+			focus = ITA_remember_the_italian_person 
+		}
+		search_filters = { FOCUS_FILTER_FRA_POLITICAL_VIOLENCE } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = ITA_civil_war.1
+}
+		}
+	}
+
+#End of focuses 
+ }

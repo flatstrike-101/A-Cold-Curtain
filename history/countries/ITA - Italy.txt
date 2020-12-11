@@ -1,6 +1,6 @@
 capital = 2
 
-oob = "_1936"
+oob = "ITA_1936"
 
 set_fuel_ratio = 0.9
 
@@ -109,9 +109,7 @@ create_import = {
 }
 
 1953.1.1 = {
-	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
 	set_war_support = 0.0
-
 	add_political_power = 0
 	
 	#adding ministers
@@ -139,33 +137,10 @@ create_import = {
 		target = GRE
 		autonomy_satellite = "Satellite"
 	}
-
-
-#Trade
-	create_import = {
-			resource = oil
-			factories = 2
-			exporter = SOV
-	}
-
-	#MR pact effect, Also has a part scripted in soviet history file
-	unlock_national_focus = ITA_mol_rib_pact
-	every_other_country = {
-		limit = {
-			has_government = fascism 
-		}
-		add_opinion_modifier = { target = ITA modifier = MR_pact_fascisms }
-	}
-	diplomatic_relation = { country = SOV relation = non_aggression_pact }
-	add_opinion_modifier = { target = SOV modifier = MR_pact }
-	#MR pact end
-
-	#Soviet treaty
-	unlock_national_focus = ITA_soviet_treaty
-	add_tech_bonus = {
-		bonus = 1.0
-		uses = 2
-		category = armor
+	
+	set_autonomy = {
+		target = MEP
+		autonomy_satellite = "colony"
 	}
 
 	#BUILDINGS
@@ -289,7 +264,6 @@ ITA = { puppet = EGY
 
 add_ideas = {
 	sour_loser
-	general_staff
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
