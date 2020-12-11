@@ -322,11 +322,10 @@ add_to_faction = CZE
 add_to_faction = RKS
 add_to_faction = WLS
 add_to_faction = IRE
-add_to_faction = SER
-add_to_faction = CRO
 
 
-GER = { puppet = NOR
+GER = {
+	    puppet = NOR
         puppet = POL 
 		puppet = DEN
 		puppet = HOL
