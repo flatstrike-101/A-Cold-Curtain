@@ -1,0 +1,111 @@
+Italian_Civil_War_Start_commies = {
+	ITC = {
+			transfer_state = 161
+			transfer_state = 159
+			transfer_state = 158
+			transfer_state = 735
+			transfer_state = 1
+			transfer_state = 160
+			transfer_state = 39
+			transfer_state = 736
+			transfer_state = 805
+			transfer_state = 800
+			load_oob = "ITC_CIVIL_WAR"
+		}
+		161 = {
+			add_core_of = ITC
+		}
+		159 = {
+			add_core_of = ITC
+		}
+		158 = {
+			add_core_of = ITC
+		}
+		735 = {
+			add_core_of = ITC
+		}
+		1 = {
+			add_core_of = ITC
+		}
+		160 = {
+			add_core_of = ITC
+		}
+		39 = {
+			add_core_of = ITC
+		}
+		736 = {
+			add_core_of = ITC
+		}
+		805 = {
+			add_core_of = ITC
+		}
+		800 = {
+			add_core_of = ITC
+		}
+		ITA = {
+			load_oob = "ITA_cw"
+			declare_war_on = {
+				target = ITC
+				type = civil_war
+			}
+		}
+		ITR = {
+			transfer_state = 117
+			transfer_state = 156
+			transfer_state = 115
+			transfer_state = 14
+			load_oob = "ITR_CIVIL_WAR"
+		}
+		117 = {
+			add_core_of = ITR
+		}
+		156 = {
+			add_core_of = ITR
+		}
+		115 = {
+			add_core_of = ITR
+		}
+		14 = {
+			add_core_of = ITR
+		}
+		ITA = {
+			country_event = { id = ITA_cw.2 }
+			declare_war_on = {
+				target = ITR
+				type = civil_war
+			}
+		}
+
+		tag = ITC
+
+}
+
+Italian_Civil_War_Start_republicans = {
+	ITR = {
+		transfer_state = 117
+        transfer_state = 156
+        transfer_state = 115
+        transfer_state = 14
+		load_oob = "ITR_CIVIL_WAR"
+	}
+	117 = {
+		add_core_of = ITR
+	}
+    156 = {
+		add_core_of = ITR
+	}
+    115 = {
+		add_core_of = ITR
+	}
+    14 = {
+		add_core_of = ITR
+	}
+	ITA = {
+		country_event = { id = ITA_civil_war.2 }
+		declare_war_on = {
+			target = ITR
+			type = civil_war
+		}
+	}
+	tag = ITR
+}

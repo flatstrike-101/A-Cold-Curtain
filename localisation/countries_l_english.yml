@@ -452,25 +452,35 @@
  
  ITA_fascism:0 "Italian Empire"
  ITA_fascism_DEF:0 "the Italian Empire"
- ITA_liberalism:0 "Provisional Government of Italy"
- ITA_liberalism_DEF:0 "the Provisional Government of Italy"
- ITA_nationalism:0 "Kingdom of Italy"
- ITA_nationalism_DEF:0 "the Kingdom of Italy"
  ITA_national_socialism:0 "Italian Social Republic"
  ITA_national_socialism_DEF:0 "the Italian Social Republic"
- ITA_socialism:0 "Italian Popular Republic"
- ITA_socialism_DEF:0 "the Italian Popular Republic"
- ITA_marxism-leninism:0 "People's Republic of Italy"
- ITA_marxism-leninism_DEF:0 "the People's Republic of Italy"
- ITA_conservatism:0 "Provisional Government of Italy"
- ITA_conservatism_DEF:0 "the Provisional Government of Italy"
  ITA_fascism_ADJ:0 "Italian"
- ITA_liberalismc_ADJ:0 "Italian"
- ITA_nationalism_ADJ:0 "Italian"
- ITA_socialism_ADJ:0 "Italian"
  ITA:0 "Italy"
  ITA_DEF:0 "Italy"
  ITA_ADJ:0 "Italian"
+
+## Commie Italy
+ITC_socialism:0 "Italian Popular Republic"
+ITC_socialism_DEF:0 "the Italian Popular Republic"
+ITC_marxism-leninism:0 "People's Republic of Italy"
+ITC_marxism-leninism_DEF:0 "the People's Republic of Italy"
+ITC:0 "Italy"
+ITA_socialism_ADJ:0 "Italian"
+ITC_DEF:0 "Italy"
+ITC_ADJ:0 "Italian"
+
+## Republican Italy
+ITR_conservatism:0 "Provisional Government of Italy"
+ITR_conservatism_DEF:0 "the Provisional Government of Italy"
+ITR_liberalism:0 "Provisional Government of Italy"
+ITR_liberalism_DEF:0 "the Provisional Government of Italy"
+ITR_nationalism:0 "Kingdom of Italy"
+ITR_nationalism_DEF:0 "the Kingdom of Italy"
+ITR_liberalismc_ADJ:0 "Italian"
+ITR_nationalism_ADJ:0 "Italian"
+ITR:0 "Italy"
+ITR_DEF:0 "Italy"
+ITR_ADJ:0 "Italian"
 
 ### Middle Eastern Protektorate
 

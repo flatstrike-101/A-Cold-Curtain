@@ -1,0 +1,84 @@
+division_template = {
+	name = "Divisione Infanteria"	
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+        artillery = { x = 3 y = 2 }
+        artillery = { x = 3 y = 3 }
+	}
+}
+
+units = {
+	##### Italian Army ###
+	division= {
+		name = "Prima Divisione Infanteria"
+		location = 910
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Seconda Divisione Infanteria"
+		location = 11889
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Terza Divisione Infanteria"
+		location = 967
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Quarta Divisione Infanteria"
+		location = 6973
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Quinta Divisione Infanteria"
+		location = 3923
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Sesta Divisione Infanteria"
+		location = 11751
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Settima Divisione Infanteria"
+		location = 925
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+
+    }
+
+	##### No notable navy #####
+}

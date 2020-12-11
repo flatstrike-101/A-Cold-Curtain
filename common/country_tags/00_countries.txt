@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 GER	= "countries/Germany.txt"
 ENG = "countries/United Kingdom.txt"
 SOV = "countries/Soviet Union.txt"
@@ -221,6 +221,11 @@ RKA = "countries/Zentralafrika.txt"
 RKW = "countries/Westafrika.txt"
 RKM = "countries/Madagaskar.txt"
 
+ITC = "countries/ItalyCommies"
+ITR = "countries/ItalyRepublicans"
+ITV = "countries/Venice"
+
+
 ### GERMAN CIVIL WAR COUNTRIES ###
 
 HGY = "countries/Himmler's Germany.txt"
@@ -228,3 +233,4 @@ BGY = "countries/Bormann's Germany.txt"
 GGY = "countries/Goring's Germany.txt"
 SGY = "countries/Speer's Germany.txt"
 GOY = "countries/Goebbels's Germany.txt"
+
