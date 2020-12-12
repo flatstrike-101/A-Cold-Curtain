@@ -1,0 +1,36 @@
+﻿capital = 51
+
+#oob = "ENG_1953"
+
+set_convoys = 300
+
+
+set_politics = {
+	ruling_party = national_socialism
+	last_election = "1952.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberalism = 4
+	conservatism = 7
+	socialism = 2
+	marxism_leninism = 1
+	fascism = 9
+	nationalism = 10
+	national_socialism = 67
+}
+
+add_ideas = {
+	
+}
+
+create_country_leader = {
+	name = "Albert Speer"
+	desc = "POLITICS_ALBERT_SPEER_DESC"
+	picture = "Leader_Albert_Speer.dds"
+	expire = "1980.1.1"
+	ideology = base_national_socialism
+	traits = {
+	}
+}

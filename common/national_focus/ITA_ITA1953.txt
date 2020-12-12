@@ -123,9 +123,11 @@ popularity = 0.15
 			factor = 1
 		}
 		completion_reward = {
+			kill_country_leader = yes
+			set_country_leader_ideology = rexism
 			country_event= {
 days = 1 
-id = ITA_civil_war.1 
+id = ITA_cw.1 
 }
 		}
 	}
@@ -420,9 +422,11 @@ popularity = 0.15
 			factor = 1
 		}
 		completion_reward = {
+			kill_country_leader = yes
+			set_country_leader_ideology = rexism
 			country_event= {
 days = 1 
-id = ITA_civil_war.1 
+id = ITA_cw.1 
 }
 		}
 	}
@@ -609,9 +613,11 @@ popularity = 0.05
 			factor = 1
 		}
 		completion_reward = {
+			kill_country_leader = yes
+			set_country_leader_ideology = rexism
 			country_event= {
 days = 1 
-id = ITA_civil_war.1
+id = ITA_cw.1
 }
 		}
 	}

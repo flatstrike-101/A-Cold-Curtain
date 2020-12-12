@@ -4,7 +4,7 @@ set_convoys = 100
 
 
 set_politics = {
-	ruling_party = marxism-marxism_leninism
+	ruling_party = marxism_leninism
 	last_election = "1953.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -28,6 +28,6 @@ create_country_leader = {
 	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
 	picture = "Portrait_ITA_Palmiro_Togliatti.dds"
 	expire = "1980.1.1"
-	ideology = stalinism
+	ideology = base_marxism_leninism
 	}
 }
