@@ -462,8 +462,8 @@
 ## Commie Italy
 ITC_socialism:0 "Italian Popular Republic"
 ITC_socialism_DEF:0 "the Italian Popular Republic"
-ITC_marxism-leninism:0 "People's Republic of Italy"
-ITC_marxism-leninism_DEF:0 "the People's Republic of Italy"
+ITC_marxism_leninism:0 "People's Republic of Italy"
+ITC_marxism_leninism_DEF:0 "the People's Republic of Italy"
 ITC:0 "Italy"
 ITA_socialism_ADJ:0 "Italian"
 ITC_DEF:0 "Italy"

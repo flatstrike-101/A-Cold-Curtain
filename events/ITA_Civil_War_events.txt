@@ -5,23 +5,28 @@ add_namespace = ITA_cw
 #Italy Civil War Starts
 country_event = {
 	id = ITA_cw.1
-	title = ITA_cw.1.t
-	desc = ITA_cw.1.d
+	title ="The Italian Civil War"
+	desc = "IL DUCE TROVATO MORTO Il Duce found dead was in every newspaper in Italy, from the opposition to the conservatives, the Italian people found a profound emotion in this event. But it was not sadness.Finally freed from the iron fist of Il Duce, and with the Grand Council of Fascism indecisive, the ex partisan leader, Palmiro Togliatti saw an opportunity. He came out of hiding and called his comrades, that day he would give a speech - a speech that would shake the hearts and minds of the Italian people, and that would bring a new dawn to the Meditteranean.  Meanwhile in the South, already inspired by the death of the great leader, people from all over the country, from Naples to Palermo, to Toronto gathered and for the first time in 30 years, voted in a new leader. "It is my pride to announce the new prime minister of the Italian Republic: Alcide De Gasperi!" gleefully shouted the announcer, and De Gasperi triumphantly walked onto the stage. However this was not the end of Fascism. Once word of these new rebellions reached Rome, the Grand Council of Fascism was not about to let itself die out so quickly. Driven forwards by a common will to survive, they quickly elected Italo Balbo as provisional Duce. The Italian army, or what’s left of it, quickly secured the central Alpini and the area around Umbria, placing it all under martial law. Heavily outnumbered, corrupt and disorganized, thousands of soldiers deserted in the first days, disappearing into the countryside or fleeing to France and Croatia. The Mediterranean now temporarily free from the Italian grip, exploded, from Syria to Algeria and even as far as Ethiopia, the Italian empire burst like a bird finally free from its cage. The unheard screams of millions of people around the continent finally unleashed, and the full brunt finally brought down to strike the oppressor which had tortured it for centuries. The fate of not only the Italian people, but also the whole Mediterranean lies in the hands of 3 men - Palmiro Togliatti, premiere of the north and breaker of the chains - Italo Balbo, military governor and Provisional Duce of Rome - and Alcide De Gasperi, Prime Minister-elect of the Italian people, and leader of the southern revolution. And so as always, the future is balanced on the thin edge of a shattered knife."
 	picture = GFX_event_italian_cw
 	is_triggered_only = yes
 	option = {	### Commies
 		name = "Avanti O Popolo!"
 		ai_chance = { base = 34 }
+		dismantle_faction = yes
 		Italian_Civil_War_Start_commies = yes
 		
 	}
 		option = {	###Republicans
 		name = "Per La Democrazia e Liberta!"
-		ai_chance = { base = 34 }
+		ai_chance = { base = 33 }
+		dismantle_faction = yes
 		Italian_Civil_War_Start_republicans = yes
 	}
 	option = {	###Fascists
 		name = "Viva il Duce!"
+		ai_chance = { base = 33 }
+		dismantle_faction = yes
+		Italian_Civil_War_Start_Fascists = yes
 		ai_chance = { base = 34 }
 		ITC = {
 			transfer_state = 161
@@ -91,7 +96,6 @@ country_event = {
 				type = civil_war
 			}
 		}
-
 	}
 }
 
@@ -99,8 +103,8 @@ country_event = {
 
 country_event = {
 	id = ITA_cw.2
-	title = ITA_cw.2.t
-	desc = ITA_cw.2.d
+	title = "The Fist Broken"
+	desc = "With the collapse of order in Italy, and the iron rule of Mussolini finally lifted, the Italian people have sprung back into action, and now the balace of power must be restored, and as for the Italian government - It is anyone's game."
 	picture = GFX_event_italian_cw.2
 	is_triggered_only = yes
 	option = {
