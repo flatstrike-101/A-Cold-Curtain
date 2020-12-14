@@ -1,0 +1,5 @@
+sound = { ### DO NOT MISTAKE SOUND (HERE) FOR SOUNDEFFECTS (ANOTHER FILE)
+	name = "Bandiera_Rossa" #name you're using for the sound
+	file = "customsound/Bandiera_Rossa.wav" ## location of the sound file
+	always_load = no
+}
