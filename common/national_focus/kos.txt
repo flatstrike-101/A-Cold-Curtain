@@ -1,0 +1,232 @@
+focus_tree = {
+	id = kos
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KOS
+		}
+	}
+	#Liberty At last
+	focus = {
+		id = KOS_liberty_at_last
+		icon = GFX_focus_BUL_free_balkan_states
+		x = 2
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power = 100
+
+			
+		}
+	}
+
+	#With Marx we stand!
+	focus = {
+		id = KOS_with_marx_we_stand
+		icon = GFX_focus_eng_crush_the_dream
+		x = 1
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = 5815  }
+		completion_reward = {
+			set_political_party = { 
+
+			ideology = marxism-leninism = 1.0 
+
+			}
+
+			
+		}
+		select_effect = {
+			add_stability = -0.05
+
+			
+		}
+		will_lead_to_war_with = {
+			Serbia, Albania, Bulgaria, Greece, Croatia, Yugoslavia, Romania, Italy, Hungary, Germany, Slovakia, Poland, the Soviet Union, Persia, Iraq, Turkey, the Middle East, France, Burgundy
+		}
+	}
+
+	#United Forever
+	focus = {
+		id = KOS_united_forever
+		icon = GFX_focus_generic_army_tanks2
+		x = 3
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = 5815  }
+		completion_reward = {
+			add_war_support = 20
+
+			add_stability = 0.05
+
+			
+		}
+	}
+
+	#To Spread the Revolution
+	focus = {
+		id = KOS_to_spread_the_revolution
+		icon = GFX_focus_generic_little_entente
+		x = 2
+		y = 3
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = 5817  focus = 5818  }
+		available = {
+
+			division_template = { 
+
+			name = 'Militia' 
+
+			regiments = { 
+
+			infantry = { 
+
+			x = 0 
+
+			y = 0 
+
+			} 
+
+			infantry = { 
+
+			x = 1 
+
+			y = 0 
+
+			} infantry = { 
+
+			x = 2 
+
+			y = 0 
+
+			} infantry = { 
+
+			x = 3 
+
+			y = 0 
+
+			} infantry = { 
+
+			x = 4 
+
+			y = 0 
+
+			} infantry = { 
+
+			x = 5 
+
+			y = 0 
+
+			} infantry = { 
+
+			x = 1 
+
+			y = 1 
+
+			} infantry = { 
+
+			x = 1 
+
+			y = 2 
+
+			} infantry = { 
+
+			x = 1 
+
+			y = 3 
+
+			} 
+
+			} 
+
+			}
+				create_unit = { 
+
+			division = 
+
+			'name = "1st Kosovo Liberation Division" 
+
+			division_template = Militia 
+
+			starting_experience_factor = 1.0' 
+
+			}
+			create_unit = { 
+
+			division = 
+
+			'name = "2nd Kosovo Liberation Division" 
+
+			division_template = Militia 
+
+			starting_experience_factor = 1.0' 
+
+			}
+			create_unit = { 
+
+			division = 
+
+			'name = "3d Kosovo Liberation Division" 
+
+			division_template = Militia 
+
+			starting_experience_factor = 1.0' 
+
+			}
+			create_unit = { 
+
+			division = 
+
+			'name = "4th Kosovo Liberation Division" 
+
+			division_template = Militia 
+
+			starting_experience_factor = 1.0' 
+
+			}
+			
+		}
+		will_lead_to_war_with = {
+			Serbia, Albania, Bulgaria, Greece, Croatia, Yugoslavia, Romania, Italy, Hungary, Germany, Slovakia, Poland, the Soviet Union, Persia, Iraq, Turkey, the Middle East, France, Burgundy
+		}
+	}
+
+	#Order 77
+	focus = {
+		id = KOS_order_77
+		icon = GFX_focus_ger_great_red_menace
+		x = 2
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = 5820  }
+		completion_reward = {
+			add_manpower = -1000
+
+			create_wargoal = { 
+
+			type = annex_everything 
+
+			target =  SER}
+
+			
+		}
+	}
+
+}

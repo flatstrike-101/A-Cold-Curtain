@@ -1,0 +1,74 @@
+capital = 160
+
+set_convoys = 100
+
+
+set_politics = {
+	ruling_party = marxism_leninism
+	last_election = "1953.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	liberalism = 20
+	conservatism = 0
+	socialism = 20
+	marxism_leninism = 60
+	fascism = 0
+	nationalism = 0
+	national_socialism = 0
+}
+
+add_ideas = {
+	
+}
+
+create_country_leader = {
+	name = "Fadil Hoxha"
+	desc = "POLITICS_HOXHA_DESC"
+	picture = "Portrait_KOS_Hoxha.dds"
+	expire = "1984.1.1"
+	ideology = stalinism
+}
+
+
+create_country_leader = {
+	name = "Reichsfuherer Reich Asdley"
+	desc = "POLITICS_RICK_ROLL_DESC"
+	picture = "Portrait_KOS_Rick_roll.dds"
+	expire = "9999.9.12"
+	ideology = base_national_socialism
+}
+
+
+create_country_leader = {
+	name = "Duce Jar Jar Bink"
+	desc = "POLITICS_JAR_JAR_DESC"
+	picture = "Portrait_KOS_Jar_Jar.dds"
+	expire = "9999.9.12"
+	ideology = classical_fascism
+}
+
+create_country_leader = {
+	name = "Patriach Joe Stahllin"
+	desc = "POLITICS_KOS_STALIN_DESC"
+	picture = "Portrait_KOS_Stalin_2.dds"
+	expire = "9999.9.12"
+	ideology = monarchism
+}
+
+create_country_leader = {
+	name = "Winnie the Pooh"
+	desc = "POLITICS_POOH_DESC"
+	picture = "winnie_the_pooh.dds"
+	expire = "1984.1.1"
+	ideology = juche
+}
+
+create_country_leader = {
+	name = "Draw Dunvill"
+	desc = "POLITICS_GEORGE_DESC"
+	picture = "drew.dds"
+	expire = "1984.1.1"
+	ideology = national_liberalism
+}

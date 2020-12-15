@@ -14,22 +14,21 @@ country_event = {
 		ai_chance = { base = 34 }
 		dismantle_faction = yes
 		Italian_Civil_War_Start_commies = yes
-		set_country_flag = big_event_italy_cw
-		
+		Italian_Civil_War_general = yes
 	}
 		option = {	###Republicans
 		name = "Per La Democrazia e Liberta!"
 		ai_chance = { base = 33 }
 		dismantle_faction = yes
 		Italian_Civil_War_Start_republicans = yes
-		set_country_flag = big_event_italy_cw
+		Italian_Civil_War_general = yes
 	}
 	option = {	###Fascists
 		name = "Viva il Duce!"
 		ai_chance = { base = 33 }
 		dismantle_faction = yes
 		Italian_Civil_War_Start_Fascists = yes
-		set_country_flag = big_event_italy_cw
+		Italian_Civil_War_general = yes
 	}
 }
 
