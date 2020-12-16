@@ -34,3 +34,47 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_field_marshal = {
+	name = "Wilhelm Keitel"
+	picture = "General_Wilhelm_Keitel.dds"
+	traits = { offensive_doctrine infantry_officer unyielding_defender }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Robert Greim"
+	picture = "General_Robert_Greim.dds"
+	traits = { fast_planner career_officer inspirational_leader luftwaffe_general }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Erhard Milch"
+	picture = "General_Erhard_Milch.dds"
+	traits = { organisational_leader logistics_wizard luftwaffe_general }
+	skill = 5
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Albert Kesselring"
+	picture = "General_Albert_Kesselring.dds"
+	traits = { inflexible_strategist armor_officer }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
