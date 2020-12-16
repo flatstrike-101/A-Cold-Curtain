@@ -9,6 +9,7 @@ state={
         state_category=rural
         history = {
         owner = ITA
-        add_core_of = BUL
+        add_core_of = KOS
+		add_core_of = BUL
         }
 }
