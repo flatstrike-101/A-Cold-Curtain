@@ -1,0 +1,436 @@
+focus_tree = {
+	id = germany_starting_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = GER_two_masters_of_europe
+		icon = GFX_goal_generic_construction
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_facing_the_reality
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_two_masters_of_europe }
+		x = 5
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_old_allies
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_facing_the_reality }
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_watch_on_from_north
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_old_allies }
+		x = -1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_detest_their_leader
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_watch_on_from_north }
+		x = -1
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_strengthen_our_border
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_detest_their_leader }
+		x = -1
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_never_again
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_strengthen_our_border }
+		x = -1
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_enemies_to_the_east
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_facing_the_reality }
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_land_lost
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_enemies_to_the_east }
+		x = 1
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_cramped_in_the_fatherland
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_land_lost }
+		x = 1
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_dream_of_lebensraum
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_cramped_in_the_fatherland }
+		x = 1
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_what_could_have_been
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_enemies_to_the_east }
+		x = 3
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_war_planning
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_what_could_have_been }
+		x = 3
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_convene_the_ckw
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_war_planning }
+		x = 3
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_our_final_war
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_dream_of_lebensraum }
+        prerequisite = { focus = GER_convene_the_ckw }
+		x = 2
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_our_fuhrers_health
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_facing_the_reality }
+		x = 5
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_prepare_for_what_comes_after
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_our_fuhrers_health }
+		x = 5
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_find_who_to_trust
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_prepare_for_what_comes_after }
+		x = 5
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_destiny_in_the_hands_of_the_few
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_find_who_to_trust }
+		x = 5
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_engage_with_bouler
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_destiny_in_the_hands_of_the_few }
+		x = 5
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_engage_with_dietrich
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_engage_with_bouler }
+		x = 5
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_prepare_for_the_final_choice
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_engage_with_dietrich }
+		x = 5
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_the_german_volk
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_facing_the_reality }
+		x = 8
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_aryan_supremacy
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_the_german_volk }
+		x = 8
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_educate_the_adults
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_aryan_supremacy }
+		x = 7
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_educate_the_youth
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_aryan_supremacy }
+		x = 9
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_closer_to_perfection
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_educate_the_adults }
+        prerequisite = { focus = GER_educate_the_youth }
+		x = 8
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+    focus = {
+		id = GER_a_clean_germany
+		icon = GFX_goal_generic_construction
+        prerequisite = { focus = GER_closer_to_perfection }
+		x = 8
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			
+		}
+	}
+
+}

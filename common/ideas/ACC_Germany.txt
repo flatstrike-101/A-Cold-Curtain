@@ -1,0 +1,89 @@
+ideas = {
+
+	country = {
+		GER_fuhrer = {
+		    picture = fuhrer
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
+		GER_ss_loyalty = {
+		    picture = ss_loyalty
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
+		GER_lost_living_space = {
+		    picture = lost_living_space
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
+		GER_soviet_relations = {
+		    picture = soviet_relations
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
+		GER_declining_economy = {
+		    picture = declining_economy
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
+		GER_aftermath_of_tannenbaum = {
+		    picture = aftermath_of_tannenbaum
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
+	}
+} 
