@@ -35,67 +35,6 @@ set_technology = {
 	fuel_refining = 1
 }
 
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		basic_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		basic_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
-	set_naval_oob = "GER_1936_naval"
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_ship_hull_heavy = 1
-		panzerschiffe = 1
-		pre_dreadnoughts = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		mtg_transport = 1
-		basic_torpedo = 1
-		improved_ship_torpedo_launcher = 1
-		basic_battery = 1
-		basic_light_battery = 1
-		basic_medium_battery = 1
-		basic_heavy_battery = 1
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
-		basic_depth_charges = 1
-		sonar = 1
-		basic_cruiser_armor_scheme = 1
-	}
-	set_naval_oob = "GER_1936_naval_mtg"
-}
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	set_technology = {
-		armored_car1 = 1
-	}
-}
-
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 
 set_variable = { var = wehrmacht_anger value = 0 }
@@ -105,194 +44,10 @@ set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
-#Trade
-create_import = {
-		resource = tungsten
-		factories = 1
-		exporter = SWE
-}
-
 puppet = RKA
 puppet = RKM
 puppet = RKW
 puppet = BEL
-
-1953.1.1 = {
-	add_named_threat = { threat = 40 name = 1939_bookmark_threat }
-	set_war_support = 0.7
-
-	add_political_power = 1197
-	
-	#adding ministers
-	add_ideas = {
-		henschel
-		ig_faben
-		heinrich_himmler
-		rudolf_hess
-		ludwig_beck
-		gerd_von_rundstedt
-		GER_autarky_idea
-
-		#laws
-		war_economy
-		extensive_conscription
-	}
-	
-	oob = "GER_1939"
-	
-	set_autonomy = {
-		target = SLO
-		autonomous_state = autonomy_puppet
-	}
-	
-	give_military_access = SLO
-	create_wargoal = {
-		type = take_state_focus
-		target = POL
-		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
-	}
-
-#Trade
-	create_import = {
-			resource = oil
-			factories = 2
-			exporter = SOV
-	}
-
-	#MR pact effect, Also has a part scripted in soviet history file
-	unlock_national_focus = GER_mol_rib_pact
-	every_other_country = {
-		limit = {
-			has_government = fascism 
-		}
-		add_opinion_modifier = { target = GER modifier = MR_pact_fascists }
-	}
-	diplomatic_relation = { country = SOV relation = non_aggression_pact }
-	add_opinion_modifier = { target = SOV modifier = MR_pact }
-	#MR pact end
-
-	#Soviet treaty
-	unlock_national_focus = GER_soviet_treaty
-	add_tech_bonus = {
-		bonus = 1.0
-		uses = 2
-		category = armor
-	}
-	SOV = {
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty }
-		add_opinion_modifier = { target = GER modifier = sov_ger_treaty_trade }
-	}
-	#Soviet treaty end
-	
-	unlock_national_focus = GER_rhineland
-	unlock_national_focus = GER_anschluss
-	unlock_national_focus = GER_demand_sudetenland
-	unlock_national_focus = GER_first_vienna_award
-	unlock_national_focus = GER_end_of_czechoslovakia
-	unlock_national_focus = GER_demand_memel
-	unlock_national_focus = GER_four_year_plan
-	unlock_national_focus = GER_autarky
-	unlock_national_focus = GER_synthetic_rubber
-
-	set_global_flag = end_of_czechoslovakia
-	set_global_flag = olympics_1936
-	set_variable = { var = GER_mefo_bill_counter value = 90 }
-	complete_national_focus = GER_autobahn
-	complete_national_focus = GER_west_wall
-	complete_national_focus = GER_army_innovation
-	complete_national_focus = GER_hermann_goring_werke
-	complete_national_focus = GER_kdf_wagen
-	complete_national_focus = GER_coal_liquidization
-	complete_national_focus = GER_extra_tech_slot
-
-	#BUILDINGS
-	
-
-	set_technology = {
-		improved_light_tank = 1 
-		basic_medium_tank = 1 
-		CAS2 = 1
-		heavy_fighter1 = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		infantry_weapons2 = 1
-		improved_infantry_weapons = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		paratroopers = 1
-		
-
-		#doctrines
-		delay = 1
-		elastic_defence = 1
-		armored_spearhead = 1
-		schwerpunk = 1
-		blitzkrieg = 1
-		convoy_interdiction_ti = 1
-		unrestricted_submarine_warfare = 1
-		raider_patrols = 1
-		#air
-		formation_flying = 1		
-		dive_bombing = 1
-		direct_ground_support = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		decimetric_radar = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		construction4 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-		dispersed_industry4 = 1
-
-	}
-	if = {
-		limit = {
-			not = {
-				has_dlc = "Man the Guns"
-			}
-		}
-		set_technology = {
-			basic_heavy_cruiser = 1
-			improved_heavy_cruiser = 1
-			improved_battleship = 1
-			early_carrier = 1
-			basic_carrier = 1
-			improved_carrier = 1
-		}
-		set_naval_oob = "GER_1939_naval_legacy"
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			improved_ship_hull_cruiser = 1
-			basic_ship_hull_heavy = 1
-			early_ship_hull_carrier = 1
-			basic_ship_hull_carrier = 1
-			improved_heavy_battery = 1
-			basic_heavy_armor_scheme = 1
-		}
-		set_naval_oob = "GER_1939_naval_mtg"
-	}
-}
 
 set_politics = {
 	ruling_party = national_socialism
@@ -325,28 +80,28 @@ add_to_faction = IRE
 
 
 GER = {
-	    puppet = NOR
-        puppet = POL 
-		puppet = DEN
-		puppet = HOL
-		puppet = SSO
-		puppet = SLO
-		puppet = CZE
-		puppet = RKS
-		puppet = WLS
-		puppet = SER
-		puppet = CRO
-		}
+	puppet = NOR
+    puppet = POL 
+	puppet = DEN
+	puppet = HOL
+	puppet = SSO
+	puppet = SLO
+	puppet = CZE
+	puppet = RKS
+	puppet = WLS
+	puppet = SER
+	puppet = CRO
+}
 
 
 add_ideas = {
-	sour_loser
-	general_staff
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
+	GER_fuhrer
+	GER_ss_loyalty
+	GER_lost_living_space
+	GER_soviet_relations
+	GER_declining_economy
+	GER_aftermath_of_tannenbaum
 }
-add_ideas = GER_mefo_bills_1
 
 activate_mission = GER_mefo_bills_mission
 
