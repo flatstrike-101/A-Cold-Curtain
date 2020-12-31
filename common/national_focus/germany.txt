@@ -22,7 +22,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			
+			GER = { country_event = { id = germany_main_story.1 } }
 		}
 	}
 
