@@ -5,10 +5,17 @@ state= {
 	
 	state_category = city
 
-	history=
-	{
+	history= {
+		victory_points = { 9904 30 }
 		owner = ITA
 		add_core_of = ITA
+		buildings = {
+			infrastructure = 10
+			air_base = 10
+			11751 = {
+				naval_base = 10
+			}
+		}
 	}
 
 	provinces= {

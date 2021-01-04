@@ -533,6 +533,15 @@ ITR_ADJ:0 "Italian"
  MEP_DEF:0 "Middle Eastern"
  MEP_ADJ:0 "Middle Eastern"
 
+### Italian Indian ocean territories
+ 
+ IIP_fascism:0 "Italian Indian Oceean territories"
+ IIP_fascism_DEF:0 "the Italian Indian Ocean territories"
+ IIP_fascism_ADJ:0 "Italian"
+ IIP:0 "Italy"
+ IIP_DEF:0 "Italy"
+ IIP_ADJ:0 "Italian
+
  ROM_fascism:0 "Legionary Romania"
  ROM_fascism_DEF:0 "Legionary Romania"
  ROM_democratic:0 "Romania"

@@ -127,6 +127,11 @@ create_import = {
 	}
 
 	set_autonomy = {
+		target = IIP
+		autonomy_colony = "Colony"
+	}
+
+	set_autonomy = {
 		target = ETH
 		autonomy_colony = "Colony"
 	}
@@ -252,12 +257,14 @@ add_to_faction = EGY
 add_to_faction = ETH
 add_to_faction = GRE
 add_to_faction = MEP
+add_to_faction = IIP
 
 
 ITA = { puppet = EGY
         puppet = ETH 
 		puppet = GRE
 		puppet = MEP
+		puppet = IIP
 		}
 
 

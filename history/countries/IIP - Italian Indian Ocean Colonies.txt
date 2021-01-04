@@ -1,0 +1,36 @@
+capital = 765
+
+oob = "IIP_1953"
+
+set_convoys = 1000
+
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1941.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberalism = 30
+	conservatism = 10
+	socialism = 10
+	marxism_leninism = 5
+	fascism = 10
+	nationalism = 30
+	national_socialism = 5
+}
+
+add_ideas = {
+	
+}
+
+create_country_leader = {
+	name = "Guglielmo Nasi"
+	desc = "POLITICS_NASI_DESC"
+	picture = "Portrait_Guglielmo_Nasi.dds"
+	expire = "1971.1.1"
+	ideology = classical_fascism
+	traits = {
+	}
+}

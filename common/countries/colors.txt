@@ -66,6 +66,11 @@ MEP = {
 	color_ui = rgb { 37 131 46 }
 }
 
+IIP = {
+	color = rgb { 0 102 0 }
+	color_ui = rgb { 0 102 0 }
+}
+
 ROM = {
 	color = rgb { 164 164 69 }
 	color_ui = rgb { 164 164 69 }
