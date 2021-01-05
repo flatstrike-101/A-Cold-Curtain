@@ -1,0 +1,57 @@
+division_template = {
+	name = "People's Brigades"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {
+		name = "First Syrian Liberation Division"
+		location = 4550
+		division_template = "People's Brigades"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+    division= {
+		name = "Second Syrian Liberation Division"
+		location = 11919
+		division_template = "People's Brigades"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+    division= {
+		name = "Third Syrian Liberation Division"
+		location = 4486
+		division_template = "People's Brigades"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+    division= {
+		name = "Fourth Syrian Liberation Division"
+		location = 4486
+		division_template = "People's Brigades"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+    division= {
+		name = "Fifth Syrian Liberation Division"
+		location = 4486
+		division_template = "People's Brigades"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
