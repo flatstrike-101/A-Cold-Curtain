@@ -1,0 +1,97 @@
+MEP_first_stage = {
+    hidden_effect = {
+		SYR = {
+            transfer_state = 554
+            transfer_state = 680
+            transfer_state = 677
+            transfer_state = 554
+            transfer_state = 553
+        
+		set_popularities = {
+			liberalism = 30
+			conservatism = 30
+			socialism = 30
+			marxism_leninism = 5
+			fascism = 0
+			nationalism = 5
+			national_socialism = 0
+			}
+        load_oob = "SYR_revolt"
+	    }
+
+        MEP = {
+                declare_war_on = {
+                    target = SYR
+                    type = civil_war
+                }
+                load_oob = "MEP_syrian_revolt"
+            }
+	    }
+    }
+}
+
+MEP_second_stage = {
+    hidden_effect = {
+		SYR = {
+            transfer_state = 554
+            transfer_state = 680
+            transfer_state = 677
+            transfer_state = 554
+
+		set_popularities = {
+			liberalism = 30
+			conservatism = 30
+			socialism = 30
+			marxism_leninism = 5
+			fascism = 0
+			nationalism = 5
+			national_socialism = 0
+			}
+        load_oob = "SYR_revolt2"
+        
+	    }
+        JOR = {
+            transfer_state = 455
+
+            set_popularities = {
+			    liberalism = 60
+			    conservatism = 30
+			    socialism = 10
+			    marxism_leninism = 0
+			    fascism = 0
+			    nationalism = 0
+			    national_socialism = 0
+			}
+        }
+
+        LEB = {
+            transfer_state = 553
+
+            set_popularities = {
+			    liberalism = 30
+			    conservatism = 30
+			    socialism = 30
+			    marxism_leninism = 10
+			    fascism = 0
+			    nationalism = 0
+		    	national_socialism = 0
+			}
+        }
+
+        MEP = {
+                declare_war_on = {
+                    target = SYR
+                    type = civil_war
+                }
+                declare_war_on = {
+                    target = LEB
+                    type = civil_war
+                }
+                declare_war_on = {
+                    target = JOR
+                    type = civil_war
+                }
+            }
+	    }
+    }
+}

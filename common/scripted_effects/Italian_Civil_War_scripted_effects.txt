@@ -12,6 +12,7 @@ Italian_Civil_War_general = {
 		end_puppet = ETH
 		end_puppet = GRE 
 		end_puppet = MEP
+		end_puppet = IIP
 		set_popularities = {
 			liberalism = 0
 			conservatism = 0

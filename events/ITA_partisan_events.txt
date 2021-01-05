@@ -8,9 +8,7 @@ country_event = {
 	desc = "This morning at 8:30 a series of explosions were heard throughout the Eur district, collapsing several districts and killing 11 people, leaving 3 injured. It is believed that this event was caused by a partisan group called 'the Red Brigades' who seek to create a marxist-leninist government in Italy. Il Duce has yet to comment."
 	picture = GFX_event_eur_explosions
 	fire_only_once = yes
-	tag = {
-		ITA
-	}
+	trigger = { tag = { ITA } }
 	mean_time_to_happen = {
 		days = 40
 	}
