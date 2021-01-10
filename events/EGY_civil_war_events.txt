@@ -1,0 +1,24 @@
+add_namespace = EGY_cw
+
+country_event = {### Sudan
+	id = EGY_cw.1
+	title ="The Sudanese Rebellion"
+	desc = "Reports are coming in from the Sudan region, from the border with East Africa, along the Red Sea, word of rebellion is spreading. Garrisons are overwhelmed as people flood the streets, some armed with guns, and others with nothing but the clothes on their backs."
+	picture = GFX_event_syria_revolt
+	fire_only_once = yes
+    tag = { EGY }
+    trigger = {
+        ITA = { has_country_flag = big_event_italy_cw }
+    }
+    mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "To Arms!"
+		EGY_cw_1 = yes
+        EGY = { set_country_flag = Sudan_Rebellion }
+        ETH = {
+            country_event = { id = ETH_intervention.1 }
+        }
+	}
+}
