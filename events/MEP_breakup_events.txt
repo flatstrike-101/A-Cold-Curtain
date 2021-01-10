@@ -6,11 +6,11 @@ country_event = {### Syria
 	desc = "People take to the streets, angry, united against the colonial government and against the national corporations that have exploited them and their land. Banners of all colors and ideology rally, but all have one common demand - free Syria. And so, they shall do what they must."
 	picture = GFX_event_syria_revolt
 	fire_only_once = yes
+    tag = { MEP }
     trigger = {
         ITA = {
             has_country_flag = big_event_italy_cw
         }
-        tag = { MEP }
     }
 	option = {
 		name = "In this land, WE rule"
@@ -25,9 +25,9 @@ country_event = {### Syria
 	desc = "The Syrian revolt might have been crushed, but the nationalist idea still stands. And this time, it has spread to other communities, from Jordan, to Palestine, freedom is wanted, it is needed, for the people to survive. However, it is not granted easily. The government missed the chance to redeem itself, and so now the people shall destroy it."
 	picture = GFX_event_mep_great_split
 	fire_only_once = yes
+    tag = { MEP }
     trigger = {
         has_country_flag = MEP_syrian_revolt_flag
-        tag = { MEP }
     }
     mean_time_to_happen = {
         months = 2

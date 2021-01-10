@@ -1,0 +1,30 @@
+EGY_cw_1 = {
+    hidden_effect = {
+		SUD = {
+            transfer_state = 551
+            transfer_state = 767
+            transfer_state = 549
+        
+		set_popularities = {
+			liberalism = 10
+			conservatism = 10
+			socialism = 0
+			marxism_leninism = 0
+			fascism = 20
+			nationalism = 60
+			national_socialism = 0
+			}
+        set_ruling_party = nationalism
+        load_oob = "SUD_revolt"
+	    }
+
+        EGY = {
+                declare_war_on = {
+                    target = SUD
+                    type = civil_war
+                }
+                load_oob = "EGY_cw"
+            }
+	    }
+    }
+}

@@ -1,0 +1,44 @@
+add_namespace = ETH_intervention
+
+country_event = {
+    id = ETH_intervention.1
+	title ="Egypt Calls for Aid"
+	desc = "With nearly half of the Kingdom of Egypt rising in rebellion, the government is asking us to help them in their civil war."
+	picture = GFX_event_syria_revolt
+	fire_only_once = yes
+    tag = { ETH }
+    trigger = {
+        EGY = { has_country_flag = Sudan_Rebellion }
+    }
+    mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = "We shall defend our allies."
+        ETH = {
+            declare_war_on = { target = SUD type = topple_government }
+            give_guarantee = EGY
+        }
+        EGY = { give_guarantee = ETH }
+	}
+    option = {
+        name = "Send the Egyptian Government a few spare weapons"
+        ETH = {
+            add_equipment_to_stockpile = {
+   			type = infantry_equipment
+    		amount = -1000
+		    }
+        }
+        EGY = {
+            add_equipment_to_stockpile = {
+   			type = infantry_equipment
+    		amount = 1000
+		    }
+        }
+    }
+    option = {
+        name = "Send them our best regards"
+        ETH = { add_opinion_modifier = { target = EGY modifier = betrayed_guarantee } }	
+        EGY = { add_opinion_modifier = { target = ETH modifier = betrayed_guarantee } }	
+    }
+}
