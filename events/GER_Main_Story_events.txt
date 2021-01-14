@@ -5,10 +5,25 @@ country_event = {
 	id = germany_main_story.1
 	title = germany_main_story.1.t
 	desc = germany_main_story.1.desc
-	picture = event_germany_two_masters_of_europe
+	picture = GFX_event_germany_two_masters_of_europe
 	is_triggered_only = yes
 	option = {
 		name = germany_main_story.1.a
 		ai_chance = { base = 100 }
+		add_war_support = 0.03
+	}
+}
+
+#The Status Quo
+country_event = {
+	id = germany_main_story.2
+	title = germany_main_story.2.t
+	desc = germany_main_story.2.desc
+	picture = GFX_event_germany_two_masters_of_europe_bw
+	is_triggered_only = yes
+	option = {
+		name = germany_main_story.2.a
+		ai_chance = { base = 100 }
+		add_stability = -0.03
 	}
 }

@@ -7,6 +7,11 @@ spriteTypes = {
 	
 	spriteType = {
         name = "GFX_event_germany_two_masters_of_europe"
-        texturefile = "gfx/event_pictures/event_italian_cw.dds"
+        texturefile = "gfx/event_pictures/event_two_masters_of_europe.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_event_germany_two_masters_of_europe_bw"
+        texturefile = "gfx/event_pictures/event_two_masters_of_europe_b&w.dds"
     }
 }
