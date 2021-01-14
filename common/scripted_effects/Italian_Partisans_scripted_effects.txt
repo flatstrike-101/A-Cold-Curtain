@@ -1,0 +1,61 @@
+ITA_Eur_Explosion = {
+    add_stability = -0.2
+    add_political_power = -50
+    damage_building = {
+        type = infrastructure
+        damage = 1
+    }
+    damage_building = {
+        type = industrial_complex
+        damage = 1
+        province = 9904
+    }
+    damage_building = {
+        type = industrial_complex
+        damage = 1
+        province = 9904
+    }
+    damage_building = {
+        type = industrial_complex
+        damage = 1
+        province = 9904
+    }
+    hidden_effect = {
+     ITA = {
+        remove_state_core = 2
+        remove_state_core = 117
+        remove_state_core = 156
+        remove_state_core = 115
+        remove_state_core = 114
+        remove_state_core = 1
+        remove_state_core = 162
+        remove_state_core = 157
+        remove_state_core = 161
+        remove_state_core = 158
+        remove_state_core = 159
+        remove_state_core = 39
+        remove_state_core = 160
+        remove_state_core = 736
+        remove_state_core = 800
+        remove_state_core = 805
+        remove_state_core = 735
+        add_resistance_target = {
+        id = 117
+        amount = 30
+        
+    }
+    add_resistance_target = {
+        id = 2
+        amount = 30
+        
+    }
+    add_resistance_target = {
+        id = 156
+        amount = 30
+    }
+        start_resistance = yes
+        }
+    
+    }
+}
+

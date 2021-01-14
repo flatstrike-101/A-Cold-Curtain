@@ -1,0 +1,96 @@
+##
+
+add_namespace = ITA_partisan
+
+country_event = {
+	id = ITA_partisan.1
+	title ="Explosions in the Eur District!"
+	desc = "This morning at 8:30 a series of explosions were heard throughout the Eur district, collapsing several districts and killing 11 people, leaving 3 injured. It is believed that this event was caused by a partisan group called 'the Red Brigades' who seek to create a marxist-leninist government in Italy. Il Duce has yet to comment."
+	picture = GFX_event_eur_explosions
+	fire_only_once = yes
+	trigger = { tag = { ITA } }
+	mean_time_to_happen = {
+		days = 40
+	}
+	option = {
+		name = "We Shall Rebuild"
+		ITA_Eur_Explosion = yes
+	}
+}
+
+############ ITA_partisan.2
+
+country_event = {
+	id = ITA_partisan.2
+	title = "Desertions in the Army"
+	desc = "Sick of the plutocratic, narsassitic and unreliable army, thousands of soldiers have left the military without warning, seeking a different life. It is also suspected that some may be joining partisan groups, giving strength to a potential rebellion."
+	picture = GFX_event_ITA_desertions
+	trigger = {
+		tag = ITA
+	}
+	option = {
+		name = "Traitors! All of them!"
+		add_manpower = -2000
+		random_owned_controlled_state = { 
+			add_resistance = 5				
+		}
+        add_popularity = {
+            ideology = fascism
+            popularity = -0.005
+        }
+	}
+}
+
+############ ITA_partisan.3
+
+country_event = {
+	id = ITA_partisan.3
+	title = "Equipment stockpile raided"
+	desc = "A group of armed bandits overpowered guards and stole from a military stockpile before disappearing into the hills. A red hammer and sickle graffiti was put over the walls of the facility, indicating partisan activity."
+	picture = GFX_event_ITA_stockpile_raided
+	trigger = {
+		tag = ITA
+	}
+	option = {
+		name = "Find them!"
+		add_equipment_to_stockpile = {
+   			type = infantry_equipment
+    		amount = -1000
+		}
+		random_owned_controlled_state = { 
+			add_resistance = 5				
+		}
+        add_popularity = {
+            ideology = fascism
+            popularity = -0.05
+        }
+	}
+}
+
+############ ITA_partisan.4
+
+country_event = {
+	id = ITA_partisan.4
+	title = "Factory Raids"
+	desc = "A raid was recently conducted on one of our military factories, leaving several dead and more wounded. The factory was damaged in an explosion and many pieces of equipment where stolen."
+	picture = GFX_event_ITA_factory_raids
+	trigger = {
+		tag = ITA
+	}
+	option = {
+		name = "Where?"
+		add_manpower = -200
+		add_equipment_to_stockpile = {
+   			type = infantry_equipment
+    		amount = -2000
+		}
+		random_owned_controlled_state = { 
+			remove_building = { type = arms_factory  level = 1 }
+			add_resistance = 5				
+		}
+        add_popularity = {
+            ideology = fascism
+            popularity = -0.05
+        }
+	}
+}

@@ -1,0 +1,43 @@
+add_namespace = MEP_breakup
+
+country_event = {### Syria
+	id = MEP_breakup.1
+	title ="Revolution in Syria!"
+	desc = "People take to the streets, angry, united against the colonial government and against the national corporations that have exploited them and their land. Banners of all colors and ideology rally, but all have one common demand - free Syria. And so, they shall do what they must."
+	picture = GFX_event_syria_revolt
+	fire_only_once = yes
+    tag = { MEP }
+    trigger = {
+        ITA = {
+            has_country_flag = big_event_italy_cw
+        }
+    }
+	option = {
+		name = "In this land, WE rule"
+		MEP_first_stage = yes
+        set_country_flag = MEP_syrian_revolt_flag
+	}
+}
+
+country_event = {### Syria
+	id = MEP_breakup.2
+	title ="The Great Split"
+	desc = "The Syrian revolt might have been crushed, but the nationalist idea still stands. And this time, it has spread to other communities, from Jordan, to Palestine, freedom is wanted, it is needed, for the people to survive. However, it is not granted easily. The government missed the chance to redeem itself, and so now the people shall destroy it."
+	picture = GFX_event_mep_great_split
+	fire_only_once = yes
+    tag = { MEP }
+    trigger = {
+        has_country_flag = MEP_syrian_revolt_flag
+    }
+    mean_time_to_happen = {
+        months = 2
+    }
+	option = {
+		name = "We march once more."
+		MEP_second_stage = yes
+        add_resistance_target = {
+            id = 454
+           amount = 50 
+        }
+	}
+}

@@ -1,5 +1,6 @@
 Italian_Civil_War_general = {
 	ITA = {
+		hidden_effect = {
 		set_country_flag = big_event_italy_cw
 		release = TUN
 		release = ALG
@@ -11,6 +12,7 @@ Italian_Civil_War_general = {
 		end_puppet = ETH
 		end_puppet = GRE 
 		end_puppet = MEP
+		end_puppet = IIP
 		set_popularities = {
 			liberalism = 0
 			conservatism = 0
@@ -27,10 +29,12 @@ Italian_Civil_War_general = {
 	ITC = {
 		set_country_flag = big_event_italy_cw
 	}
+	}
 }
 
 
 Italian_Civil_War_Start_commies = {
+	hidden_effect = {
 	play_song = Bandiera_Rossa.ogg
 	ITC = {
 			transfer_state = 161
@@ -119,12 +123,14 @@ Italian_Civil_War_Start_commies = {
 			}
 		}
 		country_event = { id = ITA_cw.2 }
+	}
 		ITC = { change_tag_from = ITA }
 }
 
 ####### republicans
 
 Italian_Civil_War_Start_republicans = {
+	hidden_effect = {
 	play_song = Bandiera_Rossa.ogg
 	ITR = {
 		transfer_state = 117
@@ -215,13 +221,14 @@ Italian_Civil_War_Start_republicans = {
 			}
 		}
 		country_event = { id = ITA_cw.2 }
+	}
 		ITR = { change_tag_from = ITA }
 }
 
 ###### Fascism
 Italian_Civil_War_Start_Fascists = {
+	hidden_effect = {
 	play_song = Bandiera_Rossa.ogg
-	 
 	ITC = {
 			transfer_state = 161
 			transfer_state = 159
@@ -307,5 +314,6 @@ Italian_Civil_War_Start_Fascists = {
 				type = civil_war
 			}
 		}
+	}
 		country_event = { id = ITA_cw.2 }
 }
