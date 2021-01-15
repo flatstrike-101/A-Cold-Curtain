@@ -1,4 +1,5 @@
 add_namespace = germany_main_story
+add_namespace = germany_generic
 
 #The Two Powers of Europe
 country_event = {
@@ -25,5 +26,42 @@ country_event = {
 		name = germany_main_story.2.a
 		ai_chance = { base = 100 }
 		add_stability = -0.03
+	}
+}
+
+#A Decision not Taken Lightly
+country_event = {
+	id = germany_main_story.3
+	title = germany_generic.3.t
+	desc = germany_generic.3.desc
+	picture = GFX_event_a_decision_not_taken_lightly
+	is_triggered_only = yes
+	option = {
+		name = germany_generic.3.a
+		ai_chance = { base = 100 }
+		add_stability = -0.03
+	}
+}
+
+###############
+# NEWS EVENTS #
+###############
+
+#Mustache man dies
+news_event = {
+	id = germany_main_story.4
+	title = germany_generic.4.t
+	desc = germany_generic.4.desc
+	picture = GFX_news_event_hitler_dead
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = germany_generic.4.a
+		if = {
+			limit = {
+				tag = GER
+			}
+			load_focus_tree = germany_pre_civil_war_focus
+		}
 	}
 }
