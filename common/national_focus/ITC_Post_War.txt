@@ -1,0 +1,544 @@
+focus_tree = {
+	id = ITC_Post_War
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITC
+		}
+	}
+
+	focus = {
+		id = ITC_victory_at_last
+		icon = GFX_focus_por_workers_of_iberia
+		x = 1
+		y = 0
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		completion_reward = {
+			add_stability = 0.01
+
+			
+		}
+	}
+
+
+	focus = {
+		id = ITC_the_great_decision
+		icon = GFX_ITC_the_great_decision
+		x = 5
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITC_industrialization.1
+
+			}
+
+			
+		}
+	}
+
+
+	focus = {
+		id = ITC_trust_with_the_union
+		icon = GFX_ITC_trust_with_the_union
+		x = 4
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ITC_the_great_decision  }
+		bypass = {
+			has_country_flag = ITC_trust_with_ussr
+
+			
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+
+				add_building_construction = { 
+
+			type = industrial_complex 
+
+			level = 2 
+
+			instant_build = yes }
+
+			
+
+				add_extra_state_shared_building_slots = {
+
+			 add_extra_state_shared_building_slots = 2 
+
+			}
+
+			}
+
+			
+		}
+	}
+
+	focus = {
+		id = ITC_our_own_path
+		icon = GFX_ITC_our_own_path
+		x = 4
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ITC_the_great_decision  }
+		bypass = {
+			has_country_flag = ITC_our_own_path
+
+			
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+
+				add_building_construction = { 
+
+			type = industrial_complex 
+
+			level = 2 
+
+			instant_build = yes }
+
+			
+
+				add_extra_state_shared_building_slots = {
+
+			 add_extra_state_shared_building_slots = 2 
+
+			}
+
+			}
+
+			
+		}
+	}
+
+	focus = {
+		id = ITC_begin_the_transition_to_a_centralized_economy
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 4
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ITC_trust_with_the_union  }
+		completion_reward = {
+			country_event = {
+
+			days = 10 
+
+			id = ITC_centralized_economy.4
+
+			}
+
+			
+		}
+		select_effect = {
+			country_event = {
+
+			days = 20 
+
+			id = ITC_centralized_economy.1 }
+
+			country_event = {
+
+			days = 40 
+
+			id = ITC_centralized_economy.2
+
+			}
+
+			country_event = {
+
+			days =  60
+
+			id = ITC_centralized_economy.3
+
+			}
+
+			
+		}
+	}
+
+
+	focus = {
+		id = ITC_the_great_leap_forwards
+		icon = GFX_focus_generic_soviet_politics
+		x = 4
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ITC_begin_the_transition_to_a_centralized_economy  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITC_centralized_industry.1 
+
+			}
+
+			
+
+			
+		}
+	}
+
+
+	focus = {
+		id = ITC_hold_the_first_congress_of_italian_syndicates
+		icon = GFX_focus_BUL_cooperate_with_the_zveno
+		x = 6
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ITC_our_own_path  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITC_decentralized_final.1 
+
+			}
+
+			
+		}
+		select_effect = {
+			country_event = {
+
+			days = 20 
+
+			id = ITC_decentralized_economy.1 }
+
+			country_event = {
+
+			days = 40 
+
+			id = ITC_decentralized_economy.2
+
+			}
+
+			country_event = {
+
+			days =  60
+
+			id = ITC_decentralized_economy.3
+
+			}
+
+			
+		}
+	}
+
+
+	focus = {
+		id = ITC_italian_general_elections
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 1
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_victory_at_last  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITC_general_elections.4
+
+			}
+
+			
+		}
+		select_effect = {
+			country_event = {
+
+			days = 20 
+
+			id = ITC_ITC_general_elections.1 }
+
+			country_event = {
+
+			days = 40 
+
+			id = ITC_general_elections.2
+
+			}
+
+			country_event = {
+
+			days =  60
+
+			id = ITC_general_elections.3
+
+			}
+
+			
+		}
+	}
+
+	
+	focus = {
+		id = ITC_economic_revolution
+		icon = GFX_ITC_economic_revolution-424
+		x = 6
+		y = 3
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ITC_hold_the_first_congress_of_italian_syndicates  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITC_economic_revolution.1
+
+			}
+
+			
+		}
+	}
+
+	
+	focus = {
+		id = ITC_togliatti_hero_of_the_people
+		icon = GFX_ITC_togliatti_hero_of_the_people-445
+		x = 0
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_italian_general_elections  }
+		bypass = {
+			has_country_flag = ITC_Togliatti_won
+
+			
+		}
+	}
+
+
+	focus = {
+		id = ITC_nenni_victorious
+		icon = GFX_ITC_nenni_victorious-445
+		x = 1
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_italian_general_elections  }
+		mutually_exclusive = { focus = ITC_togliatti_hero_of_the_people  }
+		bypass = {
+			has_country_flag = ITC_nenni_won
+
+			
+		}
+	}
+
+	
+	focus = {
+		id = ITC_parri_wins
+		icon = GFX_ITC_parri_wins-445
+		x = 2
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_italian_general_elections  }
+		mutually_exclusive = { focus = ITC_togliatti_hero_of_the_people  focus = ITC_nenni_victorious  }
+		bypass = {
+			has_country_flag = ITC_parri_won
+
+			
+		}
+	}
+
+	
+	focus = {
+		id = ITC_togliattis_big_speech
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_togliatti_hero_of_the_people  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITC_togliatti_speech
+
+			}
+
+			
+		}
+	}
+
+
+	focus = {
+		id = ITC_recovery_from_fascism
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 1
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_nenni_victorious  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITC_nenni_anti_fascism.1
+
+			}
+
+			
+		}
+	}
+
+	
+	focus = {
+		id = ITC_a_move_towards_democracy
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		x = 2
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_parri_wins  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITC_parri_anti_communism
+
+			}
+
+			
+		}
+	}
+
+
+	focus = {
+		id = ITC_request_aid_from_the_soviet_union
+		icon = GFX_ITC_request_aid_from_the_soviet_union-52
+		x = 0
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_togliattis_big_speech  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITC_soviet_aid.1 
+
+			}
+
+			
+		}
+	}
+
+	
+	focus = {
+		id = ITC_italy_on_her_own
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_recovery_from_fascism  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITC_Italy_on_her_own.1}
+
+			
+		}
+	}
+
+	
+	focus = {
+		id = ITC_seek_help_from_the_united_states
+		icon = GFX_ITC_seek_help_from_the_united_states-427
+		x = 2
+		y = 4
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_a_move_towards_democracy  }
+		completion_reward = {
+			USA = {country_event = {
+
+			days = 1 
+
+			id = USA_ITC_help.1
+
+			}}
+
+			
+		}
+	}
+
+	
+	focus = {
+		id = ITC_a_new_dawn
+		icon = GFX_ITC_a_new_dawn-445
+		x = 1
+		y = 5
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITC_request_aid_from_the_soviet_union  }{ focus = ITC_italy_on_her_own  }{ focus = ITC_seek_help_from_the_united_states  }
+		select_effect = {
+			load_focus_tree = ITC_new_dawn
+
+			
+		}
+	}
+
+}
