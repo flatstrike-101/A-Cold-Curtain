@@ -26,8 +26,29 @@ add_ideas = {
 create_country_leader = {
 	name = "Palmiro Togliatti"
 	desc = "POLITICS_PALMIRO_TOGLIATTI_DESC"
-	picture = "Portrait_ITA_Palmiro_Togliatti.dds"
-	expire = "1980.1.1"
-	ideology = base_marxism_leninism
+	picture = "Portrait_ITC_Palmiro_Togliatti.dds"
+	expire = "1965.1.1"
+	ideology = marxism_leninism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Pietro Nenni"
+	desc = "POLITICS_PIETRO_NENNI_DESC"
+	picture = "Portrait_ITC_Pietro_Nenni.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Ferruccio Parri"
+	desc = "POLITICS_FERRUCIO_PARRI_DESC"
+	picture = "Portrait_ITC_Ferruccio_Parri.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
 	}
 }
