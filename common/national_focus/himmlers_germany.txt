@@ -1,0 +1,137 @@
+focus_tree = {
+	id = germany_starting_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = HGY
+		}
+	}
+	
+	default = no
+
+    focus = {
+		id = HGY_bolster_our_ranks
+		icon = GFX_focus_HGY_bolster_our_ranks
+		x = 2
+		y = 0
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			HGY = {
+                capital_scope = {
+                    create_unit = {
+                        division = "name = \"Infantry Division\" division_template = \"Militia Infantry Division\" start_experience_factor = 0.0 start_equipment_factor = 0.8"
+                        owner = HGY
+                    }
+                    create_unit = {
+                        division = "name = \"Infantry Division\" division_template = \"Militia Infantry Division\" start_experience_factor = 0.0 start_equipment_factor = 0.8"
+                        owner = HGY
+                    }
+                }
+                manpower = 10000
+            }
+		}
+	}
+
+    focus = {
+		id = HGY_grab_who_we_can
+		icon = GFX_focus_HGY_grab_who_we_can
+		x = 2
+		y = 1
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+        prerequisite = { focus = HGY_bolster_our_ranks }
+		completion_reward = {
+			HGY = {
+                add_stability = -0.03
+                manpower = 25000
+            }
+		}
+	}
+
+    focus = {
+		id = HGY_expand_the_waffen
+		icon = GFX_focus_HGY_grab_who_we_can
+		x = 2
+		y = 2
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+        prerequisite = { focus = HGY_bolster_our_ranks }
+		completion_reward = {
+			HGY = {
+				add_stability = -0.02
+                capital_scope = {
+                    create_unit = {
+                        division = "name = \"Infantry Division\" division_template = \"Militia Infantry Division\" start_experience_factor = 0.0 start_equipment_factor = 0.8"
+                        owner = HGY
+                    }
+                    create_unit = {
+                        division = "name = \"Infantry Division\" division_template = \"Militia Infantry Division\" start_experience_factor = 0.0 start_equipment_factor = 0.8"
+                        owner = HGY
+                    }
+                }
+                manpower = 10000
+            }
+		}
+	}
+
+	focus = {
+		id = HGY_send_them_to_the_front
+		icon = GFX_focus_HGY_grab_who_we_can
+		x = 3
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+        prerequisite = { focus = HGY_expand_the_waffen }
+		mutually_exclusive = { focus = HGY_send_them_to_the_forts }
+		completion_reward = {
+			HGY = {
+				add_stability = -0.02
+            }
+		}
+		modifier = {
+			army_attack_factor = 0.1
+			army_org_factor = -0.1
+			army_speed_factor = 0.15
+			motorized_attack_factor = 0.25
+			mechanized_attack_factor = 0.25
+		}
+	}
+
+	focus = {
+		id = HGY_send_them_to_the_forts
+		icon = GFX_focus_HGY_grab_who_we_can
+		x = 1
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 100
+		}
+        prerequisite = { focus = HGY_expand_the_waffen }
+		mutually_exclusive = { focus = HGY_send_them_to_the_front }
+		completion_reward = {
+			HGY = {
+				add_stability = 0.02
+				manpower = -10000
+            }
+		}
+		modifier = {
+			army_defence_factor = 0.1
+			army_org_factor = 0.1
+			army_artillery_defence_factor = 0.25
+		}
+	}
+
+
+}

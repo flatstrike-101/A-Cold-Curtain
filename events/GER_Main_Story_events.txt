@@ -43,6 +43,47 @@ country_event = {
 	}
 }
 
+#The Italian Diplomat
+country_event = {
+	id = germany_main_story.5
+	title = germany_generic.5.t
+	desc = germany_generic.5.desc
+	picture = GFX_event_a_decision_not_taken_lightly
+	is_triggered_only = yes
+	option = {
+		name = germany_generic.5.a
+		ai_chance = { base = 100 }
+		add_war_support = 0.05
+		GER = {
+			add_relation_modifier = {
+				target = ITA
+				modifier = GER_unfriendly_diplomacy
+			}
+		}
+		ITA = {
+			add_relation_modifier = {
+				target = GER
+				modifier = GER_unfriendly_diplomacy
+			}
+		}
+	}
+}
+
+#The Sound of Gunshots
+country_event = {
+	id = germany_main_story.6
+	title = germany_generic.6.t
+	desc = germany_generic.6.desc
+	picture = GFX_event_a_decision_not_taken_lightly
+	is_triggered_only = yes
+	option = {
+		name = germany_generic.6.a
+		ai_chance = { base = 100 }
+		add_stability = -0.03
+		war_support = 0.03
+	}
+}
+
 ###############
 # NEWS EVENTS #
 ###############
@@ -63,5 +104,18 @@ news_event = {
 			}
 			load_focus_tree = germany_pre_civil_war_focus
 		}
+	}
+}
+
+#Mustache man dies
+news_event = {
+	id = germany_main_story.7
+	title = germany_generic.7.t
+	desc = germany_generic.7.desc
+	picture = GFX_news_event_hitler_dead
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = germany_generic.7.a
 	}
 }
