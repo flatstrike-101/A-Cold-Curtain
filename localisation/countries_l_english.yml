@@ -509,6 +509,46 @@ ITR:0 "Italy"
 ITR_DEF:0 "Italy"
 ITR_ADJ:0 "Italian"
 
+## IRM
+
+IRM_marxism_leninism:0 "Italian Provisional Government"
+IRM_marxism_leninism_DEF:0 "the Italian Provisional Government"
+IRM:0 "Italy"
+IRM_DEF:0 "Italy"
+IRM_ADJ:0 "Italian"
+
+## Nat Soc Italy
+
+INR_national_socialism:0 "Italian Social Republic"
+INR_national_socialism_DEF:0 "the Italian Social Republic"
+INR:0 "Italy"
+INR_DEF:0 "Italy"
+INR_ADJ:0 "Italian"
+
+## Religious Fascism Italy
+
+IKS_nationalism:0 "Kingdom of Italy"
+IKS_nationalism_DEF:0 "the Kingdom of Italy"
+IKS:0 "Italy"
+IKS_DEF:0 "Italy"
+IKS_ADJ:0 "Italian"
+
+## Italian Corporatist Faction
+
+IEC_fascism:0 "Italian Empire"
+IEC_fascism_DEF:0 "the Italian Empire"
+IEC:0 "Italy"
+IEC_DEF:0 "Italy"
+IEC_ADJ:0 "Italian"
+
+## Blackshirt faction
+
+IFG_nationalism:0 "Blackshirt Italy"
+IFG_nationalism_DEF:0 "the Blackshirts"
+IFG:0 "Italy"
+IFG_DEF:0 "Italy"
+IFG_ADJ:0 "Italian"
+
 ### Middle Eastern Protektorate
 
  MEP_fascism:0 "Governo Coloniale del Medio Oriente"
@@ -535,12 +575,12 @@ ITR_ADJ:0 "Italian"
 
 ### Italian Indian ocean territories
  
- IIP_fascism:0 "Italian Indian Ocean territories"
- IIP_fascism_DEF:0 "the Italian Indian Ocean territories"
+ IIP_fascism:0 "Italian Colonial Government of Arabia"
+ IIP_fascism_DEF:0 "Italian Colonial Government of Arabia"
  IIP_fascism_ADJ:0 "Italian"
  IIP:0 "Italy"
  IIP_DEF:0 "Italy"
- IIP_ADJ:0 "Italian
+ IIP_ADJ:0 "Italian Arabian"
 
  ROM_fascism:0 "Legionary Romania"
  ROM_fascism_DEF:0 "Legionary Romania"

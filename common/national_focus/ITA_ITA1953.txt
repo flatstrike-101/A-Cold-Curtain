@@ -179,7 +179,7 @@ id = ITA_cw.1
 
 	#Focus for Purge the Army
 	focus = {
-		id = ITA_purge_the_army
+		id = ITA_purge_the_army_monarch
 		icon = GFX_goal_generic_political_pressure
 		x = 4
 		y = 4
@@ -415,7 +415,7 @@ popularity = 0.15
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = ITA_secure_the_peoples_support 
-			focus = ITA_purge_the_army 
+			focus = ITA_purge_the_army_monarch
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {

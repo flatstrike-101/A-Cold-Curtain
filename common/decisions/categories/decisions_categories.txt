@@ -1,0 +1,50 @@
+the_psychological_war = {		#ID of category
+	priority = 8		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon = GFX_category_icon	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		has_country_flag = ITA_pre_cw
+	}
+	visible = {
+	tag = ITA
+	}
+}
+
+the_physical_war = {		#This is the type of category used for the spanish civil war.
+	icon = GFX_category_icon
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.	
+	
+	allowed = {
+		has_country_flag = ITA_pre_cw
+	}
+	visible = {
+		tag = ITA
+	}
+	
+	visible_when_empty = yes		
+
+	on_map_area = {		
+	state = 159 
+	state = 162
+	state = 735
+	state = 158
+	state = 805
+	state = 39
+	state = 160
+	state = 736
+	state = 800
+	state = 163
+	state = 802
+	state = 162
+	state = 157
+	state = 2
+	state = 117
+	state = 156
+	state = 115
+	state = 114
+	state = 1
+	state = 161
+		name = map_icon_strip_localisation		
+		zoom = 200		
+	}
+}
