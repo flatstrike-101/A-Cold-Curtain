@@ -61,6 +61,32 @@ ITA = {
 	color = rgb { 47 119 54 }
 	color_ui = rgb { 47 119 54 }
 }
+
+INR = {
+	color = rgb { 77 77 77 }
+	color_ui = rgb { 77 77 77 }
+}
+
+IEC = {
+	color = rgb { 55 117 52 }
+	color_ui = rgb { 55 117 52 }
+}
+
+IFG = {
+	color = rgb { 0 77 4 }
+	color_ui = rgb { 0 77 4 }
+}
+
+IKS = {
+	color = rgb { 40 99 44 }
+	color_ui = rgb { 40 99 44 }
+}
+
+IRM = {
+	color = rgb { 199 16 16 }
+	color_ui = rgb { 199 16 16 }
+}
+
 MEP = {
 	color = rgb { 37 131 46 }
 	color_ui = rgb { 37 131 46 }
