@@ -58,6 +58,10 @@ country_event = {
     		amount = -1000
 		}
 		random_owned_controlled_state = { 
+			NOT = { has_state_flag = {
+				flag = ITA_partisan_stopped
+				}
+			}
 			add_resistance = 5				
 		}
         add_popularity = {

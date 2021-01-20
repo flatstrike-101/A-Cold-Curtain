@@ -94,7 +94,7 @@ LBA = "countries/Libya.txt"
 WGR = "countries/West Germany.txt"
 DDR = "countries/East Germany.txt"
 PAL = "countries/Palestine.txt"
-ISR = "countries/Israel.txt"
+IRS = "countries/Israel.txt"
 VIN = "countries/Vietnam.txt"
 CAM = "countries/Cambodia.txt"
 MAL = "countries/Malaysia.txt"
@@ -174,7 +174,7 @@ GAM = "countries/Gambia.txt"
 WLS = "countries/Wales.txt"
 NGR = "countries/Niger.txt"
 CSA = "countries/CSA.txt"
-USB = "countries/USB.txt"#neutral US bloc during civil war in MTG
+USB = "countries/USB.txt" #neutral US bloc during civil war in MTG
 MRT = "countries/Mauritania.txt"
 NMB = "countries/Namibia.txt"
 WES = "countries/Western Sahara.txt"
@@ -222,6 +222,14 @@ PCA = "countries/Portugese Central Africa.txt"
 RKA = "countries/Zentralafrika.txt"
 RKW = "countries/Westafrika.txt"
 RKM = "countries/Madagaskar.txt"
+
+### Italian Civil War
+
+INR = "countries/Italian Social Republic (natsoc)"
+IFG = "countries/Italian Feudal Government (blackshirts)"
+IEC = "countries/Italian Empire (corporatist)"
+IKS = "countries/Kingdom of Italy (spiritualist fascism)"
+IRM = "countries/Italian Resistance Movement"
 
 ITC = "countries/ItalyCommies"
 ITR = "countries/ItalyRepublicans"
