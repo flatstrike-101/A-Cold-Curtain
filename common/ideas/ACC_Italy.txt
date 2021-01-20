@@ -12,10 +12,11 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				add_popularity = {
-                 ideology = nationalism
-                 popularity = -0.5
-}	
+				#add_popularity = {
+				#	ideology = nationalism
+				#	popularity = -0.5
+				#}	
+				# This is an effect, not a modifier. It can't be put in an idea.
 			}
 		}
 	}

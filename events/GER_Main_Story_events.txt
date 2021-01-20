@@ -32,12 +32,12 @@ country_event = {
 #A Decision not Taken Lightly
 country_event = {
 	id = germany_main_story.3
-	title = germany_generic.3.t
-	desc = germany_generic.3.desc
+	title = germany_main_story.3.t
+	desc = germany_main_story.3.desc
 	picture = GFX_event_a_decision_not_taken_lightly
 	is_triggered_only = yes
 	option = {
-		name = germany_generic.3.a
+		name = germany_main_story.3.a
 		ai_chance = { base = 100 }
 		add_stability = -0.03
 	}
@@ -46,12 +46,12 @@ country_event = {
 #The Italian Diplomat
 country_event = {
 	id = germany_main_story.5
-	title = germany_generic.5.t
-	desc = germany_generic.5.desc
+	title = germany_main_story.5.t
+	desc = germany_main_story.5.desc
 	picture = GFX_event_a_decision_not_taken_lightly
 	is_triggered_only = yes
 	option = {
-		name = germany_generic.5.a
+		name = germany_main_story.5.a
 		ai_chance = { base = 100 }
 		add_war_support = 0.05
 		GER = {
@@ -72,12 +72,12 @@ country_event = {
 #The Sound of Gunshots
 country_event = {
 	id = germany_main_story.6
-	title = germany_generic.6.t
-	desc = germany_generic.6.desc
+	title = germany_main_story.6.t
+	desc = germany_main_story.6.desc
 	picture = GFX_event_a_decision_not_taken_lightly
 	is_triggered_only = yes
 	option = {
-		name = germany_generic.6.a
+		name = germany_main_story.6.a
 		ai_chance = { base = 100 }
 		add_stability = -0.03
 		war_support = 0.03
@@ -91,13 +91,13 @@ country_event = {
 #Mustache man dies
 news_event = {
 	id = germany_main_story.4
-	title = germany_generic.4.t
-	desc = germany_generic.4.desc
+	title = germany_main_story.4.t
+	desc = germany_main_story.4.desc
 	picture = GFX_news_event_hitler_dead
 	is_triggered_only = yes
 	major = yes
 	option = {
-		name = germany_generic.4.a
+		name = germany_main_story.4.a
 		if = {
 			limit = {
 				tag = GER
@@ -107,15 +107,15 @@ news_event = {
 	}
 }
 
-#Mustache man dies
+#Excommunication of Mussolini
 news_event = {
 	id = germany_main_story.7
-	title = germany_generic.7.t
-	desc = germany_generic.7.desc
-	picture = GFX_news_event_hitler_dead
+	title = germany_main_story.7.t
+	desc = germany_main_story.7.desc
+	picture = GFX_news_event_mussolini_excommunicated
 	is_triggered_only = yes
 	major = yes
 	option = {
-		name = germany_generic.7.a
+		name = germany_main_story.7.a
 	}
 }

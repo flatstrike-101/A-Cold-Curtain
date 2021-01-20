@@ -1,4 +1,7 @@
 ﻿l_english:
+ 
+ ### IDEAS LOC ###
+
  GER_fuhrer:0 "Führer of the German Reich and People"
  GER_fuhrer_desc:0 "The Führer is our leader. He is our glorious leader, he has lead us through wars, and hasn't yet failed. He has established our great nation, and lifted our people out of poverty. In 1933, people looked at Germany as an impoverished nation. But in 1953, people look at Germany as a great power. Ruler of Western Europe. Conquerer of the Allies. And the greatest Rival to the Soviet Union and the United States of America. None of this would have been possible without him."
  GER_ss_loyalty:0 "Regain SS Loyalty"
@@ -20,16 +23,16 @@
  germany_main_story.1.a:0 "§RIn the end, we will be all that is left.§!"
  germany_main_story.2.t:0 "The Status Quo"
  germany_main_story.2.desc:0 "PLACEHOLDER"
- germany_main_story.2.a "Our Glorious Reich"
+ germany_main_story.2.a:0 "Our Glorious Reich"
  germany_main_story.5.t:0 "The Italian Diplomat"
- germany_main_story.5.desc:0 "PLACEHOLDER
+ germany_main_story.5.desc:0 "PLACEHOLDER"
  germany_main_story.5.a:0 "This has been an insult to the Reich."
- germany_generic.6.t "The Sound of Gunshots"
- germany_generic.6.desc:0 "PLACEHOLDER"
- germany_generic.6.a:0 "Chaos is unfolding in Italy..."
- germany_generic.7.t:0 "The Excommunication of Mussolini"
- germany_generic.7.desc:0 "PLACEHOLDER"
- germany_generic.7.a:0 "Mussolini has lost a valuable friend..."
+ germany_main_story.6.t:0 "The Sound of Gunshots"
+ germany_main_story.6.desc:0 "PLACEHOLDER"
+ germany_main_story.6.a:0 "Chaos is unfolding in Italy..."
+ germany_main_story.7.t:0 "The Excommunication of Mussolini"
+ germany_main_story.7.desc:0 "Earlier this morning, the world recieved news from the reichsfuhrer of germany, Adolf Hitler where he was making a speech in Vienna. He began his speech off in a somber tone, as if he was speaking about a lost friend or someone he loved. He continued for a moment, speaking of the glories of World War II and the combined efforts of the Axis powers to make the world a better place. Once finished, he glanced at the mob of his unyeilding supporters and said to his advisors, 'We must tell them the truth'. And Hitler began his speech announcing that he has cut diplomatic ties with his former ally Italy. He described it as an 'Excommunication'. \n\nAlthough many suspected that relations between the two powers were rapidly deteriorating, none could have predicted such action as this happening so soon. He proceeded to speak of the glories and treasures that were claimed through efforts between the two nations. He then stopped, seeming to freeze time in. And when he spoke, there was power. He spoke of how the Italians had been there friends, and betrayed them. They formed an alliance to rival that of the Reich. They reaped the rewards of war, and made Germany pay the bill.\n\nThe crowd below, in the courtyard exclaimed in outrage. And just like that, the speech ended and Hitler was gone."
+ germany_main_story.7.a:0 "Mussolini has gained a powerful enemy..."
 
  ### FOCUS LOC ###
 
@@ -224,3 +227,8 @@
  GER_the_grand_holdout_desc:0 ""
  GER_till_the_last_man:0 "Till the last Man"
  GER_till_the_last_man_desc:0 ""
+
+ ### OPINION LOC ###
+
+ GER_unfriendly_diplomacy:0 "Unfriendly Diplomacy"
+ GER_cut_ties:0 "Cut Ties"

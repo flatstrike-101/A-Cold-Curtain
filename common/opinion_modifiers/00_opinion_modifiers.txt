@@ -1099,10 +1099,10 @@ opinion_modifiers = {
 	##########
 	
 	GER_unfriendly_diplomacy = {
-		value = -30
+		value = 30
 	}
 	
 	GER_cut_ties = {
-		value = -60
+		value = 60
 	}
 }
