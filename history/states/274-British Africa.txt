@@ -1,3 +1,4 @@
+
 state={
 	id=274
 	name="STATE_274"
@@ -5,24 +6,18 @@ state={
 	history={
 		owner = RKW
 		add_core_of = GHA
-		victory_points = {
-			10862 1 
-		}
 		buildings = {
 			infrastructure = 3
-			10862 = {
-				naval_base = 2
-
-			}
-
 		}
-
+		victory_points = {
+			12787 1
+		}
 	}
 
 	provinces={
-		8039 8096 10862 12742 12785 12787 13136 
+		12787 
 	}
-	manpower=3163600
+	manpower=2390190
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

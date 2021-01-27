@@ -1,0 +1,25 @@
+state={
+	id=827
+	name="STATE_827"
+	provinces={
+		10862 12742 
+	}
+	history = {
+		owner = RKW
+		add_core_of = GHA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 0
+			industrial_complex = 0
+			10862 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			10862 3
+		}
+	}
+	manpower=2080208
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

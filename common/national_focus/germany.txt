@@ -119,27 +119,29 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			GER = {
-				add_relation_modifier = {
-					target = ITA
-					modifier = GER_cut_ties
+			hidden = {
+				GER = {
+					add_relation_modifier = {
+						target = ITA
+						modifier = GER_cut_ties
+					}
+					remove_opinion_modifier = {
+						target = ITA
+						modifier = GER_unfriendly_diplomacy
+					}
 				}
-				remove_opinion_modifier = {
-					target = ITA
-					modifier = GER_unfriendly_diplomacy
+				ITA = {
+					add_relation_modifier = {
+						target = GER
+						modifier = GER_cut_ties
+					}
+					remove_opinion_modifier = {
+						target = GER
+						modifier = GER_unfriendly_diplomacy
+					}
 				}
+				add_stability = 0.05
 			}
-			ITA = {
-				add_relation_modifier = {
-					target = GER
-					modifier = GER_cut_ties
-				}
-				remove_opinion_modifier = {
-					target = GER
-					modifier = GER_unfriendly_diplomacy
-				}
-			}
-			add_stability = 0.05
 		}
 	}
 

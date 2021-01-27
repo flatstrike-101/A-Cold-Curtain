@@ -1,0 +1,19 @@
+state={
+	id=826
+	name="STATE_826"
+	provinces={
+		1992 4889 4952 7978 8034 10831 12731 12817 12900 
+	}
+	history = {
+		owner = RKW
+		add_core_of = GHA
+		buildings = {
+			infrastructure = 4
+			arms_factory = 0
+			industrial_complex = 0
+
+		}
+	}
+	manpower=25239832
+	buildings_max_level_factor=1.000
+}
