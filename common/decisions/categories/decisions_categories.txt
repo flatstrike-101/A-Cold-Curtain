@@ -1,9 +1,8 @@
 the_psychological_war = {		#ID of category
-	priority = 8		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
+	priority = 6		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
 	icon = GFX_category_icon	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
 	
 	allowed = {
-		has_country_flag = ITA_pre_cw
 	}
 	visible = {
 	tag = ITA
@@ -12,10 +11,9 @@ the_psychological_war = {		#ID of category
 
 the_physical_war = {		#This is the type of category used for the spanish civil war.
 	icon = GFX_category_icon
-	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.	
+	priority = 7		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.	
 	
 	allowed = {
-		has_country_flag = ITA_pre_cw
 	}
 	visible = {
 		tag = ITA
@@ -46,5 +44,27 @@ the_physical_war = {		#This is the type of category used for the spanish civil w
 	state = 161
 		name = map_icon_strip_localisation		
 		zoom = 200		
+	}
+}
+
+passing_reforms = {
+	icon = GFX_category_icon
+	priority = 8		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.	
+	
+	allowed = {
+	}
+	visible = {
+		tag = ITA
+	}
+}
+
+the_italian_civil_war = {
+	icon = GFX_category_icon
+	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.	
+	
+	allowed = {
+	}
+	visible = {
+		tag = ITA
 	}
 }

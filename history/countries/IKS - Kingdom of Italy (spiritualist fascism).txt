@@ -4,7 +4,7 @@ set_convoys = 20
 
 
 set_politics = {
-	ruling_party = nationalism
+	ruling_party = fascism
 	last_election = "1941.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -14,21 +14,21 @@ set_popularities = {
 	conservatism = 0
 	socialism = 10
 	marxism_leninism = 0
-	fascism = 20
-	nationalism = 70
+	fascism = 70
+	nationalism = 20
 	national_socialism = 0
 }
 
 add_ideas = {
-	
+	Civil_war
 }
 
 create_country_leader = {
-	name = "Niccolo Giani"
-	desc = "POLITICS_GIANI_DESC"
-	picture = "Portrait_Niccolo_Giani.dds"
+	name = "Giuseppe Tucci"
+	desc = "POLITICS_TUCCI_DESC"
+	picture = "Portrait_Giuseppe_Tucci.dds"
 	expire = "1968.1.1"
-	ideology = religious_nationalism
+	ideology = spiritualist_fascism
 	traits = {
 	}
 }

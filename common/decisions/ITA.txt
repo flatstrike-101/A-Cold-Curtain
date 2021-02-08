@@ -1,27 +1,366 @@
 
 the_psychological_war = {
-	spread_propaganda = {		#ID of the decision, must not contain spaces!
 
-		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
-		
-		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
-		
-		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+	totalitarian_decay = {
+		allowed = {tag = ITA}
+		visible = {
+			ROOT = {
+				is_ai = no
+			}
+			tag = ITA
 		}
-		
-		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
-		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		available = {  }
+		activation = { 
+			has_country_flag = ITA_pre_cw
+			tag = ITA
+			check_variable = { ITA.totalitarianism > 0 }
+		}
+		days_mission_timeout = 30
+		timeout_effect = {
+			add_to_variable = {
+				var = ITA.totalitarianism
+				value = -1
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
+	
+	totalitarian_check = {
+		allowed = {tag = ITA}
+		visible = {
+			ROOT = {
+				is_ai = no
+			}
+			tag = ITA
+		}
+		available = { has_country_flag = big_event_italy_cw }
+		activation = { 
+			has_country_flag = ITA_pre_cw
+			tag = ITA
+			check_variable = { ITA.totalitarianism > 50 }
+		}
+		days_mission_timeout = 30
+		timeout_effect = {
+			add_to_variable = {
+				var = ITA.reforms
+				value = 1
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
 
-		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+	spread_propaganda = {	
+
+		icon = GFX_decision_icon_default	
+		available = {}
+		
+		fire_only_once = no		
+		days_re_enable = 5	
+
+		visible = {		
 			tag = ITA	
 		}		
 
-		cost = 10		#The cost to execute the decision, by default its political power.
+		cost = 10		
 
-		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		complete_effect = {		
+			add_to_variable = {
+				var = ITA.totalitarianism
+				value = 1
+			}
 		}
 
-		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+	
+	install_survailance_systems = {	
+
+		icon = GFX_decision_icon_default	
+		available = {}
+		
+		fire_only_once = no		
+		days_re_enable = 5	
+
+		visible = {		
+			tag = ITA	
+		}		
+
+		cost = 25		
+
+		complete_effect = {		
+			add_to_variable = {
+				var = ITA.totalitarianism
+				value = 5
+			}
+			add_to_variable = {
+				var = ITA.cameras
+				value = 1
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+
+	modernize_survailance_systems = {	
+
+		icon = GFX_decision_icon_default	
+		available = {}
+		
+		fire_only_once = no		
+		days_re_enable = 5	
+
+		visible = {		
+			tag = ITA	
+			check_variable = { ITA.cameras > 1 }
+			check_variable = { ITA.cameras_modernity < ITA.cameras }
+		}		
+
+		cost = 5		
+
+		complete_effect = {		
+			add_to_variable = {
+				var = ITA.cameras_modernity
+				value = 1
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+}
+
+passing_reforms = {
+
+	draft_labor_reforms = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default	
+		
+		
+		available = {		
+		}
+		
+		fire_only_once = no	
+		days_remove = 10	
+		days_re_enable = 10	
+
+		visible = {		
+			tag = ITA	
+			check_variable = { ITA.prepared_labor_reform = 0 }
+		}		
+
+		cost = 25		
+
+		complete_effect = {	
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = ITA.prepared_labor_reform
+				value = 1
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+
+	pass_labor_reforms = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default	
+		
+		
+		available = {	
+
+		}
+		
+		fire_only_once = no	
+		days_remove = 30	
+		days_re_enable = 30	
+
+		visible = {		
+			tag = ITA	
+			check_variable = { ITA.prepared_labor_reform = 1 }
+		}		
+
+		cost = 25		
+
+		
+
+		complete_effect = {	
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = ITA.prepared_labor_reform
+				value = -1
+			}
+			add_to_variable = {
+				var = ITA.reforms
+				value = 5
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+
+	### social reforms
+
+	draft_social_reforms = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default	
+		
+		
+		available = {	
+
+		}
+		
+		fire_only_once = no		
+		days_remove = 10
+		days_re_enable = 10	
+
+		visible = {		
+			tag = ITA	
+			check_variable = { ITA.prepared_social_reform = 0 }
+		}		
+
+		cost = 25		
+
+		complete_effect = {	
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = ITA.prepared_social_reform
+				value = 1
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+	pass_social_reforms = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default	
+		
+		
+		available = {	
+
+		}
+		
+		fire_only_once = no	
+		days_remove = 30	
+		days_re_enable = 10	
+
+		visible = {		
+			tag = ITA	
+			check_variable = { ITA.prepared_social_reform = 1 }
+		}		
+
+		cost = 25		
+
+		complete_effect = {	
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = ITA.prepared_social_reform
+				value = -1
+			}
+			add_to_variable = {
+				var = ITA.reforms
+				value = 5
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+
+	### economic reforms
+
+	draft_economic_reforms = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default	
+		
+		
+		available = {	
+
+		}
+		
+		fire_only_once = no	
+		days_remove = 10	
+		days_re_enable = 10	
+
+		visible = {		
+			tag = ITA	
+			check_variable = { ITA.prepared_economic_reform = 0 }
+		}		
+
+		cost = 25		
+
+		complete_effect = {	
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = ITA.prepared_economic_reform
+				value = 1
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+	pass_economic_reforms = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_icon_default	
+		
+		
+		available = {	
+
+		}
+		
+		fire_only_once = no	
+		days_remove = 30	
+		days_re_enable = 30	
+
+		visible = {		
+			tag = ITA	
+			check_variable = { ITA.prepared_economic_reform = 1 }
+		}		
+
+		cost = 25		
+
+		complete_effect = {	
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = ITA.prepared_economic_reform
+				value = -1
+			}
+			add_to_variable = {
+				var = ITA.reforms
+				value = 5
+			}
+		}
+
+		ai_will_do = {	
 			factor = 0
 		}
 	}
@@ -33,26 +372,27 @@ the_physical_war = {
 		icon = GFX_decision_icon_default
 		on_map_mode = map_only
 		highlight_states = { 
-		state = 159 
-		state = 162
-		state = 735
-		state = 158
-		state = 805
-		state = 39
-		state = 160
-		state = 736
-		state = 800
-		state = 163
-		state = 802
-		state = 162
-		state = 157
-		state = 2
-		state = 117
-		state = 156
-		state = 115
-		state = 114
-		state = 1
-		state = 161
+			is_core_state = yes
+		# state = 159 
+		# state = 162
+		# state = 735
+		# state = 158
+		# state = 805
+		# state = 39
+		# state = 160
+		# state = 736
+		# state = 800
+		# state = 163
+		# state = 802
+		# state = 162
+		# state = 157
+		# state = 2
+		# state = 117
+		# state = 156
+		# state = 115
+		# state = 114
+		# state = 1
+		# state = 161
 		}
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
@@ -74,21 +414,25 @@ the_physical_war = {
 		cost = 10	
 
 		complete_effect = {		#The effects to execute once the decision icon is clicked.
-		random_list = {
-			50 = {
-				army_experience = 10
-				add_equipment_to_stockpile {
-					type = infantry_equipment
-    				amount = -100
-				}
-				set_state_flag = {
-					target = THIS
-					name = ITA_partisan_stopped } 
-			}
-			50 = {
-				event = ITA_partisan.3
-			}
 		}
+
+		remove_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+						type = infantry_equipment
+						amount = -100
+					}
+					add_to_variable = {
+						var = THIS.partisan_unrest
+						value = -10
+					}
+				}
+				50 = {
+					country_event = ITA_partisan.3
+				}
+			}
 		}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION
@@ -97,5 +441,32 @@ the_physical_war = {
 			factor = 1
 		}
 	
+	}
+}
+
+the_italian_civil_war = {
+	ITA_cw_start = {
+		allowed = {tag = ITA}
+		visible = {
+			ROOT = {
+				is_ai = no
+			}
+			tag = ITA
+		}
+		available = {
+			check_variable = { ITA.reforms = 10000 }
+			check_variable = { ITA.totalitarianism > 65 }
+		}
+		activation = { 
+			has_country_flag = ITA_pre_cw
+			tag = ITA
+		}
+		days_mission_timeout = 2555
+		timeout_effect = {
+			hidden_effect = { set_country_flag = big_event_italy_cw }
+		}
+		complete_effect = {
+			add_stability = 0.5
+		}
 	}
 }

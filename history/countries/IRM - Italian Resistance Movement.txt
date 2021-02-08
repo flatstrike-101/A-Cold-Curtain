@@ -20,7 +20,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	
+	Civil_war
 }
 
 create_country_leader = {

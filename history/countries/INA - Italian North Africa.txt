@@ -1,34 +1,34 @@
-capital = 910
+capital = 1149
 
-set_convoys = 20
+set_convoys = 0
 
 
 set_politics = {
-	ruling_party = nationalism
+	ruling_party = fascism
 	last_election = "1941.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	liberalism = 0
+	liberalism = 10
 	conservatism = 10
 	socialism = 0
 	marxism_leninism = 0
-	fascism = 10
-	nationalism = 70
-	national_socialism = 10
+	fascism = 50
+	nationalism = 30
+	national_socialism = 0
 }
 
 add_ideas = {
-	Civil_war
+	
 }
 
 create_country_leader = {
-	name = "Pietro Mannelli"
-	desc = "POLITICS_MANNELLI_DESC"
-	picture = "Portrait_Pietro_Mannelli.dds"
+	name = "Italo Gariboldie"
+	desc = "POLITICS_GARIBOLDIE_DESC"
+	picture = "Portrait_Italo_Gariboldi.dds"
 	expire = "1968.1.1"
-	ideology = monarchism
+	ideology = classical_fascism
 	traits = {
 	}
 }

@@ -43,8 +43,8 @@ COL = "countries/Colombia.txt"
 COS = "countries/Costa Rica.txt"
 ECU = "countries/Ecuador.txt"
 ELS = "countries/El Salvador.txt"
-ETH = "countries/Ethiopia.txt"
-MEP = "countries/Middle-East.txt"
+
+
 GUA = "countries/Guatemla.txt"
 HON = "countries/Honduras.txt"
 IRQ = "countries/Iraq.txt"
@@ -88,8 +88,7 @@ ICE = "countries/Iceland.txt"
 LEB = "countries/Lebanon.txt"
 JOR = "countries/Jordan.txt"
 SYR = "countries/Syria.txt"
-EGY = "countries/Egypt.txt"
-IIP = "countries/Italian Indian Colonies.txt"
+
 LBA = "countries/Libya.txt"
 WGR = "countries/West Germany.txt"
 DDR = "countries/East Germany.txt"
@@ -235,6 +234,13 @@ ITC = "countries/ItalyCommies"
 ITR = "countries/ItalyRepublicans"
 ITV = "countries/Venice"
 
+## Italian Colonies
+
+MEP = "countries/Middle-East.txt"
+EGY = "countries/Egypt.txt"
+IIP = "countries/Italian Indian Colonies.txt"
+ETH = "countries/Ethiopia.txt"
+INA = "countries/Italian North Africa"
 
 ### GERMAN CIVIL WAR COUNTRIES ###
 

@@ -15,7 +15,33 @@ ideas = {
 				add_popularity = {
                  ideology = nationalism
                  popularity = -0.5
-}	
+				}	
+			}
+		}
+	}
+
+hidden_ideas = {
+	country = {
+		Civil_war = {
+			picture = civil_war
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = { has_war = no }
+			removal_cost = -1
+			modifier = {
+				rule = {
+					can_join_opposite_factions = no
+					can_create_factions = no
+					can_be_called_to_war = no
+					can_force_government = no
+					can_guarantee_other_ideologies = no
+					can_join_factions = no
+				}	
 			}
 		}
 	}

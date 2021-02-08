@@ -1,0 +1,25 @@
+state= {
+	id=823
+	name="Taliabu"
+	manpower = 37000
+	
+	state_category = pastoral
+
+	history= {
+		victory_points = { 7369 1 }
+		owner = USA
+		add_core_of = INS
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			radar_station = 1
+			7369 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces= {
+		7369
+ 	}
+}
