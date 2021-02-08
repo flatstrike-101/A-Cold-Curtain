@@ -1,0 +1,121 @@
+add_namespace = germany_main_story
+add_namespace = germany_generic
+
+#The Two Powers of Europe
+country_event = {
+	id = germany_main_story.1
+	title = germany_main_story.1.t
+	desc = germany_main_story.1.desc
+	picture = GFX_event_germany_two_masters_of_europe
+	is_triggered_only = yes
+	option = {
+		name = germany_main_story.1.a
+		ai_chance = { base = 100 }
+		add_war_support = 0.03
+	}
+}
+
+#The Status Quo
+country_event = {
+	id = germany_main_story.2
+	title = germany_main_story.2.t
+	desc = germany_main_story.2.desc
+	picture = GFX_event_germany_two_masters_of_europe_bw
+	is_triggered_only = yes
+	option = {
+		name = germany_main_story.2.a
+		ai_chance = { base = 100 }
+		add_stability = -0.03
+	}
+}
+
+#A Decision not Taken Lightly
+country_event = {
+	id = germany_main_story.3
+	title = germany_main_story.3.t
+	desc = germany_main_story.3.desc
+	picture = GFX_event_a_decision_not_taken_lightly
+	is_triggered_only = yes
+	option = {
+		name = germany_main_story.3.a
+		ai_chance = { base = 100 }
+		add_stability = -0.03
+	}
+}
+
+#The Italian Diplomat
+country_event = {
+	id = germany_main_story.5
+	title = germany_main_story.5.t
+	desc = germany_main_story.5.desc
+	picture = GFX_event_a_decision_not_taken_lightly
+	is_triggered_only = yes
+	option = {
+		name = germany_main_story.5.a
+		ai_chance = { base = 100 }
+		add_war_support = 0.05
+		GER = {
+			add_relation_modifier = {
+				target = ITA
+				modifier = GER_unfriendly_diplomacy
+			}
+		}
+		ITA = {
+			add_relation_modifier = {
+				target = GER
+				modifier = GER_unfriendly_diplomacy
+			}
+		}
+	}
+}
+
+#The Sound of Gunshots
+country_event = {
+	id = germany_main_story.6
+	title = germany_main_story.6.t
+	desc = germany_main_story.6.desc
+	picture = GFX_event_a_decision_not_taken_lightly
+	is_triggered_only = yes
+	option = {
+		name = germany_main_story.6.a
+		ai_chance = { base = 100 }
+		add_stability = -0.03
+		war_support = 0.03
+	}
+}
+
+###############
+# NEWS EVENTS #
+###############
+
+#Mustache man dies
+news_event = {
+	id = germany_main_story.4
+	title = germany_main_story.4.t
+	desc = germany_main_story.4.desc
+	picture = GFX_news_event_hitler_dead
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = germany_main_story.4.a
+		if = {
+			limit = {
+				tag = GER
+			}
+			load_focus_tree = germany_pre_civil_war_focus
+		}
+	}
+}
+
+#Excommunication of Mussolini
+news_event = {
+	id = germany_main_story.7
+	title = germany_main_story.7.t
+	desc = germany_main_story.7.desc
+	picture = GFX_news_event_mussolini_excommunicated
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = germany_main_story.7.a
+	}
+}

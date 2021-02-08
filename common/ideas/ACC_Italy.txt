@@ -12,6 +12,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
+italy
 				add_popularity = {
                  ideology = nationalism
                  popularity = -0.5
@@ -42,6 +43,11 @@ hidden_ideas = {
 					can_guarantee_other_ideologies = no
 					can_join_factions = no
 				}	
+				#add_popularity = {
+				#	ideology = nationalism
+				#	popularity = -0.5
+				#}	
+				# This is an effect, not a modifier. It can't be put in an idea.
 			}
 		}
 	}

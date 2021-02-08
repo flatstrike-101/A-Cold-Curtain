@@ -1,0 +1,41 @@
+﻿capital = 48
+
+#TROOPS
+oob = "BUL_1936" #VANILLA & DLC
+set_convoys = 5 #VANILLA & DLC
+
+set_politics = {
+	ruling_party = nationalism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberalism = 0
+	conservatism = 7
+	socialism = 3
+	marxism_leninism = 0
+	fascism = 14
+	nationalism = 64
+	national_socialism = 12
+}
+
+create_country_leader = {
+	name = "Prince Kirill"
+	desc = "POLITICS_PRINCE_KIRILL_DESC"
+	picture = "Prince_Kirill_Leader_BUL.dds"
+	expire = "1965.1.1"
+	ideology = monarchism
+	traits = {
+	}
+}
+
+set_technology = { #VANILLA & DLC
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	fuel_silos = 1
+}

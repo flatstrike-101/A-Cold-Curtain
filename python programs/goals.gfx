@@ -1,0 +1,338 @@
+SpriteTypes = {
+
+    SpriteType = {
+        name = "GFX_focus_GER_choose_the_right_fit_shine"
+        texturefile = "gfx/interface/goals/GER_choose_the_right_fit.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_stick_with_goring_shine"
+        texturefile = "gfx/interface/goals/GER_stick_with_goring.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_my_good_old_fighter_shine"
+        texturefile = "gfx/interface/goals/GER_my_good_old_fighter.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_gather_him_support_shine"
+        texturefile = "gfx/interface/goals/GER_gather_him_support.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_your_friend_keitel_shine"
+        texturefile = "gfx/interface/goals/GER_your_friend_keitel.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_reichsmarchall_of_germany_shine"
+        texturefile = "gfx/interface/goals/GER_reichsmarchall_of_germany.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_get_the_people_more_aware_shine"
+        texturefile = "gfx/interface/goals/GER_get_the_people_more_aware.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_the_handing_off_shine"
+        texturefile = "gfx/interface/goals/GER_the_handing_off.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_luftwaffe_dominance_shine"
+        texturefile = "gfx/interface/goals/GER_luftwaffe_dominance.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_our_superior_general_staff_shine"
+        texturefile = "gfx/interface/goals/GER_our_superior_general_staff.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_get_the_wehrmacht_ready_shine"
+        texturefile = "gfx/interface/goals/GER_get_the_wehrmacht_ready.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_any_waffen_ss_shine"
+        texturefile = "gfx/interface/goals/GER_any_waffen_ss.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_ready_the_heer_shine"
+        texturefile = "gfx/interface/goals/GER_ready_the_heer.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_ready_the_luftwaffe_shine"
+        texturefile = "gfx/interface/goals/GER_ready_the_luftwaffe.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_gather_the_kreigsmarine_shine"
+        texturefile = "gfx/interface/goals/GER_gather_the_kreigsmarine.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_prepare_for_battle_shine"
+        texturefile = "gfx/interface/goals/GER_prepare_for_battle.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_go_with_himmler_shine"
+        texturefile = "gfx/interface/goals/GER_go_with_himmler.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_my_loyal_heinrich_shine"
+        texturefile = "gfx/interface/goals/GER_my_loyal_heinrich.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_reichsfurer_to_fuhrer_shine"
+        texturefile = "gfx/interface/goals/GER_reichsfurer_to_fuhrer.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_the_most_support_shine"
+        texturefile = "gfx/interface/goals/GER_the_most_support.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_gather_the_germanic_ss_shine"
+        texturefile = "gfx/interface/goals/GER_gather_the_germanic_ss.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_hand_off_dietrich_shine"
+        texturefile = "gfx/interface/goals/GER_hand_off_dietrich.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_eyes_on_hausser_shine"
+        texturefile = "gfx/interface/goals/GER_eyes_on_hausser.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_are_they_capable_of_fighting_shine"
+        texturefile = "gfx/interface/goals/GER_are_they_capable_of_fighting.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_support_them_all_we_can_shine"
+        texturefile = "gfx/interface/goals/GER_support_them_all_we_can.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_gather_advisors_shine"
+        texturefile = "gfx/interface/goals/GER_gather_advisors.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_kaltenbrunner_shine"
+        texturefile = "gfx/interface/goals/GER_kaltenbrunner.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_ribbentrop_shine"
+        texturefile = "gfx/interface/goals/GER_ribbentrop.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_dietrich_shine"
+        texturefile = "gfx/interface/goals/GER_dietrich.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_assemble_the_waffen_ss_shine"
+        texturefile = "gfx/interface/goals/GER_assemble_the_waffen_ss.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_call_on_speer_shine"
+        texturefile = "gfx/interface/goals/GER_call_on_speer.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_my_true_friend_shine"
+        texturefile = "gfx/interface/goals/GER_my_true_friend.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_no_one_will_support_shine"
+        texturefile = "gfx/interface/goals/GER_no_one_will_support.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_figure_out_who_will_back_us_shine"
+        texturefile = "gfx/interface/goals/GER_figure_out_who_will_back_us.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_get_the_industrial_land_shine"
+        texturefile = "gfx/interface/goals/GER_get_the_industrial_land.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_fortify_while_we_can_shine"
+        texturefile = "gfx/interface/goals/GER_fortify_while_we_can.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_prepare_for_gorings_onslaught_shine"
+        texturefile = "gfx/interface/goals/GER_prepare_for_gorings_onslaught.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_gather_the_generals_shine"
+        texturefile = "gfx/interface/goals/GER_gather_the_generals.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_have_faith_in_hitler_shine"
+        texturefile = "gfx/interface/goals/GER_have_faith_in_hitler.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_watch_our_backs_to_burgundy_shine"
+        texturefile = "gfx/interface/goals/GER_watch_our_backs_to_burgundy.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_forever_in_need_shine"
+        texturefile = "gfx/interface/goals/GER_forever_in_need.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_chose_goebbels_shine"
+        texturefile = "gfx/interface/goals/GER_chose_goebbels.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_my_old_friend_shine"
+        texturefile = "gfx/interface/goals/GER_my_old_friend.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_the_perfect_propaganda_shine"
+        texturefile = "gfx/interface/goals/GER_the_perfect_propaganda.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_take_to_the_radios_shine"
+        texturefile = "gfx/interface/goals/GER_take_to_the_radios.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_gather_popular_support_shine"
+        texturefile = "gfx/interface/goals/GER_gather_popular_support.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_adhere_to_the_public_shine"
+        texturefile = "gfx/interface/goals/GER_adhere_to_the_public.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_what_the_frick_shine"
+        texturefile = "gfx/interface/goals/GER_what_the_frick.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_adhere_to_the_heer_shine"
+        texturefile = "gfx/interface/goals/GER_adhere_to_the_heer.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_schorner_surprise_shine"
+        texturefile = "gfx/interface/goals/GER_schorner_surprise.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_adhere_to_the_kriegsmarine_shine"
+        texturefile = "gfx/interface/goals/GER_adhere_to_the_kriegsmarine.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_my_friend_donitz_shine"
+        texturefile = "gfx/interface/goals/GER_my_friend_donitz.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_adhere_to_the_loyal_ss_shine"
+        texturefile = "gfx/interface/goals/GER_adhere_to_the_loyal_ss.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_use_bouhler_shine"
+        texturefile = "gfx/interface/goals/GER_use_bouhler.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_the_new_eternal_fuhrer_shine"
+        texturefile = "gfx/interface/goals/GER_the_new_eternal_fuhrer.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_ready_our_forces_shine"
+        texturefile = "gfx/interface/goals/GER_ready_our_forces.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_decide_upon_bormann_shine"
+        texturefile = "gfx/interface/goals/GER_decide_upon_bormann.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_the_backroom_stabber_shine"
+        texturefile = "gfx/interface/goals/GER_the_backroom_stabber.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_reassure_the_firm_trust_shine"
+        texturefile = "gfx/interface/goals/GER_reassure_the_firm_trust.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_find_support_shine"
+        texturefile = "gfx/interface/goals/GER_find_support.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_build_up_in_munich_shine"
+        texturefile = "gfx/interface/goals/GER_build_up_in_munich.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_fortify_our_positions_shine"
+        texturefile = "gfx/interface/goals/GER_fortify_our_positions.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_prepare_for_the_long_game_shine"
+        texturefile = "gfx/interface/goals/GER_prepare_for_the_long_game.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_mobilize_the_troops_shine"
+        texturefile = "gfx/interface/goals/GER_mobilize_the_troops.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_get_our_troops_ready_shine"
+        texturefile = "gfx/interface/goals/GER_get_our_troops_ready.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_the_grand_holdout_shine"
+        texturefile = "gfx/interface/goals/GER_the_grand_holdout.dds"
+    }
+
+    SpriteType = {
+        name = "GFX_focus_GER_till_the_last_man_shine"
+        texturefile = "gfx/interface/goals/GER_till_the_last_man.dds"
+    }
+
+}

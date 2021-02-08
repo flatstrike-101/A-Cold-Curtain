@@ -34,3 +34,47 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+create_field_marshal = {
+	name = "Paul Hausser"
+	picture = "General_Paul_Hausser.dds"
+	traits = { aggressive_assaulter armor_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Sepp Dietrich"
+	picture = "General_Sepp_Dietrich.dds"
+	traits = { career_officer trait_reckless }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Walter Von Reichenau"
+	picture = "General_Walter_Von_Reichenau.dds"
+	traits = { aggressive_assaulter offensive_doctrine infantry_officer }
+	skill = 5
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Felix Steiner"
+	picture = "General_Felix_Steiner.dds"
+	traits = { inflexible_strategist armor_officer }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}

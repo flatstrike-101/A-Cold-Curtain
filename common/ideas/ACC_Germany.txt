@@ -1,0 +1,100 @@
+ideas = {
+
+	country = {
+		GER_fuhrer = {
+		    picture = fuhrer
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_stability_factor = 0.25
+				war_support_factor = 0.1
+			}
+		}
+		GER_ss_loyalty = {
+		    picture = ss_loyalty
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				training_time_factor = 0.25
+			}
+		}
+		GER_lost_living_space = {
+		    picture = lost_living_space
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.1
+				production_lack_of_resource_penalty_factor = 0.5 
+			}
+		}
+		GER_soviet_relations = {
+		    picture = soviet_relations
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.1
+				political_power_gain = -0.3
+			}
+		}
+		GER_declining_economy = {
+		    picture = declining_economy
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.25
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.25
+			}
+		}
+		GER_aftermath_of_tannenbaum = {
+		    picture = aftermath_of_tannenbaum
+		
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.3
+			}
+		}
+	}
+} 

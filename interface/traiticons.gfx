@@ -1,0 +1,9 @@
+spriteTypes = {	
+
+	#### Generic continuous goal icons
+
+	SpriteType = {
+	name = "GFX_trait_luftwaffe_general"
+	texturefile = "gfx/interface/traits/trait_luftwaffe_general.dds"			
+	}	
+}

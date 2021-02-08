@@ -3,15 +3,15 @@ German_Civil_War_Start = {
 		transfer_state = 50
 	}
 	tag = GOY
-	GOY = {
-		annex_country = {
-			target = GER
-			transfer_troops = no
-		}
-	}
 	SWI = {
 		transfer_state = 3
 		transfer_state = 151
+	}
+	GRE = {
+		transfer_state = 815
+	}
+	BUL = {
+		transfer_state = 816
 	}
 	BGY = {
 		transfer_state = 4

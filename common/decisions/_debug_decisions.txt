@@ -279,4 +279,34 @@ debug_decisions = {
 		}
 	}
 
+	attack_buff = {
+
+		icon = generic_research
+
+		available = {
+			always = yes
+		}
+
+		visible = {
+			always = yes
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			
+		}
+		modifier = {
+			army_attack_factor = 100.0
+			army_defence_factor = 100.0
+			army_org_factor = 100.0
+			army_morale_factor = 100.0
+			army_org_regain = 100.0
+			breakthrough_factor = 100.0
+			dig_in_speed_factor = 100.0
+			experience_gain_army = 100.0
+		}
+	}
+
 }

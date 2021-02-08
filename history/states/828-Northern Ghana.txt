@@ -1,0 +1,20 @@
+state={
+	id=828
+	name="STATE_828"
+	provinces={
+		8039 8096 
+	}
+	history = {
+		owner = RKW
+		add_core_of = GHA
+		buildings = {
+			infrastructure = 2
+			arms_factory = 0
+			industrial_complex = 0
+
+		}
+	}
+	manpower=1239730
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

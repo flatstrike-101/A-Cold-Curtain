@@ -1,0 +1,32 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_event_italian_cw"
+        texturefile = "gfx/event_pictures/event_italian_cw.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_event_germany_two_masters_of_europe"
+        texturefile = "gfx/event_pictures/event_two_masters_of_europe.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_event_germany_two_masters_of_europe_bw"
+        texturefile = "gfx/event_pictures/event_two_masters_of_europe_b&w.dds"
+    }
+
+    spriteType = {
+        name = "GFX_event_a_decision_not_taken_lightly"
+        texturefile = "gfx/event_pictures/event_a_decision_not_taken_lightly.dds"
+    }
+
+    spriteType = {
+        name = "GFX_news_event_hitler_dead"
+        texturefile = "gfx/event_pictures/news_event_hitler_dead.dds"
+    }
+
+    spriteType = {
+        name = "GFX_news_event_mussolini_excommunicated"
+        texturefile = "gfx/event_pictures/news_event_mussolini_excommunicated.dds"
+    }
+}

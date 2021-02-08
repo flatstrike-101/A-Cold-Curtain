@@ -27,8 +27,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				trade_laws_cost_factor = 0.25
-				economy_cost_factor	= 0.25
+				trade_opinion_factor = 0.25
+				consumer_goods_factor = 0.1
 			}
 		}
 		SCO_fascist_groups = {
