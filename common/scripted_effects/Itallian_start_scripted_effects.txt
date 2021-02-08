@@ -1,0 +1,127 @@
+Italian_start_general = {
+
+	### Variables
+
+	set_variable = { 
+		var = 158.partisan_unrest 
+		value = 10
+	}
+	set_variable = { 
+		var = 159.partisan_unrest 
+		value = 10
+	}
+	set_variable = { 
+		var = 39.partisan_unrest 
+		value = 10
+	}
+
+	##
+
+	set_variable = { 
+		var = 161.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 160.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 800.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 114.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 805.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 735.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 115.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 802.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 736.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 1.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 116.partisan_unrest 
+		value = 60
+	}
+	set_variable = { 
+		var = 163.partisan_unrest 
+		value = 60
+	}
+
+	##
+
+	set_variable = { 
+		var = 157.partisan_unrest 
+		value = 20
+	}
+	set_variable = { 
+		var = 162.partisan_unrest 
+		value = 20
+	}
+	set_variable = { 
+		var = 117.partisan_unrest 
+		value = 20
+	}
+	set_variable = { 
+		var = 156.partisan_unrest 
+		value = 20
+	}
+
+	### More variables
+
+	set_variable = { 
+		var = ITA.totalitarianism 
+		value = 30
+	}
+
+	set_variable = { 
+		var = ITA.cameras_modernity
+		value = 0
+	}
+
+	set_variable = { 
+		var = ITA.cameras
+		value = 0
+	}
+
+	set_variable = { 
+		var = ITA.reforms
+		value = 0
+	}
+
+	set_variable = { 
+		var = ITA.prepared_labor_reform
+		value = 0
+	}
+	set_variable = { 
+		var = ITA.prepared_social_reform
+		value = 0
+	}
+	set_variable = { 
+		var = ITA.prepared_economic_reform
+		value = 0
+	}
+
+	### flags
+
+	set_country_flag = ITA_pre_cw
+	
+}

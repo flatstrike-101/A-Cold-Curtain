@@ -271,6 +271,8 @@ ideologies = {
 			
 			rexism = {
 			}
+			spiritualist_fascism = {
+			}
 		}
 		
 		dynamic_faction_names = {

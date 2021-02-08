@@ -1,0 +1,16 @@
+add_namespace = ITA_start
+
+country_event = {
+	id = ITA_start.1
+	title = "The Italian Empire in 1953"
+	desc = "placeholder text"
+	picture = GFX_event_italian_start.1
+	trigger = {
+		tag = ITA
+	}
+	is_triggered_only = yes
+	option = {
+		name = "For Italy!"
+		Italian_start_general = yes
+	}
+}

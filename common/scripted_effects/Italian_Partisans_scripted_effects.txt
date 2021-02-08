@@ -42,7 +42,10 @@ ITA_Eur_Explosion = {
         add_resistance_target = {
         id = 117
         amount = 30
-        
+        add_to_variable = {
+            var = THIS.partisan_unrest
+            value = 10
+        }
     }
     add_resistance_target = {
         id = 2

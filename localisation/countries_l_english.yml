@@ -519,31 +519,31 @@ IRM_ADJ:0 "Italian"
 
 ## Nat Soc Italy
 
-INR_national_socialism:0 "Italian Social Republic"
-INR_national_socialism_DEF:0 "the Italian Social Republic"
+INR_national_socialism:0 "Italian National Republic"
+INR_national_socialism_DEF:0 "the Italian National Republic"
 INR:0 "Italy"
 INR_DEF:0 "Italy"
 INR_ADJ:0 "Italian"
 
 ## Religious Fascism Italy
 
-IKS_nationalism:0 "Kingdom of Italy"
-IKS_nationalism_DEF:0 "the Kingdom of Italy"
-IKS:0 "Italy"
+IKS_fascism:0 "Italian Fascist Revisionist Realm"
+IKS_fascism_DEF:0 "the Italian Fascist Reviosionist Realm"
+IKS:0 "Italian Dharmic Realm"
 IKS_DEF:0 "Italy"
 IKS_ADJ:0 "Italian"
 
 ## Italian Corporatist Faction
 
-IEC_fascism:0 "Italian Empire"
-IEC_fascism_DEF:0 "the Italian Empire"
-IEC:0 "Italy"
+IEC_fascism:0 "Italian National-Syndical State"
+IEC_fascism_DEF:0 "the Italian National-Syndical State"
+IEC:0 "Italian National-Syndical State"
 IEC_DEF:0 "Italy"
 IEC_ADJ:0 "Italian"
 
 ## Blackshirt faction
 
-IFG_nationalism:0 "Blackshirt Italy"
+IFG_nationalism:0 "Blackshirt Territories of Italy"
 IFG_nationalism_DEF:0 "the Blackshirts"
 IFG:0 "Italy"
 IFG_DEF:0 "Italy"
@@ -572,6 +572,15 @@ IFG_ADJ:0 "Italian"
  MEP:0 "Middle Eastern"
  MEP_DEF:0 "Middle Eastern"
  MEP_ADJ:0 "Middle Eastern"
+
+### Italian North Africa
+
+INA_fascism:0 "Italian North African Government"
+INA_fascism_DEF:0 "the Italian North African Government"
+INA_fascism_ADJ:0 "Italian"
+INA:0 "Italy"
+INA_DEF:0 "Italy"
+INA_ADJ:0 "Italian"
 
 ### Italian Indian ocean territories
  

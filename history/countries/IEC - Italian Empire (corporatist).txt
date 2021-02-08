@@ -19,13 +19,13 @@ set_popularities = {
 }
 
 add_ideas = {
-	
+	Civil_war
 }
 
 create_country_leader = {
-	name = "Edmondo Rossini"
-	desc = "POLITICS_ROSSINI_DESC"
-	picture = "Portrait_Edmondo_Rossini.dds"
+	name = "Paolo Signorelli"
+	desc = "POLITICS_SIGNORELLI_DESC"
+	picture = "Portrait_Paolo_Signorelli.dds"
 	expire = "1968.1.1"
 	ideology = classical_fascism
 	traits = {
