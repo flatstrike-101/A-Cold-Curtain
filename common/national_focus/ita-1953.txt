@@ -1,0 +1,344 @@
+focus_tree = {
+	id = ita-1953
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	#East Africa and Arabia
+	focus = {
+		id = ITA_east_africa_and_arabia
+		icon = GFX_ITA_east_africa_and_arabia-445
+		x = 6
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_imperial_domestic_affairs_commitee  }
+		completion_reward = {
+			add_opinion_modifier = { 
+
+			target = ETH
+
+			modifier = ita_diplomacy_focus
+
+			}reverse_add_opinion_modifier = { 
+
+			target = IIP 
+
+			modifier = ita_diplomacy_focus 
+
+			}
+
+			
+		}
+	}
+
+	#The Mediterranean Empire
+	focus = {
+		id = ITA_the_mediterranean_empire
+		icon = GFX_ITA_the_mediterranean_empire-445
+		x = 4
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITA_start.1 
+
+			}
+
+			
+		}
+	}
+
+	#Imperial Foreign Affairs
+	focus = {
+		id = ITA_imperial_foreign_affairs
+		icon = GFX_ITA_imperial_foreign_affairs-445
+		x = 0
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_the_mediterranean_empire  }
+		select_effect = {
+			country_event = {
+
+			days = 1 
+
+			id = ITA_start.2
+
+			}
+
+			
+		}
+	}
+
+	#Imperial Domestic Affairs Commitee
+	focus = {
+		id = ITA_imperial_domestic_affairs_commitee
+		icon = GFX_ITA_imperial_domestic_affairs_commitee-445
+		x = 4
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_the_mediterranean_empire  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITA_start.3 
+
+			}
+
+			
+		}
+	}
+
+	#The Imperial Armed Forces Division
+	focus = {
+		id = ITA_the_imperial_armed_forces_division
+		icon = GFX_ITA_the_imperial_armed_forces_division-445
+		x = 10
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_the_mediterranean_empire  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITA_start.4
+
+			}
+
+			
+		}
+	}
+
+	#The Middle East
+	focus = {
+		id = ITA_the_middle_east
+		icon = GFX_ITA_the_middle_east-445
+		x = 2
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_imperial_domestic_affairs_commitee  }
+		completion_reward = {
+			add_opinion_modifier = { 
+
+			target = MEP
+
+			modifier = ITA_diplomacy_focus
+
+			}
+
+			
+		}
+	}
+
+	#Egypt and the Sudan
+	focus = {
+		id = ITA_egypt_and_the_sudan
+		icon = GFX_ITA_egypt_and_the_sudan-445
+		x = 4
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_imperial_domestic_affairs_commitee  }
+		completion_reward = {
+			remove_opinion_modifier = {
+
+			 target = EGY 
+
+			modifier = ita_diplomacy_focus
+
+			}
+
+			
+		}
+	}
+
+	#At the homeland
+	focus = {
+		id = ITA_at_the_homeland
+		icon = GFX_ITA_at_the_homeland-445
+		x = 4
+		y = 3
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_east_africa_and_arabia  focus = ITA_the_middle_east  focus = ITA_egypt_and_the_sudan  }
+		completion_reward = {
+			add_to_variable = { var = ITA.totalitarianism 
+
+			 value = 10 
+
+			 tooltip = "This will increase our control over Italy" }
+
+			
+		}
+	}
+
+	#Our Northern Neighbor
+	focus = {
+		id = ITA_our_northern_neighbor
+		icon = GFX_ITA_our_northern_neighbor-445
+		x = 0
+		y = 2
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_imperial_foreign_affairs  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITA_start.5 
+
+			}
+
+			
+		}
+	}
+
+	#Overwhelmed in the Air
+	focus = {
+		id = ITA_overwhelmed_in_the_air
+		icon = GFX_ITA_overwhelmed_in_the_air-445
+		x = 10
+		y = 2
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_the_imperial_armed_forces_division  }
+		bypass = {
+			country_event = {
+
+			days = 1 
+
+			id = ITA_start.8
+
+			}
+
+			
+		}
+	}
+
+	#Begin Armed Forces Reformation
+	focus = {
+		id = ITA_begin_armed_forces_reformation
+		icon = GFX_ITA_begin_armed_forces_reformation-445
+		x = 10
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ITA_an_army_in_shambles focus = ITA_the_navy_obsolete focus = ITA_overwhelmed_in_the_air  }
+		completion_reward = {
+			set_country_flag = ITA_reforming_military
+
+			
+		}
+	}
+
+	#Reopen the Italian-German Embassy
+	focus = {
+		id = ITA_reopen_the_italiangerman_embassy
+		icon = GFX_ITA_reopen_the_italiangerman_embassy-445
+		x = 0
+		y = 3
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_our_northern_neighbor  }
+		completion_reward = {
+			add_opinion_modifier = { 
+
+			target = GER
+
+			modifier = attache_sent
+
+			}
+
+			
+		}
+	}
+
+	#An Army in Shambles
+	focus = {
+		id = ITA_an_army_in_shambles
+		icon = GFX_ITA_an_army_in_shambles-445
+		x = 8
+		y = 2
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ITA_the_imperial_armed_forces_division  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITA_start.6
+
+			}
+
+			
+		}
+	}
+
+	#The Navy Obsolete
+	focus = {
+		id = ITA_the_navy_obsolete
+		icon = GFX_ITA_the_navy_obsolete-445
+		x = 12
+		y = 2
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ITA_the_imperial_armed_forces_division  }
+		completion_reward = {
+			country_event = {
+
+			days = 1 
+
+			id = ITA_start.7 
+
+			}
+
+			
+		}
+	}
+
+}

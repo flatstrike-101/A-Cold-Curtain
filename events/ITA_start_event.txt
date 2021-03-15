@@ -10,7 +10,85 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
-		name = "For Italy!"
+		name = "Viva Il Duce!"
 		Italian_start_general = yes
+	}
+}
+
+country_event = {
+	id = ITA_start.2
+	title = "A Closed Door"
+	desc = "placeholder text"
+	picture = GFX_event_italian_start.2
+	trigger = {
+	}
+	is_triggered_only = yes
+	option = {
+		name = "Our isolation is our splendor"
+	}
+}
+
+country_event = {
+	id = ITA_start.3
+	title = "The People Unhappy"
+	desc = "placeholder text"
+	picture = GFX_event_italian_start.3
+	trigger = {
+	}
+	is_triggered_only = yes
+	option = {
+		name = "We will make them work!"
+	}
+}
+
+country_event = {
+	id = ITA_start.4
+	title = "The Military Corrupt"
+	desc = "placeholder text"
+	picture = GFX_event_italian_start.4
+	trigger = {
+	}
+	is_triggered_only = yes
+	option = {
+		name = "Soldiers will fight"
+	}
+}
+
+country_event = {
+	id = ITA_start.5
+	title = "Italo-German Relations"
+	desc = "placeholder text"
+	picture = GFX_event_italian_start.2
+	trigger = {
+	}
+	is_triggered_only = yes
+	option = {
+		name = "So long, old friend"
+	}
+}
+
+country_event = {
+	id = ITA_start.6
+	title = "Desertions, Draft Dodging and Partisans"
+	desc = "placeholder text"
+	picture = GFX_event_italian_start.6
+	trigger = {
+	}
+	is_triggered_only = yes
+	option = {
+		name = "Traitors! One and all!"
+	}
+}
+
+country_event = {
+	id = ITA_start.7
+	title = "Desertions, Draft Dodging and Partisans"
+	desc = "placeholder text"
+	picture = GFX_event_italian_start.7
+	trigger = {
+	}
+	is_triggered_only = yes
+	option = {
+		name = "Traitors! One and all!"
 	}
 }
