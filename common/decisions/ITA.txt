@@ -174,8 +174,8 @@ passing_reforms = {
 		}
 	}
 
-	pass_labor_reforms = {		#ID of the decision, must not contain spaces!
-
+	pass_labor_reforms = {		
+		
 		icon = GFX_decision_icon_default	
 		
 		
@@ -372,7 +372,7 @@ the_physical_war = {
 		icon = GFX_decision_icon_default
 		on_map_mode = map_only
 		highlight_states = { 
-			is_core_state = yes
+			core_states = yes
 		# state = 159 
 		# state = 162
 		# state = 735

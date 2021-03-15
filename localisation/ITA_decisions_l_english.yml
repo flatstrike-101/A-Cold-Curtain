@@ -1,0 +1,59 @@
+﻿l_english:
+the_psychological_war:0 "The Psychological War"
+the_psychological_war_desc:0 "placeholder text\ntotalitarianism: [?ITA.totalitarianism|§R]§!"
+
+totalitarian_check:0 "Totalitarian variables check"
+totalitarian_check_desc:0 "just ignore this"
+
+totalitarian_decay:0 "Totalitarian Decay Check"
+totalitarian_decay_desc:0 "just ignore this"
+
+spread_propaganda:0 "Spread Propaganda"
+spread_propaganda_desc:0 "placeholdertext"
+
+install_survailance_systems:0 "Extend survailance systems installations"
+install_survailance_systems_desc:0 "placeholder text"
+
+modernize_survailance_systems:0 "Modernize Survailance Systems"
+modernize_survailance_systems_desco:0 "placeholder text"
+
+###
+
+passing_reforms:0 "Legislature and Concessions in the Empire"
+passing_reforms_desc:0 "placeholder text\nreform points: [?ITA.reforms|§B]§!"
+
+draft_labor_reforms:0 "Prepare Labor Concessions"
+draft_labor_reforms_desc:0 "placeholder text"
+
+draft_economic_reforms:0 "Prepare Economic Concessions"
+draft_economic_reforms_desc:0 "placeholder text"
+
+draft_social_reforms:0 "Prepare Social Concessions"
+draft_social_reforms_desc:0 "placeholder text"
+
+
+pass_labor_reforms:0 "Pass Labor Concessions"
+pass_labor_reforms_desc:0 "placeholder text"
+
+pass_economic_reforms:0 "Pass Economic Concessions"
+pass_economic_reforms_desc:0 "placeholder text"
+
+pass_social_reforms:0 "Pass Social Concessions"
+pass_social_reforms_desc:0 "placeholder text"
+
+###
+
+the_physical_war:0 "The Physicial War"
+the_physical_war_desc:0 "placeholder text"
+
+deploy_garrisons:0 "Deploy the Garrisons"
+deploy_garrisons_desc:0 "placeholder text"
+
+the_italian_civil_war:0 "The Partisan's War"
+the_italian_civil_war_desc:0 "placeholder text"
+
+ITA_cw_start:0 "The Fire Begins"
+ITA_cw_start_desc:0 "placeholder text"
+
+map_icon_strip_localisation:0 "Italian Partisan Activity"
+map_icon_strip_localisation_desc:0 "placeholder text"
