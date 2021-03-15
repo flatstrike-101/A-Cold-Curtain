@@ -1,0 +1,21 @@
+state={
+	id=803
+	name="Northern Bulgaria"
+	
+	state_category = rural
+
+	history={
+		owner = BUL
+		add_core_of = BUL
+		buildings = {
+			infrastructure = 5
+		}
+
+	}
+
+	provinces={
+		6842 3952 3819 3796 9610 9612
+	}
+	manpower=1063159
+	buildings_max_level_factor=1.000
+}
