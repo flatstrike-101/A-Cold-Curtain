@@ -1,5 +1,3 @@
-##
-
 add_namespace = ITA_partisan
 
 country_event = {
@@ -8,7 +6,7 @@ country_event = {
 	desc = "This morning at 8:30 a series of explosions were heard throughout the Eur district, collapsing several districts and killing 11 people, leaving 3 injured. It is believed that this event was caused by a partisan group called 'the Red Brigades' who seek to create a marxist-leninist government in Italy. Il Duce has yet to comment."
 	picture = GFX_event_eur_explosions
 	fire_only_once = yes
-	trigger = { tag = { ITA } }
+	trigger = { tag = ITA }
 	mean_time_to_happen = {
 		days = 40
 	}
@@ -27,6 +25,7 @@ country_event = {
 	picture = GFX_event_ITA_desertions
 	trigger = {
 		tag = ITA
+		has_country_flag = ITA_pre_cw
 	}
 	option = {
 		name = "Traitors! All of them!"
@@ -45,29 +44,16 @@ country_event = {
 
 country_event = {
 	id = ITA_partisan.3
-	title = "Equipment stockpile raided"
-	desc = "A group of armed bandits overpowered guards and stole from a military stockpile before disappearing into the hills. A red hammer and sickle graffiti was put over the walls of the facility, indicating partisan activity."
-	picture = GFX_event_ITA_stockpile_raided
-	trigger = {
-		tag = ITA
-	}
+	title = "Equipment Stockpile Raided"
+	desc = ITA_partisan_event_3
+	picture = GFX_event_ITA_partisan.3
 	option = {
-		name = "Find them!"
-		add_equipment_to_stockpile = {
-   			type = infantry_equipment
-    		amount = -1000
+		name = "Find Them!"
+		add_manpower = -100
+		add_equipment_to_stockpile {
+			type = infantry_equipment
+			amount = -1000
 		}
-		random_owned_controlled_state = { 
-			NOT = { has_state_flag = {
-				flag = ITA_partisan_stopped
-				}
-			}
-			add_resistance = 5				
-		}
-        add_popularity = {
-            ideology = fascism
-            popularity = -0.05
-        }
 	}
 }
 

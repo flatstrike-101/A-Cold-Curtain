@@ -238,7 +238,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ITA_the_imperial_armed_forces_division  }
-		bypass = {
+		completion_reward = {
 			country_event = {
 
 			days = 1 
@@ -264,8 +264,6 @@ focus_tree = {
 		prerequisite = { focus = ITA_an_army_in_shambles focus = ITA_the_navy_obsolete focus = ITA_overwhelmed_in_the_air  }
 		completion_reward = {
 			set_country_flag = ITA_reforming_military
-
-			
 		}
 	}
 

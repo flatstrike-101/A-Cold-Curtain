@@ -1,6 +1,18 @@
-the_psychological_war = {		#ID of category
-	priority = 6		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
-	icon = GFX_category_icon	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+reforming_military = {		
+	priority = 5		
+	icon = GFX_category_icon	
+	
+	allowed = {
+	}
+	visible = {
+	tag = ITA
+	has_country_flag = ITA_reforming_military
+	}
+}
+
+the_psychological_war = {		
+	priority = 6		
+	icon = GFX_category_icon	
 	
 	allowed = {
 	}
@@ -10,7 +22,7 @@ the_psychological_war = {		#ID of category
 }
 
 the_physical_war = {		#This is the type of category used for the spanish civil war.
-	icon = GFX_category_icon
+	icon = GFX_ITA_deploy_garrison
 	priority = 7		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.	
 	
 	allowed = {
@@ -31,8 +43,6 @@ the_physical_war = {		#This is the type of category used for the spanish civil w
 	state = 160
 	state = 736
 	state = 800
-	state = 163
-	state = 802
 	state = 162
 	state = 157
 	state = 2
@@ -42,9 +52,10 @@ the_physical_war = {		#This is the type of category used for the spanish civil w
 	state = 114
 	state = 1
 	state = 161
-		name = map_icon_strip_localisation		
+		name = "States with Partisan Activity"		
 		zoom = 200		
 	}
+	on_map_mode = map_only
 }
 
 passing_reforms = {

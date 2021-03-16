@@ -8,7 +8,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/category_icon_template.dds"
 	}
 	spriteType = {
-		name = "GFX_decision_icon_default"
-		texturefile = "gfx/interface/decisions/decision_icon_default.dds"
+		name = "GFX_ITA_deploy_garrison"
+		texturefile = "gfx/interface/decisions/ITA_deploy_garrison.dds"
 	}
 }
