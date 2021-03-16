@@ -1,47 +1,206 @@
+reforming_military = {
+	### sections creation
+	create_army_section = { ##army
+		allowed = {}
+		visible = {
+			tag = ITA
+			has_country_flag = ITA_reforming_military
+		}
+		cost = 100
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			set_country_flag = reform_army_section_created
+		}
+	}
+
+	create_navy_section = { ##navy
+		allowed = {}
+		visible = {
+			has_country_flag = ITA_reforming_military
+		}
+		cost = 100
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			set_country_flag = reform_navy_section_created
+		}
+	}
+
+	create_air_section = { ##air
+		allowed = {tag = ITA}
+		visible = {
+			has_country_flag = ITA_reforming_military
+		}
+		cost = 100
+		days_remove = 30
+		fire_only_once = yes
+		remove_effect = {
+			set_country_flag = reform_air_section_created
+		}
+	}
+	### anti corruption
+	investigate_corruption_in_army = { ##army
+		allowed = {tag = ITA}
+		visible = {
+			has_country_flag = reform_army_section_created
+			NOT = {
+				has_country_flag = done_corruption_army
+			}
+		}
+		cost = 25
+		days_re_enable = 10
+		complete_effect = {
+			random_list = {
+				50 = {
+					country_event = ITA_reform.1
+					set_country_flag = done_corruption_army
+				}
+				50 = {
+					country_event = ITA_reform.2
+				}
+			}
+		}
+	}
+	investigate_corruption_in_navy = { ##navy
+		allowed = {tag = ITA}
+		visible = {
+			has_country_flag = reform_navy_section_created
+			NOT = {
+				has_country_flag = done_corruption_navy
+			}
+		}
+		cost = 25
+		days_re_enable = 10
+		complete_effect = {
+			random_list = {
+				50 = {
+					country_event = ITA_reform.1
+					set_country_flag = done_corruption_navy
+				}
+				50 = {
+					country_event = ITA_reform.2
+				}
+			}
+		}
+	}
+	investigate_corruption_in_air = { ##air
+		allowed = {tag = ITA}
+		visible = {
+			has_country_flag = reform_air_section_created
+			NOT = {
+				has_country_flag = done_corruption_air
+			}
+		}
+		cost = 25
+		days_re_enable = 10
+		complete_effect = {
+			random_list = {
+				50 = {
+					country_event = ITA_reform.1
+					set_country_flag = done_corruption_air
+				}
+				50 = {
+					country_event = ITA_reform.2
+				}
+			}
+		}
+	}
+	### Modernization
+	fund_army_research = {
+		allowed = {tag = ITA}
+		visible = {
+			has_country_flag = reform_army_section_created
+		}
+		fire_only_once = no		
+		days_re_enable = 7
+		cost = 10
+		complete_effect = {
+			add_to_variable = {
+				var = ITA_army_modern
+				value = 5
+			}
+		}
+	}
+	fund_navy_research = {
+		allowed = {tag = ITA}
+		visible = {
+			has_country_flag = reform_navy_section_created
+		}
+		fire_only_once = no		
+		days_re_enable = 7
+		cost = 10
+		complete_effect = {
+			add_to_variable = {
+				var = ITA_navy_modern
+				value = 5
+			}
+		}
+	}
+	fund_air_research = {
+		allowed = {tag = ITA}
+		visible = {
+			has_country_flag = reform_air_section_created
+		}
+		fire_only_once = no		
+		days_re_enable = 7
+		cost = 10
+		complete_effect = {
+			add_to_variable = {
+				var = ITA_air_modern
+				value = 5
+			}
+		}
+	}
+}
+
 
 the_psychological_war = {
 
 	totalitarian_decay = {
 		allowed = {tag = ITA}
 		visible = {
-			ROOT = {
-				is_ai = no
-			}
 			tag = ITA
 		}
-		available = {  }
+		available = { has_country_flag = big_event_italy_cw }
 		activation = { 
 			has_country_flag = ITA_pre_cw
-			tag = ITA
 			check_variable = { ITA.totalitarianism > 0 }
 		}
-		days_mission_timeout = 30
+		fire_only_once = no
+		days_re_enable = 30
+		days_mission_timeout = 1
 		timeout_effect = {
 			add_to_variable = {
 				var = ITA.totalitarianism
-				value = -1
+				value = -5
 			}
 		}
 		complete_effect = {
-			
+			add_to_variable = {
+				var = ITA.totalitarianism
+				value = -5
+			}
 		}
 	}
 	
 	totalitarian_check = {
 		allowed = {tag = ITA}
 		visible = {
-			ROOT = {
-				is_ai = no
-			}
 			tag = ITA
 		}
 		available = { has_country_flag = big_event_italy_cw }
 		activation = { 
 			has_country_flag = ITA_pre_cw
-			tag = ITA
-			check_variable = { ITA.totalitarianism > 50 }
+			OR = {
+				check_variable = { ITA.totalitarianism > 50 }
+				check_variable = { ITA.totalitarianism = 50 }
+			}
+			
 		}
-		days_mission_timeout = 30
+		fire_only_once = no
+		days_re_enable = 30
+		days_mission_timeout = 5
 		timeout_effect = {
 			add_to_variable = {
 				var = ITA.reforms
@@ -49,7 +208,10 @@ the_psychological_war = {
 			}
 		}
 		complete_effect = {
-			
+			add_to_variable = {
+				var = ITA.reforms
+				value = 1
+			}
 		}
 	}
 
@@ -367,32 +529,67 @@ passing_reforms = {
 }
 
 the_physical_war = {
-	deploy_garrisons = {
+	deploy_garrisons_lombardy = {
 
-		icon = GFX_decision_icon_default
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 159 }
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_country_flag = ITA_pre_cw
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ITA
+		}		
+
+		cost = 10	
+
+		complete_effect = {		#The effects to execute once the decision icon is clicked.
+		random_list = {
+			50 = {
+				army_experience = 10
+				add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+				}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+			}
+			50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+		}
+	}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 1
+		}
+	
+	}
+
+	deploy_garrisons_piemonte = {
+
+		icon = GFX_deploy_garrisons_ITA
 		on_map_mode = map_only
 		highlight_states = { 
-			core_states = yes
-		# state = 159 
-		# state = 162
-		# state = 735
-		# state = 158
-		# state = 805
-		# state = 39
-		# state = 160
-		# state = 736
-		# state = 800
-		# state = 163
-		# state = 802
-		# state = 162
-		# state = 157
-		# state = 2
-		# state = 117
-		# state = 156
-		# state = 115
-		# state = 114
-		# state = 1
-		# state = 161
+		state = 158
 		}
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
@@ -402,38 +599,39 @@ the_physical_war = {
 		}
 		
 		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
-		days_re_enable = 25	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
 
 		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
-			ROOT = {
-				is_ai = no
-			}
 			tag = ITA
 		}		
 
 		cost = 10	
 
 		complete_effect = {		#The effects to execute once the decision icon is clicked.
-		}
-
-		remove_effect = {
-			random_list = {
-				50 = {
-					army_experience = 10
-					add_equipment_to_stockpile {
-						type = infantry_equipment
-						amount = -100
-					}
-					add_to_variable = {
-						var = THIS.partisan_unrest
-						value = -10
-					}
+		random_list = {
+			50 = {
+				army_experience = 10
+				add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
 				}
-				50 = {
-					country_event = ITA_partisan.3
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+			}
+			50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
 				}
 			}
 		}
+	}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION
 
@@ -441,6 +639,546 @@ the_physical_war = {
 			factor = 1
 		}
 	
+	}
+
+	deploy_garrisons_veneto = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { 
+		state = 160 
+		}
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_country_flag = ITA_pre_cw
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ITA
+		}		
+
+		cost = 10	
+
+		complete_effect = {		#The effects to execute once the decision icon is clicked.
+		random_list = {
+			50 = {
+				army_experience = 10
+				add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+				}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+			}
+			50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+		}
+	}
+}
+	
+
+	deploy_garrisons_south_tyrol = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { 
+		state = 39 
+		}
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			has_country_flag = ITA_pre_cw
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = ITA
+		}		
+
+		cost = 10	
+
+		complete_effect = {		#The effects to execute once the decision icon is clicked.
+		random_list = {
+			50 = {
+				army_experience = 10
+				add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+				}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+			}
+			50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+		}
+	}
+}
+
+	deploy_garrisons_emilia_romagna = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 161 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+			}
+		}
+	}
+	deploy_garrisons_savoia = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 735 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+			}
+		}
+	}
+	deploy_garrisons_epirus = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 805 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+			}
+		}
+	}
+	deploy_garrisons_istria = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 736 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+					custom_effect_tooltip = tt_partisan_activity_bad
+					hidden_effect = {
+						random_list = {
+							50 = { country_event = ITA_partisan.3 }
+							50 = { country_event = ITA_partisan.4 }
+						}
+					}
+				}
+			}
+		}
+	}
+	deploy_garrisons_toscana = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 162 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+					custom_effect_tooltip = tt_partisan_activity_bad
+					hidden_effect = {
+						random_list = {
+							50 = { country_event = ITA_partisan.3 }
+							50 = { country_event = ITA_partisan.4 }
+						}
+					}
+				}
+			}
+		}
+	}
+	deploy_garrisons_abruzzo_marche = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 157 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+			}
+		}
+	}
+	deploy_garrisons_lazio = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 2 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+			}
+		}
+	}
+	deploy_garrisons_campania = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 117 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+			}
+		}
+	}
+	deploy_garrisons_calabria_puglia = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 156 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+			}
+		}
+	}
+	deploy_garrisons_sicilia = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 115 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+			}
+		}
+	}
+	deploy_garrisons_sardinia = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 114 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+				custom_effect_tooltip = tt_partisan_activity_bad
+				hidden_effect = {
+					random_list = {
+						50 = { country_event = ITA_partisan.3 }
+						50 = { country_event = ITA_partisan.4 }
+					}
+				}
+			}
+			}
+		}
+	}
+	deploy_garrisons_corsica = {
+
+		icon = GFX_deploy_garrisons_ITA
+		on_map_mode = map_only
+		highlight_states = { state = 1 }
+		available = { has_country_flag = ITA_pre_cw }
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 10	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		visible = { tag = ITA }		
+		cost = 10	
+
+		complete_effect = {
+			random_list = {
+				50 = {
+					army_experience = 10
+					add_equipment_to_stockpile {
+					type = infantry_equipment
+					amount = -100
+					}
+				custom_effect_tooltip = ITA_garrison_deploy_effect
+				add_to_variable = {
+					var = ITA.totalitarianism
+					value = 1
+				}
+				}
+				50 = {
+				country_event = ITA_partisan
+				}
+			}
+		}
 	}
 }
 

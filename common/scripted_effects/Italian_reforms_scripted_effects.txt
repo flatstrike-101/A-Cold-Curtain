@@ -1,0 +1,29 @@
+crackdown_corruption = {
+	add_political_power = 25
+	add_stability = 0.05
+	add_war_support = 0.05
+	add_to_variable = {
+		var = ITA.totalitarianism
+		value = 5
+	}
+	custom_effect_tooltip = ITA_garrison_deploy_effect
+}
+accept_corruption = {
+	add_political_power = 100
+	add_stability = -0.05
+	add_war_support = -0.05
+	add_manpower = -50
+	army_experience = -5
+	air_experience = -5
+	navy_experience = -5
+	add_to_variable = {
+		var = ITA.totalitarianism
+		value = -5
+	}
+	add_to_variable = {
+		var = ITA.totalitarianism
+		value = -5
+	}
+	custom_effect_tooltip = ITA_tot_decrease_minor
+	custom_effect_tooltip = ITA_reform_decrease_minor
+}

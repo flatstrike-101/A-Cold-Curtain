@@ -1,6 +1,6 @@
 ﻿l_english:
-the_psychological_war:0 "The Psychological War"
-the_psychological_war_desc:0 "placeholder text\ntotalitarianism: [?ITA.totalitarianism|§R]§!"
+the_psychological_war:0 "§RThe Psychological War§!"
+the_psychological_war_desc:0 "Since the end of the Second Great War, Italian Fascist spirit has fallen. The Party must work to fix this decline.\n\n Il Duce and his cabinet will work to create a state, and a people so awed and fearful of the government, that no dissident will go unpunished, and justice will truly be achieved.\n\nTotalitarianism: [?ITA.totalitarianism|§R]§!"
 
 totalitarian_check:0 "Totalitarian variables check"
 totalitarian_check_desc:0 "just ignore this"
@@ -19,8 +19,8 @@ modernize_survailance_systems_desco:0 "placeholder text"
 
 ###
 
-passing_reforms:0 "Legislature and Concessions in the Empire"
-passing_reforms_desc:0 "placeholder text\nreform points: [?ITA.reforms|§B]§!"
+passing_reforms:0 "§BLegislature and Concessions in the Empire§!"
+passing_reforms_desc:0 "The glory and power of Il Duce do not come alone; he has many resposibilities to face, including improving the lives of Italian workers.\n\nTherefore, he must pass reforms to improve the lives and efficiency of the Italian workers.\n\nSleek coporations, grandeous hospitals, magestic monuments and plentiful fields shall all be constructed in the name of Il Duce, Benitto Mussolini!\n\nHence, the efficiency and power of the Italian Empire, shall only grow after stability has been achieved.\n\nReform points: [?ITA.reforms|§B]§!"
 
 draft_labor_reforms:0 "Prepare Labor Concessions"
 draft_labor_reforms_desc:0 "placeholder text"
@@ -43,11 +43,62 @@ pass_social_reforms_desc:0 "placeholder text"
 
 ###
 
-the_physical_war:0 "The Physicial War"
-the_physical_war_desc:0 "placeholder text"
+the_physical_war:0 "§YThe Physicial War§!"
+the_physical_war_desc:0 "The Italian people are superior and more glorious than any other race on the planet. But we do have our weeds. These partisan filths must be stomped out, lest they run rampant in our great nation, and destroy the very foundations of our fascist utopia.\n\nTherefore, the great Duce has given authorization to the military, to deploy garrisons, of any size, to destroy these swamps of dissent and antifascist infestation."
 
-deploy_garrisons:0 "Deploy the Garrisons"
-deploy_garrisons_desc:0 "placeholder text"
+ITA_garrison_deploy_effect:0 "§Gthis will increase our totalitarianism§!"
+ITA_tot_decrease_minor:0 "§Rthis will slightly decrease our totalitarianism§!"
+ITA_reform_decrease_minor:0 "§Rthis will slightly decrease our reform points§!"
+
+deploy_garrisons_sardinia:0 "Deploy Garrisons in Sardinia"
+deploy_garrisons_sardinia_desc:0 ""
+
+deploy_garrisons_corsica:0 "Deploy Garrisons in Corsica"
+deploy_garrisons_corsica_desc:0 ""
+
+deploy_garrisons_lombardy:0 "Deploy Garrisons in Lomardy"
+deploy_garrisons_lombardy_desc:0 ""
+
+deploy_garrisons_piemonte:0 "Deploy Garrisons in Piemonte-Liguria"
+deploy_garrisons_piemonte_desc:0 ""
+
+deploy_garrisons_epirus:0 "Deploy Garrisons in Northern Epirus"
+deploy_garrisons_epirus_desc:0 ""
+
+deploy_garrisons_savoia:0 "Deploy Garrisons in Savoy"
+deploy_garrisons_savoia_desc:0 ""
+
+deploy_garrisons_south_tyrol:0 "Deploy Garrisons in South Tyrol"
+deploy_garrisons_south_tyrol_desc:0 ""
+
+deploy_garrisons_veneto:0 "Deploy Garrisons in Veneto"
+deploy_garrisons_veneto_desc:0 ""
+
+deploy_garrisons_emilia_romagna:0 "Deploy Garrisons in Emiglia Romagna"
+deploy_garrisons_emilia_romagna_desc:0 ""
+
+deploy_garrisons_toscana:0 "Deploy Garrisons in Tuscany"
+deploy_garrisons_toscana_desc:0 ""
+
+deploy_garrisons_abruzzo_marche:0 "Deploy Garrisons in Abruzzo-Marche"
+deploy_garrisons_abruzzo_marche_desc:0 ""
+
+deploy_garrisons_lazio:0 "Deploy Garrisons in Lazio"
+deploy_garrisons_lazio_desc:0 ""
+
+deploy_garrisons_campania:0 "Deploy Garrisons in Campania-Molise"
+deploy_garrisons_campania_desc:0 ""
+
+deploy_garrisons_calabria_puglia:0 "Deploy Garrisons in Calabria-Basilicata-Puglia"
+deploy_garrisons_calabria_puglia_desc:0 ""
+
+deploy_garrisons_sicilia:0 "Deploy Garrisons in Sicily"
+deploy_garrisons_sicilia_desc:0 ""
+
+deploy_garrisons_istria:0 "Deploy Garrisons in Istria"
+deploy_garrisons_istria_desc:0 ""
+
+###
 
 the_italian_civil_war:0 "The Partisan's War"
 the_italian_civil_war_desc:0 "placeholder text"
@@ -55,5 +106,42 @@ the_italian_civil_war_desc:0 "placeholder text"
 ITA_cw_start:0 "The Fire Begins"
 ITA_cw_start_desc:0 "placeholder text"
 
-map_icon_strip_localisation:0 "Italian Partisan Activity"
-map_icon_strip_localisation_desc:0 "placeholder text"
+###
+
+reforming_military:0 "Reforming the Military"
+reforming_military_desc:0 "The Italian military is not what it used to be.\n\nWith desertions common, nepotism and corruption rampant, the Italian armed forces are a pitiful cesspool of plutocracy and cowardly men.\n\nBecause of this, we must modernize, and purge the corrupt and cowardly officers, who dare put themselves above the fatherland!\n\nArmy Modernization: [?ITA_army_modern|§Y§!]\nNavy Modernization: [?ITA_navy_modern|§C§!]\nAirforce Modernization: [?ITA_air_modern|§G§!]"
+
+create_army_section:0 "Found the Army Reformation Division"
+create_army_section_desc:0 "placeholder"
+
+create_navy_section:0 "Found the Navy Reformation Division"
+create_navy_section_desc:0 "placeholder"
+
+create_air_section:0 "Found the Airforce Reformation Division"
+create_air_section_desc:0 "placeholder"
+
+
+
+investigate_corruption_in_army:0 "Investigate corruption in the Army"
+investigate_corruption_in_army_desc:0 "placeholder"
+
+investigate_corruption_in_navy:0 "Investigate corruption in the Navy"
+investigate_corruption_in_navy_desc:0 "placeholder"
+
+investigate_corruption_in_air:0 "Investigate corruption in the Airforce"
+investigate_corruption_in_air_desc:0 "placeholder"
+
+fund_army_research:0 "Fund Army Research Branch"
+fund_army_research_desc:0 "placeholder"
+
+fund_navy_research:0 "Fund Navy Research Branch"
+fund_navy_research_desc:0 "placeholder"
+
+fund_air_research:0 "Fund Airforce Research Branch"
+fund_air_research_desc:0 "placeholder"
+
+###
+
+ITA_partisan_event_3:0 "A group of armed bandits overpowered guards and stole from a military stockpile before disappearing into the hills.\n\nA red hammer and sickle graffiti was put over the walls of the facility, indicating partisan activity."
+
+tt_partisan_activity_bad:0 "§RSomething terrible has happened...§!"

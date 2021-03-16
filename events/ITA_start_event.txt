@@ -1,9 +1,10 @@
 add_namespace = ITA_start
+add_namespace = ITA_reform
 
 country_event = {
 	id = ITA_start.1
 	title = "The Italian Empire in 1953"
-	desc = "placeholder text"
+	desc = ITA_start_event_1.d
 	picture = GFX_event_italian_start.1
 	trigger = {
 		tag = ITA
@@ -11,7 +12,6 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = "Viva Il Duce!"
-		Italian_start_general = yes
 	}
 }
 
@@ -82,13 +82,61 @@ country_event = {
 
 country_event = {
 	id = ITA_start.7
-	title = "Desertions, Draft Dodging and Partisans"
+	title = "Dented Hulls and Broken Engines"
 	desc = "placeholder text"
 	picture = GFX_event_italian_start.7
 	trigger = {
 	}
 	is_triggered_only = yes
 	option = {
-		name = "Traitors! One and all!"
+		name = "We will fix this"
+	}
+}
+
+country_event = {
+	id = ITA_start.8
+	title = "Potholes in the Runways"
+	desc = "placeholder text"
+	picture = GFX_event_italian_start.8
+	trigger = {
+	}
+	is_triggered_only = yes
+	option = {
+		name = "We shall make a force to rival the luftwaffe!"
+	}
+}
+
+country_event = {
+	id = ITA_reform.1
+	title = "Corrupt Officials Found!"
+	desc = "placeholder text"
+	picture = GFX_event_italian_reform.1
+	trigger = {
+	}
+	is_triggered_only = yes
+	option = {
+		name = "Execute them!"
+		crackdown_corruption = yes
+	}
+	option = {
+		name = "Well, a new Alpine Villa does sound nice this time of year"
+		accept_corruption = yes
+	}
+}
+
+country_event = {
+	id = ITA_reform.2
+	title = "Corrpution Investigation Finds nothing"
+	desc = "placeholder text"
+	picture = GFX_event_italian_reform.2
+	trigger = {
+	}
+	is_triggered_only = yes
+	option = {
+		name = "Nonsense! Look further!"
+		add_to_variable = {
+			var = ITA.totalitarianism
+			value = -5
+		}
 	}
 }

@@ -2,6 +2,45 @@ capital = 2
 
 set_fuel_ratio = 0.9
 
+# Variables
+
+set_variable = { 
+	var = ITA.totalitarianism 
+	value = 30
+}
+
+set_variable = { 
+	var = ITA.cameras_modernity
+	value = 0
+}
+
+set_variable = { 
+	var = ITA.cameras
+	value = 0
+}
+
+set_variable = { 
+	var = ITA.reforms
+	value = 0
+}
+
+set_variable = { 
+	var = ITA.prepared_labor_reform
+	value = 0
+}
+set_variable = { 
+	var = ITA.prepared_social_reform
+	value = 0
+}
+set_variable = { 
+	var = ITA.prepared_economic_reform
+	value = 0
+}
+
+# Flags
+
+set_country_flag = ITA_pre_cw
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
