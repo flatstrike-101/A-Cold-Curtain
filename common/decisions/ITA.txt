@@ -5,6 +5,11 @@ reforming_military = {
 		visible = {
 			tag = ITA
 			has_country_flag = ITA_reforming_military
+			NOT = {
+				has_country_flag = reform_army_section_created
+				has_country_flag = ITA_finished_military_reform
+			}
+			
 		}
 		cost = 100
 		days_remove = 30
@@ -18,6 +23,10 @@ reforming_military = {
 		allowed = {}
 		visible = {
 			has_country_flag = ITA_reforming_military
+			NOT = {
+				has_country_flag = reform_navy_section_created
+				has_country_flag = ITA_finished_military_reform
+			}
 		}
 		cost = 100
 		days_remove = 30
@@ -31,6 +40,10 @@ reforming_military = {
 		allowed = {tag = ITA}
 		visible = {
 			has_country_flag = ITA_reforming_military
+			NOT = {
+				has_country_flag = reform_air_section_created
+				has_country_flag = ITA_finished_military_reform
+			}
 		}
 		cost = 100
 		days_remove = 30
@@ -44,17 +57,14 @@ reforming_military = {
 		allowed = {tag = ITA}
 		visible = {
 			has_country_flag = reform_army_section_created
-			NOT = {
-				has_country_flag = done_corruption_army
-			}
+			check_variable = { ITA.corruption > 0 }
 		}
-		cost = 25
+		cost = 10
 		days_re_enable = 10
 		complete_effect = {
 			random_list = {
 				50 = {
 					country_event = ITA_reform.1
-					set_country_flag = done_corruption_army
 				}
 				50 = {
 					country_event = ITA_reform.2
@@ -66,17 +76,14 @@ reforming_military = {
 		allowed = {tag = ITA}
 		visible = {
 			has_country_flag = reform_navy_section_created
-			NOT = {
-				has_country_flag = done_corruption_navy
-			}
+			check_variable = { ITA.corruption > 0 }
 		}
-		cost = 25
+		cost = 10
 		days_re_enable = 10
 		complete_effect = {
 			random_list = {
 				50 = {
 					country_event = ITA_reform.1
-					set_country_flag = done_corruption_navy
 				}
 				50 = {
 					country_event = ITA_reform.2
@@ -88,17 +95,14 @@ reforming_military = {
 		allowed = {tag = ITA}
 		visible = {
 			has_country_flag = reform_air_section_created
-			NOT = {
-				has_country_flag = done_corruption_air
-			}
+			check_variable = { ITA.corruption > 0 }
 		}
-		cost = 25
+		cost = 10
 		days_re_enable = 10
 		complete_effect = {
 			random_list = {
 				50 = {
 					country_event = ITA_reform.1
-					set_country_flag = done_corruption_air
 				}
 				50 = {
 					country_event = ITA_reform.2
@@ -106,11 +110,72 @@ reforming_military = {
 			}
 		}
 	}
+	corruption_check_increase = {
+		allowed = {tag = ITA}
+		visible = {
+			tag = ITA
+		}
+		available = { }
+		activation = { 
+			has_country_flag = ITA_pre_cw
+			has_country_flag = ITA_reforming_military
+			check_variable = { ITA.corruption > 0 }
+			NOT = {
+				has_country_flag = ITA_corruption_done
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 1
+		days_mission_timeout = 1
+		timeout_effect = {
+			add_to_variable = {
+				var = ITA.corruption
+				value = 2
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = ITA.corruption
+				value = 2
+			}
+		}
+	}
+	corruption_check_complete = {
+		allowed = {tag = ITA}
+		visible = {
+			tag = ITA
+		}
+		available = { }
+		activation = { 
+			has_country_flag = ITA_pre_cw
+			OR = {
+				check_variable = { ITA.corruption = 0 }
+				check_variable = { ITA.corruption < 0 }
+			}
+			NOT = {
+				has_country_flag = ITA_corruption_done
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 1
+		days_mission_timeout = 1
+		timeout_effect = {
+			set_country_flag = ITA_corruption_done
+			country_event = ITA_reform.6
+		complete_effect = {
+			set_country_flag = ITA_corruption_done
+			country_event = ITA_reform.6
+		}
+	}
+	}
 	### Modernization
 	fund_army_research = {
 		allowed = {tag = ITA}
 		visible = {
 			has_country_flag = reform_army_section_created
+			NOT = {
+				has_country_flag = ITA_army_modern_complete
+			}
 		}
 		fire_only_once = no		
 		days_re_enable = 7
@@ -126,6 +191,9 @@ reforming_military = {
 		allowed = {tag = ITA}
 		visible = {
 			has_country_flag = reform_navy_section_created
+			NOT = {
+				has_country_flag = ITA_navy_modern_complete
+			}
 		}
 		fire_only_once = no		
 		days_re_enable = 7
@@ -141,6 +209,9 @@ reforming_military = {
 		allowed = {tag = ITA}
 		visible = {
 			has_country_flag = reform_air_section_created
+			NOT = {
+				has_country_flag = ITA_air_modern_complete
+			}
 		}
 		fire_only_once = no		
 		days_re_enable = 7
@@ -152,6 +223,110 @@ reforming_military = {
 			}
 		}
 	}
+	modern_check_air_complete = {
+		allowed = {tag = ITA}
+		visible = {
+			tag = ITA
+		}
+		available = { }
+		activation = { 
+			has_country_flag = ITA_pre_cw
+			check_variable = { ITA_air_modern = 100 }
+			NOT = {
+				has_country_flag = ITA_air_modern_complete
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 1
+		days_mission_timeout = 1
+		timeout_effect = {
+			set_country_flag = ITA_air_modern_complete
+			country_event = ITA_reform.5
+		}
+		complete_effect = {
+			set_country_flag = ITA_air_modern_complete
+			country_event = ITA_reform.5
+		}
+	}
+	modern_check_army_complete = {
+		allowed = {tag = ITA}
+		visible = {
+			tag = ITA
+		}
+		available = { }
+		activation = { 
+			has_country_flag = ITA_pre_cw
+			check_variable = { ITA_army_modern = 100 }
+			NOT = {
+				has_country_flag = ITA_army_modern_complete
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 1
+		days_mission_timeout = 1
+		timeout_effect = {
+			set_country_flag = ITA_army_modern_complete
+			country_event = ITA_reform.3
+		}
+		complete_effect = {
+			set_country_flag = ITA_army_modern_complete
+			country_event = ITA_reform.3
+		}
+	}
+	modern_check_navy_complete = {
+		allowed = {tag = ITA}
+		visible = {
+			tag = ITA
+		}
+		available = { }
+		activation = { 
+			has_country_flag = ITA_pre_cw
+			check_variable = { ITA_navy_modern = 100 }
+			NOT = {
+				has_country_flag = ITA_navy_modern_complete
+			}
+		}
+		fire_only_once = no
+		days_re_enable = 1
+		days_mission_timeout = 1
+		timeout_effect = {
+			set_country_flag = ITA_navy_modern_complete
+			country_event = ITA_reform.4
+		}
+		complete_effect = {
+			set_country_flag = ITA_navy_modern_complete
+			country_event = ITA_reform.4
+		}
+	}
+	##### Reformation complete
+	ITA_complete_reformation = { ##army
+		allowed = {}
+		visible = {
+			tag = ITA
+			has_country_flag = ITA_reforming_military
+			has_country_flag = ITA_navy_modern_complete
+			has_country_flag = ITA_army_modern_complete
+			has_country_flag = ITA_air_modern_complete
+			has_country_flag = ITA_corruption_done
+			NOT = {
+				has_country_flag = ITA_finished_military_reform
+			}
+		}
+		days_remove = 120
+		fire_only_once = yes
+		remove_effect = {
+			clr_country_flag = reform_army_section_created
+			clr_country_flag = reform_air_section_created
+			clr_country_flag = reform_navy_section_created
+			set_country_flag = ITA_finished_military_reform
+			add_to_variable = {
+				var = ITA.reforms
+				value = 10
+			}
+			country_event = ITA_reform.7
+		}
+	}
+
 }
 
 
@@ -162,7 +337,7 @@ the_psychological_war = {
 		visible = {
 			tag = ITA
 		}
-		available = { has_country_flag = big_event_italy_cw }
+		available = { }
 		activation = { 
 			has_country_flag = ITA_pre_cw
 			check_variable = { ITA.totalitarianism > 0 }
@@ -189,7 +364,7 @@ the_psychological_war = {
 		visible = {
 			tag = ITA
 		}
-		available = { has_country_flag = big_event_italy_cw }
+		available = { }
 		activation = { 
 			has_country_flag = ITA_pre_cw
 			OR = {
@@ -1186,14 +1361,11 @@ the_italian_civil_war = {
 	ITA_cw_start = {
 		allowed = {tag = ITA}
 		visible = {
-			ROOT = {
-				is_ai = no
-			}
 			tag = ITA
 		}
 		available = {
 			check_variable = { ITA.reforms = 10000 }
-			check_variable = { ITA.totalitarianism > 65 }
+			check_variable = { ITA.totalitarianism > 100 }
 		}
 		activation = { 
 			has_country_flag = ITA_pre_cw
@@ -1201,10 +1373,13 @@ the_italian_civil_war = {
 		}
 		days_mission_timeout = 2555
 		timeout_effect = {
-			hidden_effect = { set_country_flag = big_event_italy_cw }
+				set_country_flag = big_event_italy_cw 
+				clr_country_flag = ITA_pre_cw
+				custom_effect_tooltip = ITA_cw_tt
 		}
 		complete_effect = {
-			add_stability = 0.5
+				clr_country_flag = ITA_pre_cw
+				custom_effect_tooltip = ITA_cw_tt_success
 		}
 	}
 }

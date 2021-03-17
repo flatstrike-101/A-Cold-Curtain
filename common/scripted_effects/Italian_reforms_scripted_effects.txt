@@ -27,3 +27,65 @@ accept_corruption = {
 	custom_effect_tooltip = ITA_tot_decrease_minor
 	custom_effect_tooltip = ITA_reform_decrease_minor
 }
+
+ITA_army_modern = {
+	add_tech_bonus = {
+		bonus = 3.0
+		uses = 2
+		category = land_doctrine
+	}
+	add_tech_bonus = {
+		bonus = 3.0
+		uses = 2
+		category = infantry_weapons
+	}
+	add_tech_bonus = {
+		bonus = 3.0
+		uses = 2
+		category = armor
+	}
+}
+
+ITA_navy_modern = {
+	add_tech_bonus = {
+		bonus = 3.0
+		uses = 2
+		category = naval_doctrine
+	}
+	add_tech_bonus = {
+		bonus = 3.0
+		uses = 2
+		category = naval_equipment
+	}
+	add_tech_bonus = {
+		bonus = 3.0
+		uses = 2
+		category = marine_tech
+	}
+}
+
+ITA_air_modern = {
+	add_tech_bonus = {
+		bonus = 3.0
+		uses = 2
+		category = air_doctrine
+	}
+	add_tech_bonus = {
+		bonus = 3.0
+		uses = 2
+		category = jet_technology
+	}
+	add_tech_bonus = {
+		bonus = 3.0
+		uses = 2
+		category = air_equipment
+	}
+}
+
+ITA_anticorruption_complete = {
+	
+}
+
+ITA_military_reformed_complete = {
+	
+}

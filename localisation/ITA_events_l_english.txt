@@ -2,4 +2,26 @@ l_english:
 ITA_cw.1.t:0 "The Italian Civil War"
 ITA_cw.1.d:0 "placeholder text"
 
-ITA_start_event_1.d:0 "placeholder text"
+### 1953 Focus tree
+
+ITA_start_event_1.d:0 "Rising from the ashes and broken promises of the First World War, Italy forged an empire which rules the mediteranean. From Gibraltar to the Suez, and even as far as the Persian Gulf, the Italian flag is flown high. However her people are not pleased, and neither are her subjects. Families all across the lands now owned by Italy remain scarred, with close to six million Italians lost in the war, civilians and soldiers alike share the overwhelming grief of death. In factories and in shops, workers are restless with low wages and a shortage of equipment, they feel frustrated and mistreated.\n\nBut Il Duce rules with an iron fist and a ruthless council, the king a mere figurehead, only supported by the Carabinieri, who even then are amongst the most corrupt in the army. The Italian empire is a shell of it’s promised self, but with much potential for growth. Will Il Duce regain his lost support in the Italian people? Or will he collapse in the face of a national workers revolution? The balance of power in the meditereanean lies on the edge of Il Duce’s thin knife."
+
+ITA_start_event_2.d:0 "Ever since the end of the Second Great War, and the Italo-German split, the Italian embassy has been silent and withdrawn from International affairs.\n\nWith the exception of the countries within the PM-EDM, Italy stands alone in the world, with enemies on all fronts."
+
+ITA_start_event_3.d:0 "As a result of the Second Great War, and the famines that followed, employment is scarce, and the many laborers and farmers that once existed in Italy have either died, or fled the country.\n\n For this, the Italian people are angry, and tired. The Fascist spirit has been shadowed by Communists and Capitalists, claiming to want a better country! For this, we cannot stand.\n\n We MUST get the people back to our side, or the consequences will be great, and Italy as we know it, might not come out whole."
+
+ITA_start_event_4.d:0 "The Imperial Armed Forces, as grand and magestic as they may have once been, have been reduced to narsacistic and unFascist scum, working to put money in their pocket, rather than serving their fatherland!\n\nAs leaders of the party, we must work torwards creating a military, more prestigious, more efficient, and more Fascist than any other nation in the world! Clean of these corrupt subhumans! and most importantly: ready to fight."
+
+ITA_start_event_5.d:0 "Mussolini was never trustful of Hitler, much less considered him a serious ally. However, complications rose post war, and our glorious leader defied Hitler, and proved the Empire's might and independence by taking in the enemies of Germany.\n\nOf course, the Germans were not happy! But it is not their place to decide the internal affairs of Italy! Ever since then, Italo-German relations have soured, and the embassies have essentially, shut down."
+
+ITA_start_event_6.d:0 "Our soldiers, demoralized by the decline of Fascist spirit, and the lack of proper equipment, have been leaving the army unexpectedly and en masse, many of the fleeing across the border to France, or even going as far as Spain to escape.\n\nWe need to stop this madness, and create a new mindset of soldiers, who will not dare leave the army, and in fact will join in it voluntarily! For the glory and well being of the fatherland!"
+
+ITA_start_event_7.d:0 "The Regia Marina was always superior to other navies in the world. But that only limited the amount of damage done to it, when it encountered the combined allied navy.\n\nAlthough we managed to prevail, the fleet has never recovered. Navy funds have been next to useless, going mainly to greedy admirals always wanting more money. We must work togheter, with a united populace, to recreate the great Regia Marina, and bring it beyong from it's former glory! And to the Fascist future!"
+
+ITA_start_event_8.d:0 "The Italian airforce was the first airforce in the history of human kind to use airplanes as a method of bombing, and direct destruction. However, as great as it might have been, it is larglerly outdated, and underfunded, especially when compared to other airforces in the world.\n\n Mussolini will not have this! So we shall work torwards making an airforce so modern and so powerful that all our enemies will fear us, and we shall fly, torwardfs the future!"
+
+### Reform Events
+
+ITA_reform_event_1.d:0 "The investigations have turned a success! We have found the names of several corrupt officials within the armed forces!\n\nThese scum have pleaded that it wasn't them, and instead blamed it on each other, but that only proves the cowardlyness and antiFascist spirit that they hold!"
+
+ITA_reform_event_2.d:0 "Unfourtunatly, the investigations have not found any breakthroughs yet. We can proceed and launch more, lest we let the infestation grow."

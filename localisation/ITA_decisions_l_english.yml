@@ -103,45 +103,52 @@ deploy_garrisons_istria_desc:0 ""
 the_italian_civil_war:0 "The Partisan's War"
 the_italian_civil_war_desc:0 "placeholder text"
 
-ITA_cw_start:0 "The Fire Begins"
-ITA_cw_start_desc:0 "placeholder text"
+ITA_cw_start:0 "§RThe Fire Begins§!"
+ITA_cw_start_desc:0 ""
 
 ###
 
 reforming_military:0 "Reforming the Military"
-reforming_military_desc:0 "The Italian military is not what it used to be.\n\nWith desertions common, nepotism and corruption rampant, the Italian armed forces are a pitiful cesspool of plutocracy and cowardly men.\n\nBecause of this, we must modernize, and purge the corrupt and cowardly officers, who dare put themselves above the fatherland!\n\nArmy Modernization: [?ITA_army_modern|§Y§!]\nNavy Modernization: [?ITA_navy_modern|§C§!]\nAirforce Modernization: [?ITA_air_modern|§G§!]"
+reforming_military_desc:0 "The Italian military is not what it used to be.\n\nWith desertions common, nepotism and corruption rampant, the Italian armed forces are a pitiful cesspool of plutocracy and cowardly men.\n\nBecause of this, we must modernize, and purge the corrupt and cowardly officers, who dare put themselves above the fatherland!\n\nArmy Modernization: [?ITA_army_modern|§Y§!]\nNavy Modernization: [?ITA_navy_modern|§C§!]\nAirforce Modernization: [?ITA_air_modern|§G§!]\n\nArmed Forces Corruption: [?ITA.corruption|§O§!]"
 
 create_army_section:0 "Found the Army Reformation Division"
-create_army_section_desc:0 "placeholder"
+create_army_section_desc:0 ""
 
 create_navy_section:0 "Found the Navy Reformation Division"
-create_navy_section_desc:0 "placeholder"
+create_navy_section_desc:0 ""
 
 create_air_section:0 "Found the Airforce Reformation Division"
-create_air_section_desc:0 "placeholder"
+create_air_section_desc:0 ""
 
 
 
 investigate_corruption_in_army:0 "Investigate corruption in the Army"
-investigate_corruption_in_army_desc:0 "placeholder"
+investigate_corruption_in_army_desc:0 ""
 
 investigate_corruption_in_navy:0 "Investigate corruption in the Navy"
-investigate_corruption_in_navy_desc:0 "placeholder"
+investigate_corruption_in_navy_desc:0 ""
 
 investigate_corruption_in_air:0 "Investigate corruption in the Airforce"
-investigate_corruption_in_air_desc:0 "placeholder"
+investigate_corruption_in_air_desc:0 ""
 
 fund_army_research:0 "Fund Army Research Branch"
-fund_army_research_desc:0 "placeholder"
+fund_army_research_desc:0 ""
 
 fund_navy_research:0 "Fund Navy Research Branch"
-fund_navy_research_desc:0 "placeholder"
+fund_navy_research_desc:0 ""
 
 fund_air_research:0 "Fund Airforce Research Branch"
-fund_air_research_desc:0 "placeholder"
+fund_air_research_desc:0 ""
+
+ITA_complete_reformation:0 "Finalize Military Reformation"
+ITA_complete_reformation_desc:0 ""
 
 ###
 
 ITA_partisan_event_3:0 "A group of armed bandits overpowered guards and stole from a military stockpile before disappearing into the hills.\n\nA red hammer and sickle graffiti was put over the walls of the facility, indicating partisan activity."
 
 tt_partisan_activity_bad:0 "§RSomething terrible has happened...§!"
+
+ITA_cw_tt:0 "§RWe Must Not Let this Happen§!"
+
+ITA_cw_tt_success:0 "§GItaly has prevailed!§!"
