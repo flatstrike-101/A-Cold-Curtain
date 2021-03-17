@@ -18,20 +18,20 @@ country_event = {
 country_event = {
 	id = ITA_start.2
 	title = "A Closed Door"
-	desc = "placeholder text"
+	desc = ITA_start_event_2.d
 	picture = GFX_event_italian_start.2
 	trigger = {
 	}
 	is_triggered_only = yes
 	option = {
-		name = "Our isolation is our splendor"
+		name = "We do not need the help of lousy Germans and Communists to rule this land!"
 	}
 }
 
 country_event = {
 	id = ITA_start.3
 	title = "The People Unhappy"
-	desc = "placeholder text"
+	desc = ITA_start_event_3.d
 	picture = GFX_event_italian_start.3
 	trigger = {
 	}
@@ -44,33 +44,33 @@ country_event = {
 country_event = {
 	id = ITA_start.4
 	title = "The Military Corrupt"
-	desc = "placeholder text"
+	desc = ITA_start_event_4.d
 	picture = GFX_event_italian_start.4
 	trigger = {
 	}
 	is_triggered_only = yes
 	option = {
-		name = "Soldiers will fight"
+		name = "They shall die like the filth they are."
 	}
 }
 
 country_event = {
 	id = ITA_start.5
 	title = "Italo-German Relations"
-	desc = "placeholder text"
+	desc = ITA_start_event_5.d
 	picture = GFX_event_italian_start.2
 	trigger = {
 	}
 	is_triggered_only = yes
 	option = {
-		name = "So long, old friend"
+		name = "Death to Hitler! Viva Il Duce!"
 	}
 }
 
 country_event = {
 	id = ITA_start.6
 	title = "Desertions, Draft Dodging and Partisans"
-	desc = "placeholder text"
+	desc = ITA_start_event_6.d
 	picture = GFX_event_italian_start.6
 	trigger = {
 	}
@@ -83,7 +83,7 @@ country_event = {
 country_event = {
 	id = ITA_start.7
 	title = "Dented Hulls and Broken Engines"
-	desc = "placeholder text"
+	desc = ITA_start_event_7.d
 	picture = GFX_event_italian_start.7
 	trigger = {
 	}
@@ -96,7 +96,7 @@ country_event = {
 country_event = {
 	id = ITA_start.8
 	title = "Potholes in the Runways"
-	desc = "placeholder text"
+	desc = ITA_start_event_8.d
 	picture = GFX_event_italian_start.8
 	trigger = {
 	}
@@ -109,25 +109,33 @@ country_event = {
 country_event = {
 	id = ITA_reform.1
 	title = "Corrupt Officials Found!"
-	desc = "placeholder text"
+	desc = ITA_reform_event_1.d
 	picture = GFX_event_italian_reform.1
 	trigger = {
 	}
 	is_triggered_only = yes
 	option = {
-		name = "Execute them!"
+		name = "Execute all of them!"
 		crackdown_corruption = yes
+		add_to_variable = {
+			var = ITA.corruption
+			value = -10
+		}
 	}
 	option = {
-		name = "Well, a new Alpine Villa does sound nice this time of year"
+		name = "Pick one, leave the rest."
 		accept_corruption = yes
+		add_to_variable = {
+			var = ITA.corruption
+			value = -1
+		}
 	}
 }
 
 country_event = {
 	id = ITA_reform.2
 	title = "Corrpution Investigation Finds nothing"
-	desc = "placeholder text"
+	desc = ITA_reform_event_2.d
 	picture = GFX_event_italian_reform.2
 	trigger = {
 	}
@@ -138,5 +146,70 @@ country_event = {
 			var = ITA.totalitarianism
 			value = -5
 		}
+	}
+}
+
+country_event = {
+	id = ITA_reform.3
+	title = "Army Modernization Complete!"
+	desc = ITA_reform_event_3.d
+	picture = GFX_event_italian_reform.3
+	trigger = {}
+	is_triggered_only = yes
+	option = {
+		name = "Perfect!"
+		ITA_army_modern = yes
+	}
+}
+
+country_event = {
+	id = ITA_reform.4
+	title = "Navy Modernization Complete!"
+	desc = ITA_reform_event_4.d
+	picture = GFX_event_italian_reform.4
+	trigger = {}
+	is_triggered_only = yes
+	option = {
+		name = "Perfect!"
+		ITA_navy_modern = yes
+	}
+}
+
+country_event = {
+	id = ITA_reform.5
+	title = "Airforce Modernization Complete!"
+	desc = ITA_reform_event_5.d
+	picture = GFX_event_italian_reform.5
+	trigger = {}
+	is_triggered_only = yes
+	option = {
+		name = "Perfect!"
+		ITA_air_modern = yes
+	}
+}
+
+country_event = {
+	id = ITA_reform.6
+	title = "Anti-Corruption Purge Complete!"
+	desc = ITA_reform_event_6.d
+	picture = GFX_event_italian_reform.6
+	trigger = {}
+	is_triggered_only = yes
+	option = {
+		name = "Excellent! Italy is once again whole!"
+		ITA_anticorruption_complete = yes
+	}
+}
+
+country_event = {
+	id = ITA_reform.7
+	title = "Army Reformation Finished"
+	desc = ITA_reform_event_7.d
+	picture = GFX_event_italian_reform.7
+	trigger = {}
+	is_triggered_only = yes
+	option = {
+		name = "We have risen from the ashes!"
+		ITA_military_reformed_complete = yes
 	}
 }

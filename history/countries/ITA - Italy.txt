@@ -10,6 +10,11 @@ set_variable = {
 }
 
 set_variable = { 
+	var = ITA.corruption
+	value = 100
+}
+
+set_variable = { 
 	var = ITA.cameras_modernity
 	value = 0
 }
