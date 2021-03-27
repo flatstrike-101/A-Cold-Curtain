@@ -1,13 +1,12 @@
 state={
 	id=802
-	name="STATE_802"
+	name="Boka"
 	
 	state_category = city
 
 	history={
 		owner = ITA
-		add_core_of = ITA
-		add_core_of = SLV
+		add_core_of = CRO
 		buildings = {
 			infrastructure = 2
 

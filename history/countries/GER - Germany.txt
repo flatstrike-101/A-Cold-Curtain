@@ -334,7 +334,6 @@ GER = {
 	puppet = RKS
 	puppet = WLS
 	puppet = SER
-	puppet = CRO
 	puppet = NOR
     puppet = POL 
 	puppet = DEN
@@ -345,7 +344,6 @@ GER = {
 	puppet = RKS
 	puppet = WLS
 	puppet = SER
-	puppet = CRO
 }
  
  
