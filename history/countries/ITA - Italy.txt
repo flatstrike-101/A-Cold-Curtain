@@ -156,8 +156,11 @@ create_import = {
 	
 	#adding ministers
 	add_ideas = {
-		
-
+		ITA_divided_military
+		ITA_fallen_king
+		ITA_disfunctional_economy
+		ITA_widespread_corruption
+		ITA_unruly_colonies
 		#laws
 		partial_economic_mobilisation
 		limited_conscription
@@ -167,27 +170,31 @@ create_import = {
 	
 	set_autonomy = {
 		target = EGY
-		autonomy_colony = "Colony"
+		autonomy_colony = "colony"
 	}
 
 	set_autonomy = {
 		target = IIP
-		autonomy_colony = "Colony"
+		autonomy_colony = "colony"
 	}
 
 	set_autonomy = {
 		target = ETH
-		autonomy_colony = "Colony"
+		autonomy_colony = "colony"
 	}
 
 	set_autonomy = {
 		target = GRE
-		autonomy_satellite = "Satellite"
+		autonomy_satellite = "satellite"
 	}
 	
 	set_autonomy = {
 		target = MEP
 		autonomy_satellite = "colony"
+	}
+	set_autonomy = {
+		target = CRO
+		autonomy_satellite = "satellite"
 	}
 
 	#BUILDINGS
@@ -302,6 +309,7 @@ add_to_faction = ETH
 add_to_faction = GRE
 add_to_faction = MEP
 add_to_faction = IIP
+add_to_faction = CRO
 
 
 ITA = { puppet = EGY
@@ -309,12 +317,11 @@ ITA = { puppet = EGY
 		puppet = GRE
 		puppet = MEP
 		puppet = IIP
+		puppet = CRO
 		}
 
 
 add_ideas = {
-	sour_loser
-	ACC_Italy
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation

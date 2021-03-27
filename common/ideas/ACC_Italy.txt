@@ -2,21 +2,105 @@ ideas = {
 
 	country = {
 		ITA_fallen_king = {
-			picture = ITA_fallen_king
+			picture = GFX_ITA_fallen_king
 			
 			allowed = {
-				always = yes
+				has_country_flag = ITA_pre_cw
 			}
 			allowed_civil_war = {
 				always = no
 			}
 			removal_cost = -1
 			modifier = {
-italy
-				add_popularity = {
-                 ideology = nationalism
-                 popularity = -0.5
-				}	
+				nationalism_drift = -0.01
+				stability_factor = -0.1
+				political_power_factor = -0.3	
+			}
+		}
+		ITA_divided_military = {
+			picture = GFX_ITA_divided_military
+			allowed = {
+				has_country_flag = ITA_pre_cw
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				command_power_gain_mult = -0.5
+				experience_loss_factor = 0.33
+				land_reinforce_rate = -0.1
+				army_org_factor = -0.5
+				army_org_regain = -0.33
+				attrition = 0.33
+				experience_gain_army_unit = -1.0
+				org_loss_when_moving = 0.5
+				planning_speed = -5.0
+				naval_hit_chance = -0.5
+				naval_morale = -0.5
+				naval_invasion_penalty = 0.5
+				air_accidents_factor = 1.0
+				cannot_use_abilities = 1
+				river_crossing_factor = 1.0	
+			}
+		}
+		ITA_disfunctional_economy = {
+			picture = GFX_ITA_divided_military
+			allowed = {
+				has_country_flag = ITA_pre_cw
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				base_fuel_gain_factor = -0.5
+				production_oil_factor = -0.5
+				global_building_slots_factor = -0.5
+				industrial_capacity_factory = -0.8
+				industrial_capacity_dockyard = -0.8
+				industry_repair_factor = -0.5
+				consumer_goods_factor = 0.7
+				conversion_cost_civ_to_mil_factor = 1.0
+				conversion_cost_mil_to_civ_factor = 1.0
+			}
+		}
+		ITA_widespread_corruption = {
+			picture = GFX_ITA_corruption
+			allowed = {
+				has_country_flag = ITA_pre_cw
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				min_export = -0.8
+				political_advisor_cost_factor = 1.0
+				max_surrender_limit_offset = -0.5
+				political_power_cost = 0.7
+				offensive_war_stability_factor = -1.0
+				party_popularity_stability_factor = -0.6
+				stability_weekly = 0.05
+				drift_defence_factor = 1.0
+				encryption_factor = -0.80
+				operation_cost = 0.5
+				research_speed_factor = -0.3
+			}
+		}
+		ITA_unruly_colonies = {
+			picture = GFX_ITA_bad_colonies
+			allowed = {
+				has_country_flag = ITA_pre_cw
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				occupation_cost = 0.5
+				required_garrison_factor = 0.5
+				autonomy_gain_global_factor = -0.33
 			}
 		}
 	}
@@ -27,12 +111,11 @@ hidden_ideas = {
 			picture = civil_war
 			
 			allowed = {
-				always = yes
+				has_country_flag = big_event_italy_cw
 			}
 			allowed_civil_war = {
 				always = yes
 			}
-			available = { has_war = no }
 			removal_cost = -1
 			modifier = {
 				rule = {
@@ -43,11 +126,6 @@ hidden_ideas = {
 					can_guarantee_other_ideologies = no
 					can_join_factions = no
 				}	
-				#add_popularity = {
-				#	ideology = nationalism
-				#	popularity = -0.5
-				#}	
-				# This is an effect, not a modifier. It can't be put in an idea.
 			}
 		}
 	}
