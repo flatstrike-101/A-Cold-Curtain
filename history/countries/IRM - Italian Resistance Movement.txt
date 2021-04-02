@@ -20,7 +20,10 @@ set_popularities = {
 }
 
 add_ideas = {
-	Civil_war
+	IRM_antifascism
+	###cw ideas
+	IRM_popular_revolt
+	Italy_cw_general
 }
 
 create_country_leader = {

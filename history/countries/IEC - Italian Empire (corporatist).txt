@@ -3,7 +3,7 @@ capital = 819
 set_convoys = 20
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = nationalism
 	last_election = "1941.11.8"
 	election_frequency = 48
 	elections_allowed = no
@@ -13,13 +13,15 @@ set_popularities = {
 	conservatism = 20
 	socialism = 0
 	marxism_leninism = 0
-	fascism = 70
-	nationalism = 10
+	fascism = 10
+	nationalism = 70
 	national_socialism = 0
 }
 
 add_ideas = {
-	Civil_war
+	IEC_national_syndicalism
+	###
+	Italy_cw_general
 }
 
 create_country_leader = {
@@ -27,7 +29,7 @@ create_country_leader = {
 	desc = "POLITICS_SIGNORELLI_DESC"
 	picture = "Portrait_Paolo_Signorelli.dds"
 	expire = "1968.1.1"
-	ideology = classical_fascism
+	ideology = social_nationalism
 	traits = {
 	}
 }

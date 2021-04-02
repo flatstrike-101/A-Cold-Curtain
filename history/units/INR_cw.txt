@@ -70,12 +70,59 @@ units = {
 		start_equipment_factor = 1.0
 
 	}
-	
 	division= {
 		name = "Settima Divisione Infanteria"
 		location = 11726
 		division_template = "Divisione Infanteria"
 		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+    }
+	division= {
+		name = "I Guardia Capitale"
+		location = 3780
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+
+    }
+	division= {
+		name = "II Guardia Capitale"
+		location = 3780
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+
+    }
+	division= {
+		name = "III Guardia Popolare"
+		location = 3772
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+
+    }
+	division= {
+		name = "IV Guardia Popolare"
+		location = 3772
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+
+	}
+	division= {
+		name = "V Guardia Popolare"
+		location = 3772
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1.0
+
+    }
+	division= {
+		name = "VI Guardia Popolare"
+		location = 6780
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 0.7
 		start_equipment_factor = 1.0
 
     }

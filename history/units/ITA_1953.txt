@@ -1,6 +1,6 @@
 division_template = {
 	name = "Divisione Infanteria"	
-	division_names_group = SPAN_INF_01
+	division_names_group = ITA_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -21,8 +21,8 @@ units = {
 		name = "Prima Divisione Infanteria"
 		location = 910
 		division_template = "Divisione Infanteria"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	
@@ -30,8 +30,8 @@ units = {
 		name = "Seconda Divisione Infanteria"
 		location = 11889
 		division_template = "Divisione Infanteria"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	
@@ -39,8 +39,8 @@ units = {
 		name = "Terza Divisione Infanteria"
 		location = 967
 		division_template = "Divisione Infanteria"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	
@@ -48,8 +48,8 @@ units = {
 		name = "Quarta Divisione Infanteria"
 		location = 6973
 		division_template = "Divisione Infanteria"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	
@@ -57,8 +57,8 @@ units = {
 		name = "Quinta Divisione Infanteria"
 		location = 3923
 		division_template = "Divisione Infanteria"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	
@@ -66,8 +66,8 @@ units = {
 		name = "Sesta Divisione Infanteria"
 		location = 11751
 		division_template = "Divisione Infanteria"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 
 	}
 	
@@ -75,8 +75,8 @@ units = {
 		name = "Settima Divisione Infanteria"
 		location = 925
 		division_template = "Divisione Infanteria"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 
     }
 

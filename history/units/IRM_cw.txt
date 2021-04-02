@@ -1,6 +1,6 @@
 division_template = {
 	name = "Militia Infantry"	
-	division_names_group = SPAN_INF_01
+	division_names_group = ITA_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -12,6 +12,26 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Standard Infantry"	
+	division_names_group = ITA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
 	}
 }
 
@@ -120,6 +140,33 @@ units = {
 		name = "Dodicesima Brigada Popolare"
 		location = 6606
 		division_template = "Militia Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+
+	division= {
+		name = "Prima Divisione Popolare"
+		location = 3662
+		division_template = "Militia Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Seconda Divisione Popolare"
+		location = 3764
+		division_template = "Standard Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Terza Divisione Popolare"
+		location = 4159
+		division_template = "Standard Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1.0
 

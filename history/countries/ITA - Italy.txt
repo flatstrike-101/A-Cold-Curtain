@@ -42,6 +42,28 @@ set_variable = {
 	value = 0
 }
 
+# cw variables
+
+set_variable = { 
+	var = ITA.blackshirt_loyalty
+	value = 0
+}
+
+set_variable = { 
+	var = ITA.natsynd_in_govt
+	value = 0
+}
+
+set_variable = { 
+	var = ITA.reactionary_influence
+	value = 100
+}
+
+set_variable = { 
+	var = ITA.nazi_influence
+	value = 100
+}
+
 # Flags
 
 set_country_flag = ITA_pre_cw
@@ -293,13 +315,13 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	liberalism = 10
-	conservatism = 10
-	socialism = 25
-	marxism_leninism = 20
-	fascism = 30
-	nationalism = 5
-	national_socialism = 0
+	liberalism = 5
+	conservatism = 5
+	socialism = 5
+	marxism_leninism = 15
+	fascism = 50
+	nationalism = 10
+	national_socialism = 10
 }
 
 create_faction = PM-EDM

@@ -3,6 +3,10 @@ reforming_military = {
 	icon = GFX_category_icon	
 	
 	allowed = {
+		has_country_flag = ITA_pre_cw
+		NOT = {
+			has_country_flag = big_event_italy_cw
+		}
 	}
 	visible = {
 	tag = ITA
@@ -15,6 +19,10 @@ the_psychological_war = {
 	icon = GFX_category_icon	
 	
 	allowed = {
+		has_country_flag = ITA_pre_cw
+		NOT = {
+			has_country_flag = big_event_italy_cw
+		}
 	}
 	visible = {
 	tag = ITA
@@ -26,6 +34,10 @@ the_physical_war = {		#This is the type of category used for the spanish civil w
 	priority = 7		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.	
 	
 	allowed = {
+		has_country_flag = ITA_pre_cw
+		NOT = {
+			has_country_flag = big_event_italy_cw
+		}
 	}
 	visible = {
 		tag = ITA
@@ -63,6 +75,10 @@ passing_reforms = {
 	priority = 8		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.	
 	
 	allowed = {
+		has_country_flag = ITA_pre_cw
+		NOT = {
+			has_country_flag = big_event_italy_cw
+		}
 	}
 	visible = {
 		tag = ITA
@@ -74,8 +90,27 @@ the_italian_civil_war = {
 	priority = 9		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.	
 	
 	allowed = {
+		has_country_flag = ITA_pre_cw
+		NOT = {
+			has_country_flag = big_event_italy_cw
+		}
 	}
 	visible = {
 		tag = ITA
+	}
+}
+
+keeping_order = {
+	icon = GFX_ITA_cw_mid
+	priority = 9
+	allowed = {}
+	visible = {
+		tag = ITA
+		NOT = {
+			has_country_flag = ITA_pre_cw
+		}
+		NOT = {
+			has_country_flag = ITA_post_cw
+		}
 	}
 }

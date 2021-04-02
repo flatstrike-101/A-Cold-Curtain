@@ -1,5 +1,5 @@
 division_template = {
-	name = "Divisione Infanteria"	
+	name = "Regimento Federale"	
 	division_names_group = SPAN_INF_01
 
 	regiments = {
@@ -18,63 +18,125 @@ division_template = {
 units = {
 	##### Italian Army ###
 	division= {
-		name = "Prima Divisione Infanteria"
+		name = "I Regimento Federale"
 		location = 910
-		division_template = "Divisione Infanteria"
+		division_template = "Regimento Federale"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
 	
 	division= {
-		name = "Seconda Divisione Infanteria"
+		name = "II  Regimento Federale"
 		location = 9907
-		division_template = "Divisione Infanteria"
+		division_template = "Regimento Federale"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
 	
 	division= {
-		name = "Terza Divisione Infanteria"
+		name = "III Regimento Federale"
 		location = 910
-		division_template = "Divisione Infanteria"
+		division_template = "Regimento Federale"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
 	
 	division= {
-		name = "Quarta Divisione Infanteria"
+		name = "IV Regimento Federale"
 		location = 6875
-		division_template = "Divisione Infanteria"
+		division_template = "Regimento Federale"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
 	
 	division= {
-		name = "Quinta Divisione Infanteria"
+		name = "V Regimento Federale"
 		location = 6673
-		division_template = "Divisione Infanteria"
+		division_template = "Regimento Federale"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
 	
 	division= {
-		name = "Sesta Divisione Infanteria"
+		name = "VI Regimento Federale"
 		location = 3885
-		division_template = "Divisione Infanteria"
+		division_template = "Regimento Federale"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
 	}
 	
 	division= {
-		name = "Settima Divisione Infanteria"
+		name = "VII Regimento Federale"
 		location = 9750
-		division_template = "Divisione Infanteria"
+		division_template = "Regimento Federale"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+    }
+	division= {
+		name = "VIII Regimento Federale"
+		location = 910
+		division_template = "Regimento Federale"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "IX Regimento Federale"
+		location = 9907
+		division_template = "Regimento Federale"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "X Regimento Federale"
+		location = 910
+		division_template = "Regimento Federale"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "XI Regimento Federale"
+		location = 6875
+		division_template = "Regimento Federale"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "XII Regimento Federale"
+		location = 6673
+		division_template = "Regimento Federale"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "XIII Regimento Federale"
+		location = 3885
+		division_template = "Regimento Federale"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "XIV Regimento Federale"
+		location = 9750
+		division_template = "Regimento Federale"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
 
