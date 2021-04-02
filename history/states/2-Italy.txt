@@ -6,7 +6,7 @@ state= {
 	state_category = city
 
 	history= {
-		victory_points = { 9904 30 }
+		victory_points = { 9904 60 }
 		owner = ITA
 		add_core_of = ITA
 		buildings = {

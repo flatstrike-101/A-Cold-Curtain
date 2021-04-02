@@ -1371,15 +1371,207 @@ the_italian_civil_war = {
 			has_country_flag = ITA_pre_cw
 			tag = ITA
 		}
-		days_mission_timeout = 2555
+		days_mission_timeout = 10
 		timeout_effect = {
 				set_country_flag = big_event_italy_cw 
+				country_event = ITA_cw.1
 				clr_country_flag = ITA_pre_cw
 				custom_effect_tooltip = ITA_cw_tt
 		}
 		complete_effect = {
 				clr_country_flag = ITA_pre_cw
 				custom_effect_tooltip = ITA_cw_tt_success
+		}
+	}
+}
+
+##### during civil war
+
+keeping_order = {
+	ITA_govt_collapse = {
+		allowed = { 
+			tag = ITA
+			has_country_flag = big_event_italy_cw 
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+			NOT = {
+				has_country_flag = ITA_pre_cw
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}
+		available = {
+			check_variable = { ITA.blackshirt_loyalty > 100 }
+			check_variable = { ITA.reactionary_influence < 0 }
+			check_variable = { ITA.natsynd_in_govt > 100 }
+			check_variable = { ITA.nazi_influence < 0 }
+		}
+		activation = {
+			has_country_flag = big_event_italy_cw
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}
+		days_mission_timeout = 30
+		timeout_effect = {
+			set_country_flag = ITA_cw_collapse
+			country_event = ITA_cw.3
+		}
+		complete_effect = {
+			country_event = ITA_cw.4
+		}
+	}
+	placate_govt = {
+		icon = GFX_decision_icon_default	
+		available = {}
+		fire_only_once = no	
+		allowed = { 
+			tag = ITA
+			has_country_flag = big_event_italy_cw 
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}		
+		days_re_enable = 10
+		cost = 25
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = ITA_govt_collapse
+				days = 7
+			}
+		}
+
+		ai_will_do = {	
+			factor = 1
+		}
+	}
+	involve_blackshirts_in_mil = {
+		icon = GFX_decision_icon_default	
+		available = {}
+		fire_only_once = no	
+		days_remove = 20	
+		days_re_enable = 20	
+		allowed = { 
+			tag = ITA
+			has_country_flag = big_event_italy_cw 
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}		
+		cost = 5
+		remove_effect = {
+			add_to_variable = {
+				var = ITA.blackshirt_loyalty
+				value = 10
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+	put_natsynd_in_govt = {
+		icon = GFX_decision_icon_default	
+		available = {}
+		fire_only_once = no	
+		days_remove = 20	
+		days_re_enable = 20	
+		allowed = { 
+			tag = ITA
+			has_country_flag = big_event_italy_cw 
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}		
+		cost = 5
+		remove_effect = {
+			add_to_variable = {
+				var = ITA.natsynd_in_govt
+				value = 10
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+	replace_nazi_officers = {
+		icon = GFX_decision_icon_default	
+		available = {}
+		fire_only_once = no	
+		days_remove = 20	
+		days_re_enable = 20	
+		allowed = { 
+			tag = ITA
+			has_country_flag = big_event_italy_cw 
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}		
+		cost = 5
+		remove_effect = {
+			add_to_variable = {
+				var = ITA.nazi_influence
+				value = -10
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
+		}
+	}
+	suppress_reactionaries = {
+		icon = GFX_decision_icon_default	
+		available = {}
+		fire_only_once = no	
+		days_remove = 20	
+		days_re_enable = 20	
+		allowed = { 
+			tag = ITA
+			has_country_flag = big_event_italy_cw 
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = ITA_cw_collapse
+			}
+		}		
+		cost = 5
+		remove_effect = {
+			add_to_variable = {
+				var = ITA.reactionary_influence
+				value = -10
+			}
+		}
+
+		ai_will_do = {	
+			factor = 0
 		}
 	}
 }

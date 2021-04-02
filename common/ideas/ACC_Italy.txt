@@ -103,30 +103,177 @@ ideas = {
 				autonomy_gain_global_factor = -0.33
 			}
 		}
-	}
 
-hidden_ideas = {
-	country = {
-		Civil_war = {
-			picture = civil_war
-			
+		#########
+		hidden_ideas = {
+		Italy_cw_general = {
+			picture = GFX_ITA_cw_general
 			allowed = {
+				OR = {
+					tag = ITA
+				}
+				OR = {
+					tag = IRM
+				}
+				OR = {
+					tag = IKS
+				}
+				OR = {
+					tag = IEC
+				}
+				OR = {
+					tag = IFG
+				}
+				OR = {
+					tag = INR
+				}
 				has_country_flag = big_event_italy_cw
-			}
-			allowed_civil_war = {
-				always = yes
 			}
 			removal_cost = -1
 			modifier = {
-				rule = {
-					can_join_opposite_factions = no
-					can_create_factions = no
-					can_be_called_to_war = no
-					can_force_government = no
-					can_guarantee_other_ideologies = no
-					can_join_factions = no
-				}	
+				surrender_limit = 0.15
 			}
 		}
+		}
+
+		IRM_popular_revolt = {
+			picture = GFX_IRM_cw_popular_revolt
+			allowed = {
+				tag = IRM
+				NOT = {
+					has_country_flag = IRM_post_war
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				occupation_cost = -0.5
+				conscription_factor = 0.25
+				command_power_gain_mult = -0.7
+				war_support_weekly_factor = 0.1
+				political_power_factor = 0.05
+			}
+		}
+
+		IRM_antifascism = {
+			picture = GFX_IRM_antifascsim
+			allowed = {
+				tag = IRM
+				NOT = {
+					has_country_flag = IRM_full_democracy
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				
+				fascism_drift = -0.5
+				nationalism_drift = -0.5
+				national_socialism_drift = -0.5
+			}
+		}
+		#########
+		IFG_neo_feudalism = {
+			picture = GFX_IFG_neo_feudalism
+			allowed = {
+				tag = IFG
+				NOT = {
+					has_country_flag = IFG_dictatorship
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_weekly_factor = 0.10
+				conscription_factor = 0.10
+				puppet_cost_factor = -0.5
+				stability_factor = 0.2
+				stability_weekly_factor = 0.05
+				drift_defence_factor = -0.1
+				political_power_factor = -0.10
+				subjects_autonomy_gain = 0.01
+			}
+		}
+		#########
+		IEC_national_syndicalism = {
+			picture = GFX_IEC_national_syndicalism
+			allowed = {
+				tag = IEC
+				NOT = {
+					has_country_flag = IEC_reformed
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				production_oil_factor = 0.3
+				global_building_slots = 2
+				conversion_cost_mil_to_civ_factor = 0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.25
+				industry_free_repair_factor = 0.25
+				compliance_growth_on_our_occupied_states = 0.01
+				consumer_goods_factor = 0.4
+			}
+		}
+		
+		INR_SS_funding = {
+			picture = GFX_INR_ss_money
+			allowed = {
+				tag = INR
+			}
+			removal_cost = -1
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.3
+				research_speed_factor = 0.05
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.1
+				breakthrough_factor = 0.4
+				experience_gain_army = 1
+				experience_gain_army_unit_factor = 0.5
+				training_time_factor = 0.5
+				out_of_supply_factor = -0.1
+				planning_speed = -0.05
+				experience_gain_navy = -0.5
+				war_support_weekly = -0.01
+				political_power_factor = -0.50
+			}
+		}
+		INR_minority_treatement = {
+			picture = GFX_INR_minority
+			allowed = {
+				tag = INR
+				NOT = {
+					has_country_flag = INR_intergration_complete
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.4
+				conscription_factor = -0.2
+				non_core_manpower = -1.0
+				stability_factor = -0.1
+				national_socialism_drift = 0.01
+			}
+		}
+		#########
+		IKS_fascist_revisionism = {
+			picture = GFX_IKS_revisionism
+			allowed = {
+				tag = IKS
+				NOT = {
+					has_country_flag = IKS_final_revision
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.25
+				monthly_population = -0.05
+				stability_factor = -0.1
+				war_support_weekly = -0.01
+				fascism_drift = 0.1
+			}
+		}
+
+
 	}
 }

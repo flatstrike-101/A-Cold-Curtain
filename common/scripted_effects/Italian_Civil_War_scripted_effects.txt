@@ -1,5 +1,33 @@
 Italian_Civil_War_general = {
 	ITA = {
+		set_rule = {
+			can_join_opposite_factions = no
+			can_create_factions = no
+			can_be_called_to_war = no
+			can_force_government = no
+			can_guarantee_other_ideologies = no
+			can_join_factions = no
+			can_puppet = no
+			can_force_government = no
+			can_send_volunteers = no
+			can_use_kamikaze_pilots = yes
+		}
+	}
+	IRM = {
+		set_rule = {
+			can_join_opposite_factions = no
+			can_create_factions = no
+			can_be_called_to_war = no
+			can_force_government = no
+			can_guarantee_other_ideologies = no
+			can_join_factions = no
+			can_puppet = no
+			can_force_government = no
+			can_send_volunteers = no
+			can_use_kamikaze_pilots = yes
+		}
+	}
+	ITA = {
 		hidden_effect = {
 		set_country_flag = big_event_italy_cw
 		release = ALB
@@ -10,6 +38,7 @@ Italian_Civil_War_general = {
 		end_puppet = GRE 
 		end_puppet = MEP
 		end_puppet = IIP
+		end_puppet = CRO
 		set_popularities = {
 			liberalism = 0
 			conservatism = 0
@@ -19,41 +48,7 @@ Italian_Civil_War_general = {
 			nationalism = 3
 			national_socialism = 3
 			}
-	}
-	ITR = {
-		set_country_flag = big_event_italy_cw
-	}
-	ITC = {
-		set_country_flag = big_event_italy_cw
-	}
-	INR = {
-		transfer_state = 158
-		transfer_state = 159
-		transfer_state = 39
-	}
-	IRM = {
-		transfer_state = 161
-		transfer_state = 160
-		transfer_state = 736
-		transfer_state = 800
-		transfer_state = 735
-		transfer_state = 1
-		transfer_state = 114
-		transfer_state = 115
-		transfer_state = 116
-		transfer_state = 805
-		transfer_state = 802
-		transfer_state = 163
-	}
-	IKS = {
-		transfer_state = 157
-	}
-	IEC = {
-		transfer_state = 117
-		transfer_state = 156
-	}
-	IFG = {
-		transfer_state = 162
+		}
 	}
 	INA = {
 		transfer_state = 459
@@ -71,77 +66,169 @@ Italian_Civil_War_general = {
 		transfer_state = 451
 		transfer_state = 663
 	}
+	
+	IRM = {
+		transfer_state = 161
+		transfer_state = 160
+		transfer_state = 736
+		transfer_state = 800
+		transfer_state = 735
+		transfer_state = 1
+		transfer_state = 114
+		transfer_state = 115
+		transfer_state = 116
+		transfer_state = 805
+		transfer_state = 802
+		transfer_state = 163
+		transfer_state = 103
+	}
+
+	IRM = {
+		add_state_core = 161
+		add_state_core = 160
+		add_state_core = 736
+		add_state_core = 800
+		add_state_core = 735
+		add_state_core = 1
+		add_state_core = 114
+		add_state_core = 115
+		add_state_core = 116
+		add_state_core = 805
+		add_state_core = 802
+		add_state_core = 163
+		add_state_core = 103
+		add_state_core = 158
+		add_state_core = 159
+		add_state_core = 39
+		add_state_core = 157
+		add_state_core = 117
+		add_state_core = 156
+		add_state_core = 162
+	}
+
+	IRM = {
+		load_oob = "IRM_cw"
+	}
+	ITA = {
+		load_oob = "ITA_ITA_CIVIL_WAR"
+	}
+	
 
 ####
+
+	
+	ITA = {
+		country_event = { id = ITA_cw.2 }
+		declare_war_on = {
+		target = IRM
+		type = civil_war
+		}
+	}
+	
+	IRM = {
+		country_event = { id = ITA_cw.2 }
+		declare_war_on = {
+		target = ITA
+		type = civil_war
+		}
+	}
+}
+
+#################################################
+
+ITA_Civil_War_collapse = {
+	INR = {
+		transfer_state = 158
+		transfer_state = 159
+		transfer_state = 39
+	}
+	IKS = {
+		transfer_state = 157
+	}
+	IEC = {
+		transfer_state = 117
+		transfer_state = 156
+	}
+	IFG = {
+		transfer_state = 162
+	}
+	
+
+	###
 
 	ITA = {
 		country_event = { id = ITA_cw.2 }
 		declare_war_on = {
 		target = IKS
 		type = civil_war
+		}
 	}
 	ITA = {
 		country_event = { id = ITA_cw.2 }
 		declare_war_on = {
 		target = INR
 		type = civil_war
+		}
 	}
 	ITA = {
 		country_event = { id = ITA_cw.2 }
 		declare_war_on = {
 		target = IEC
 		type = civil_war
+		}
 	}
-	ITA = {
-		country_event = { id = ITA_cw.2 }
-		declare_war_on = {
-		target = IRM
-		type = civil_war
-	}
+
 	ITA = {
 		country_event = { id = ITA_cw.2 }
 		declare_war_on = {
 		target = IFG
 		type = civil_war
+		}
 	}
 
-####
+###
 
 	IKS = {
 		country_event = { id = ITA_cw.2 }
 		declare_war_on = {
 		target = IRM
 		type = civil_war
+		}
 	}
 	IKS = {
 		country_event = { id = ITA_cw.2 }
 		declare_war_on = {
 		target = ITA
 		type = civil_war
+		}
 	}
 	IKS = {
 		country_event = { id = ITA_cw.2 }
 		declare_war_on = {
 		target = INR
 		type = civil_war
+		}
 	}
 	IKS = {
 		country_event = { id = ITA_cw.2 }
 		declare_war_on = {
 		target = IRM
 		type = civil_war
+		}
 	}
 	IKS = {
 		country_event = { id = ITA_cw.2 }
 		declare_war_on = {
 		target = IFG
 		type = civil_war
+		}
 	}
 	IKS = {
 		country_event = { id = ITA_cw.2 }
 		declare_war_on = {
 		target = IEC
 		type = civil_war
+		}
 	}
 
 ####
@@ -151,36 +238,42 @@ IEC = {
 	declare_war_on = {
 	target = IRM
 	type = civil_war
+	}
 }
 IEC = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = ITA
 	type = civil_war
+	}
 }
 IEC = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = INR
 	type = civil_war
+	}
 }
 IEC = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IRM
 	type = civil_war
+	}
 }
 IEC = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IFG
 	type = civil_war
+	}
 }
 IEC = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IKS
 	type = civil_war
+	}
 }
 
 ####
@@ -190,121 +283,130 @@ INR = {
 	declare_war_on = {
 	target = IRM
 	type = civil_war
+	}
 }
 INR = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = ITA
 	type = civil_war
+	}
 }
 INR = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IKS
 	type = civil_war
+	}
 }
 INR = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IRM
 	type = civil_war
+	}
 }
 INR = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IFG
 	type = civil_war
+	}
 }
 INR = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IEC
 	type = civil_war
+	}
 }
 
-####
+###
 
 IRM = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IKS
 	type = civil_war
+	}
 }
-IRM = {
-	country_event = { id = ITA_cw.2 }
-	declare_war_on = {
-	target = ITA
-	type = civil_war
-}
+
 IRM = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = INR
 	type = civil_war
+	}
 }
 IRM = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IRM
 	type = civil_war
+	}
 }
 IRM = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IFG
 	type = civil_war
+	}
 }
 IRM = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IEC
 	type = civil_war
+	}
 }
 
-####
+###
 
 IFG = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IRM
 	type = civil_war
+	}
 }
 IFG = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = ITA
 	type = civil_war
+	}
 }
 IFG = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = INR
 	type = civil_war
+	}
 }
 IFG = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IRM
 	type = civil_war
+	}
 }
 IFG = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IKS
 	type = civil_war
+	}
 }
 IFG = {
 	country_event = { id = ITA_cw.2 }
 	declare_war_on = {
 	target = IEC
 	type = civil_war
+	}
 }
 
 INR = {
 	load_oob = "INR_cw"
-}
-IRM = {
-	load_oob = "IRM_cw"
 }
 IEC = {
 	load_oob = "IEC_cw"
@@ -315,4 +417,151 @@ IFG = {
 IKS = {
 	load_oob = "IKS_cw"
 }
+
+IKS = {
+	set_rule = {
+		can_join_opposite_factions = no
+		can_create_factions = no
+		can_be_called_to_war = no
+		can_force_government = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_puppet = no
+		can_force_government = no
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = yes
+	}
+}
+
+IFG = {
+	set_rule = {
+		can_join_opposite_factions = no
+		can_create_factions = no
+		can_be_called_to_war = no
+		can_force_government = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_puppet = no
+		can_force_government = no
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = yes
+	}
+}
+
+IEC = {
+	set_rule = {
+		can_join_opposite_factions = no
+		can_create_factions = no
+		can_be_called_to_war = no
+		can_force_government = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_puppet = no
+		can_force_government = no
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = yes
+	}
+}
+
+INR = {
+	set_rule = {
+		can_join_opposite_factions = no
+		can_create_factions = no
+		can_be_called_to_war = no
+		can_force_government = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_puppet = no
+		can_force_government = no
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = yes
+	}
+}
+
+IFG = {
+	add_state_core = 161
+	add_state_core = 160
+	add_state_core = 736
+	add_state_core = 800
+	add_state_core = 735
+	add_state_core = 1
+	add_state_core = 114
+	add_state_core = 115
+	add_state_core = 116
+	add_state_core = 805
+	add_state_core = 802
+	add_state_core = 163
+	add_state_core = 103
+	add_state_core = 158
+	add_state_core = 159
+	add_state_core = 39
+	add_state_core = 157
+	add_state_core = 117
+	add_state_core = 156
+	add_state_core = 162
+}
+
+IKS = {
+	add_state_core = 161
+	add_state_core = 160
+	add_state_core = 736
+	add_state_core = 800
+	add_state_core = 735
+	add_state_core = 1
+	add_state_core = 114
+	add_state_core = 115
+	add_state_core = 116
+	add_state_core = 805
+	add_state_core = 802
+	add_state_core = 163
+	add_state_core = 103
+	add_state_core = 158
+	add_state_core = 159
+	add_state_core = 39
+	add_state_core = 157
+	add_state_core = 117
+	add_state_core = 156
+	add_state_core = 162
+}
+
+IEC = {
+	add_state_core = 161
+	add_state_core = 160
+	add_state_core = 736
+	add_state_core = 800
+	add_state_core = 735
+	add_state_core = 1
+	add_state_core = 114
+	add_state_core = 115
+	add_state_core = 116
+	add_state_core = 805
+	add_state_core = 802
+	add_state_core = 163
+	add_state_core = 103
+	add_state_core = 158
+	add_state_core = 159
+	add_state_core = 39
+	add_state_core = 157
+	add_state_core = 117
+	add_state_core = 156
+	add_state_core = 162
+}
+
+INR = {
+	add_state_core = 161
+	add_state_core = 160
+	add_state_core = 736
+	add_state_core = 1
+	add_state_core = 114
+	add_state_core = 115
+	add_state_core = 116
+	add_state_core = 158
+	add_state_core = 159
+	add_state_core = 39
+	add_state_core = 157
+	add_state_core = 117
+	add_state_core = 156
+	add_state_core = 162
+}
+
 }

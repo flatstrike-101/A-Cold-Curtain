@@ -20,7 +20,9 @@ set_popularities = {
 }
 
 add_ideas = {
-	Civil_war
+	IKS_fascist_revisionism
+	###
+	Italy_cw_general
 }
 
 create_country_leader = {

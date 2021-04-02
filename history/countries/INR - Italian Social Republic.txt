@@ -20,7 +20,10 @@ set_popularities = {
 }
 
 add_ideas = {
-	Civil_war
+	INR_SS_funding
+	INR_minority_treatement
+	###
+	Italy_cw_general
 }
 
 create_country_leader = {

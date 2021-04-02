@@ -50,6 +50,42 @@ units = {
 		division_template = "Divisione Infanteria"
 		start_experience_factor = 0.5
 		start_equipment_factor = 1.0
+	}
+
+	division= {
+		name = "Quinta Divisione Infanteria"
+		location = 6926
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Sesta Divisione Infanteria"
+		location = 925
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Settima Divisione Infanteria"
+		location = 6831
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+
+	}
+	
+	division= {
+		name = "Ottava Divisione Infanteria"
+		location = 11790
+		division_template = "Divisione Infanteria"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1.0
+	}
 
 	##### No notable navy #####
 }
