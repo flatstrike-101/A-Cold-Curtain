@@ -1,0 +1,23 @@
+state={
+	id=834
+	name="Middle Anatolia"
+	manpower = 503000
+	
+	state_category = town
+	
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2 
+			air_base = 3
+		}
+		add_core_of = TUR
+
+	}
+
+	provinces={
+		919  3807 3862 3964 11826 11844 
+	}
+}
